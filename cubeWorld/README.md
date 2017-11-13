@@ -80,3 +80,26 @@ Cube `[100, 100, 100, 5]` does not overlap any other cube and only has a volume 
 3. Create structures of connected cubes
     * Two cubes are considered connected if they share a `1 × 1 × 1` cube with the same coordinate
 4. Find the structure with the largest volume (i.e. the most number of `1 × 1 × 1` cubes)
+
+## Solution
+
+### Relevant files
+
+* [CubeWorld.java](https://github.com/jimmynguyen/codefights/blob/master/cubeWorld/src/main/java/CubeWorld.java)
+* [Cube.java](https://github.com/jimmynguyen/codefights/blob/master/cubeWorld/src/main/java/Cube.java)
+* [Structure.java](https://github.com/jimmynguyen/codefights/blob/master/cubeWorld/src/main/java/Structure.java)
+
+### Example
+
+```java
+int[][] cubes = new int[][] {
+    {  0,   0,   0, 10},
+    {100, 100, 100,  5},
+    {  5,   5,   5,  2},
+    {  9,   9,   9,  5}
+};
+
+int largestStructureVolume = CubeWorld.getLargestStructureVolume(cubes);
+
+// largestStructureVolume -> 1124
+```
