@@ -1,7 +1,7 @@
-function res = listWithoutLoop (n)
+function list = listWithoutLoop (n)
     set(0,'RecursionLimit', 150000);
     if n <= 0
-        res = n;
+        list = n;
     else
-        res = [n, listWithoutLoop(n-5), n];
+        list = [n, listWithoutLoop(n-5), n];
     end

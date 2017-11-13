@@ -22,7 +22,7 @@ For `n = 25`, the output should be
 
 ## Solution Strategy
 
-Use recursion...
+Use recursion
 
 ## Solution
 
@@ -37,4 +37,3 @@ list = listWithoutLoop(25);
 
 % list -> [25, 20, 15, 10, 5, 0, 5, 10, 15, 20, 25]
 ```
-
