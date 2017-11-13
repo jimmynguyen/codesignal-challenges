@@ -1,29 +1,54 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Structure {
-	private List<Cube> cubes;
+	private Map<Integer, Cube> cubes;
 
-	public Structure(Cube cube) {
-		this.cubes = new ArrayList<>();
-		this.addCube(cube);
+	public Structure() {
+		cubes = new HashMap<>();
 	}
 
-	public List<Cube> getCubes() {
-		return this.cubes;
+	public Structure(int[] cube) {
+		this();
+		addCube(cube);
 	}
 
-	public void addCube(Cube cube) {
-		if (this.cubes.isEmpty())
-			this.cubes.add(cube);
-		else {
-			// check if cube is connected
-			if (this.isAnyConnected(cube))
-				this.cubes.add(cube);
-		}
+	public void addCube(int[] cube) {
+		int x = cube[0];
+		int y = cube[1];
+		int z = cube[2];
+		int r = cube[3];
+		int id;
+		for (int k = z; k < z+r; k++)
+			for (int j = y; j < y+r; j++)
+				for (int i = x; i < x+r; i++) {
+					id = Cube.getId(i, j, k);
+					if (!cubes.containsKey(id))
+						cubes.put(id, new Cube(i, j, k));
+				}
 	}
 
-	public boolean isAnyConnected(Cube cube) {
-		return this.cubes.stream().filter(c -> c.isConnected(cube)).findAny().isPresent();
+	public Map<Integer, Cube> getCubes() {
+		return cubes;
+	}
+
+	public int getVolume() {
+		return cubes.size();
+	}
+
+	public boolean isConnected(int[] cube) {
+		int x = cube[0];
+		int y = cube[1];
+		int z = cube[2];
+		int r = cube[3];
+		int id;
+		for (int k = z; k < z+r; k++)
+			for (int j = y; j < y+r; j++)
+				for (int i = x; i < x+r; i++) {
+					id = Cube.getId(i, j, k);
+					if (cubes.containsKey(id))
+						return true;
+				}
+		return false;
 	}
 }

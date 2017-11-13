@@ -1,37 +1,38 @@
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CubeTest {
-	private static Cube cube, connectedCube, notConnectedCube;
+	private static Cube cube;
 
 	@BeforeAll
 	static void setUp() {
-		cube = new Cube(new int[] {0, 0, 0, 2});
-		connectedCube = new Cube(new int[] {1, 1, 1, 2});
-		notConnectedCube = new Cube(new int[] {2, 2, 2, 2});
+		cube = new Cube(0, 1, 2);
 	}
 
 	@Test
-	void when_getBottomLeftCorner_for_valid_then_returnBottomLeftCorner() {
-		assertArrayEquals(cube.getBottomLeftCorner(), new int[] {0, 0, 0});
+	void when_getId_for_valid_then_returnId() {
+		assertEquals(String.format("0,1,2").hashCode(), cube.getId());
 	}
 
 	@Test
-	void when_getTopRightCorner_for_valid_then_returnTopRightCorner() {
-		assertArrayEquals(cube.getTopRightCorner(), new int[] {2, 2, 2});
+	void when_staticGetId_for_valid_then_returnId() {
+		assertEquals(String.format("0,1,2").hashCode(), Cube.getId(0, 1, 2));
 	}
 
 	@Test
-	void when_isConnected_for_valid_then_returnTrue() {
-		assertTrue(cube.isConnected(connectedCube));
+	void when_getX_for_valid_then_returnX() {
+		assertEquals(0, cube.getX());
 	}
 
 	@Test
-	void when_isConnected_for_invalid_then_returnFalse() {
-		assertFalse(cube.isConnected(notConnectedCube));
+	void when_getY_for_valid_then_returnY() {
+		assertEquals(1, cube.getY());
+	}
+
+	@Test
+	void when_getZ_for_valid_then_returnZ() {
+		assertEquals(2, cube.getZ());
 	}
 }

@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cubeWorld" />
         <module name="cubeworld" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cubeworld" target="1.5" />
+      <module name="cubeWorld" target="1.9" />
     </bytecodeTargetLevel>
   </component>
 </project>
