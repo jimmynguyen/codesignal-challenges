@@ -1,6 +1,6 @@
 # cubeWorld
 
-## Description
+## Challenge Description
 
 Your task is to find the volume of the structure created by the provided cubes.
 
@@ -72,3 +72,11 @@ Cube `[100, 100, 100, 5]` does not overlap any other cube and only has a volume 
 * **[output] integer**
 
   Volume of the largest structure created by the cubes.
+
+## Solution Strategy
+
+1. Loop through all cubes
+2. Break all cubes into cubes of size `1 × 1 × 1`, where a cube with coordinate `(x, y, z)` represents the cube described by the two points `(x, y, z)` and `(x+1, y+1, z+1)`
+3. Create structures of connected cubes
+    * Two cubes are considered connected if they share a `1 × 1 × 1` cube with the same coordinate
+4. Find the structure with the largest volume (i.e. the most number of `1 × 1 × 1` cubes)
