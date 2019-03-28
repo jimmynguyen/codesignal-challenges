@@ -7,7 +7,7 @@ public class IsTandemRepeat {
 		assert input.length == expectedOutput.length : String.format("# inputs = %d, # expectedOutputs = %d", input.length, expectedOutput.length);
 		IntStream.range(0, expectedOutput.length).forEach(i -> {
 			boolean actualOutput = isTandemRepeat(input[i]);
-			assert actualOutput == expectedOutput[i] : String.format("isTandemRepeat(\"%s\") returned %d, but expected %d", input[i], actualOutput, expectedOutput[i]);
+			assert actualOutput == expectedOutput[i] : String.format("isTandemRepeat(\"%s\") returned %b, but expected %b", input[i], actualOutput, expectedOutput[i]);
 		});
 	}
 
