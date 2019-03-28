@@ -1,12 +1,22 @@
 # python script to parse json formatted tests retrieved from CodeSignal by running the extractTests.js script in the browser
+
+# DEFINE argTypes HERE where the last element is the output type and the other elements is the input types
+argTypes = ['int[]', 'int', 'int']
+language = 'java'
+
 import json
 from pprint import pprint
 
 def formatArg(arg, argType):
 	if argType == 'String':
 		arg = '"{}"'.format(arg)
-	elif argType == 'int' or argType == 'boolean' or argType == 'double':
+	elif argType in ['int', 'boolean', 'double']:
 		arg = arg
+	elif argType[-2:] == '[]':
+		if language == 'java':
+			arg = arg.replace('[','{').replace(']','}')
+		else:
+			raise ValueError('"{}" is not a supported language'.format(language))
 	else:
 		raise ValueError('"{}" is not a supported argType'.format(argType))
 	return arg
@@ -27,9 +37,6 @@ for inputNumber, inputList in enumerate(data['inputs']):
 for testCaseNumber, outputElem in enumerate(data['outputs']):
 	outputElem = str(outputElem)
 	testCases[testCaseNumber].append(outputElem)
-
-# DEFINE argTypes HERE
-argTypes = ['int', 'int', 'int', 'boolean']
 
 # write tests to txt file
 outputFile = ''

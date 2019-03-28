@@ -54,6 +54,7 @@ function javaStringFormatArgsMap = buildJavaStringFormatArgsMap()
 	javaStringFormatArgsMap.int = '%d';
 	javaStringFormatArgsMap.double = '%f';
 	javaStringFormatArgsMap.boolean = '%b';
+	javaStringFormatArgsMap.('int[]') = '%s';
 
 function argsMap = buildArgsMap(challenge, inputTypes, outputType, testsFilePath)
 	javaStringFormatArgsMap = buildJavaStringFormatArgsMap();
