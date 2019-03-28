@@ -1,0 +1,1 @@
+java -ea DifferentValues.java
