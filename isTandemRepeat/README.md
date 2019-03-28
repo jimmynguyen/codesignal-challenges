@@ -1,4 +1,4 @@
-# commonCharacterCount
+# isTandemRepeat
 
 Link to Challenge: [https://app.codesignal.com/challenge/b88Cu9b88ymnXxw7h](https://app.codesignal.com/challenge/b88Cu9b88ymnXxw7h)
 
