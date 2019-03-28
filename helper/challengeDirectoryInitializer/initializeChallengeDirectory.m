@@ -1,4 +1,28 @@
 function initializeChallengeDirectory(language, challenge, inputTypes, outputType, linkToChallege, testsFilePath)
+# usage: initializeChallengeDirectory(language, challenge, inputTypes, outputType, linkToChallege, testsFilePath)
+#
+# inputs:
+#     language - string
+#         the programming language for the new directory
+#         possible values:
+#             'java'
+#     challenge - string
+#         the name of the challenge in camel case or Pascal case
+#     inputTypes - cell array
+#         a list of input types
+#         possible values:
+#             'boolean'
+#             'double'
+#             'int'
+#             'String'
+#     outputType - string
+#         the output types
+#         possible values: see inputTypes
+#     linkToChallenge - string
+#         url to CodeSignal challenge
+#     testsFilePath - string
+#         local path to file containing test cases
+#
 	if strcmp(lower(language), 'java')
 		lines = textread('java/Main.java.txt', '%s','delimiter', '\n', 'whitespace', '');
 		if challenge(1) >= 'a'
@@ -31,18 +55,6 @@ function javaStringFormatArgsMap = buildJavaStringFormatArgsMap()
 	javaStringFormatArgsMap.double = '%f';
 	javaStringFormatArgsMap.boolean = '%b';
 
-# CLASS_NAME
-# TEST_INPUTS
-# OUTPUT_TYPE
-# TEST_OUTPUTS
-# NUM_TESTS_ASSERTION
-# METHOD_NAME
-# METHOD_ARGS
-# ACTUAL_EXPECTED_COMPARISON: if primitive use ==, else use equals
-# METHOD_ARGS_STRING_FORMAT_TEMPLATE
-# OUTPUT_TYPE_STRING_FORMAT_TEMPLATE
-# METHOD_ARGS_STRING_FORMAT_VALUES
-# METHOD_ARGS_DEFINITION
 function argsMap = buildArgsMap(challenge, inputTypes, outputType, testsFilePath)
 	javaStringFormatArgsMap = buildJavaStringFormatArgsMap();
 	argsMap.CLASS_NAME = challenge;

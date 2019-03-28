@@ -11,9 +11,9 @@ def formatArg(arg, argType):
 		raise ValueError('"{}" is not a supported argType'.format(argType))
 	return arg
 
+# load data from json file
 with open('data.json') as f:
 	data = json.load(f)
-
 testCases = []
 for inputNumber, inputList in enumerate(data['inputs']):
 	for testCaseNumber, inputElem in enumerate(inputList):
@@ -30,6 +30,8 @@ for testCaseNumber, outputElem in enumerate(data['outputs']):
 
 # DEFINE argTypes HERE
 argTypes = ['int', 'int', 'int', 'boolean']
+
+# write tests to txt file
 outputFile = ''
 for ndx, argType in enumerate(argTypes):
 	args = ''
