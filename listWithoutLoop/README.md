@@ -7,6 +7,7 @@ You are given n, return an array ans, composed in such way:
 Try to solve it without any loop.
 
 **Example**
+
 For `n = 25`, the output should be
 `listWithoutLoop(n) = [25, 20, 15, 10, 5, 0, 5, 10, 15, 20, 25]`.
 
