@@ -1,6 +1,6 @@
-# codefights
+# codesignal-challenges
 
-Solution to challenges from [CodeFights](https://codefights.com/)
+Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | :------: |
