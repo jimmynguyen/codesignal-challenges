@@ -1,0 +1,1 @@
+java -ea CommonCharacterCount.java
