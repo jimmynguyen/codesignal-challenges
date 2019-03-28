@@ -2,9 +2,10 @@
 
 Solution to challenges from [CodeFights](https://codefights.com/)
 
-| Challenge | Language |
+| Challenge | Solution |
 | --------- | :------: |
-| [cubeWorld](https://github.com/jimmynguyen/codefights/tree/master/cubeWorld)                         | Java   |
-| [listWithoutLoop](https://github.com/jimmynguyen/codefights/tree/master/listWithoutLoop)             | Octave |
-| [reverseComplement](https://github.com/jimmynguyen/codefights/tree/master/reverseComplement)         | Octave |
-| [solarSystemBallistics](https://github.com/jimmynguyen/codefights/tree/master/solarSystemBallistics) | Octave |
+| [commonCharacterCount](https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud) | [Java](https://github.com/jimmynguyen/codefights/tree/master/commonCharacterCount)
+| [cubeWorld](https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud) | [Java](https://github.com/jimmynguyen/codefights/tree/master/cubeWorld) |
+| [listWithoutLoop](https://app.codesignal.com/challenge/dRQcqkynqvAHHkgtv) | [Octave](https://github.com/jimmynguyen/codefights/tree/master/listWithoutLoop) |
+| [reverseComplement](https://app.codesignal.com/challenge/revx6ws9h53DS9KFF) | [Octave](https://github.com/jimmynguyen/codefights/tree/master/reverseComplement) |
+| [solarSystemBallistics](https://app.codesignal.com/challenge/7pHPAEfxbJPs8z4GR) | [Octave](https://github.com/jimmynguyen/codefights/tree/master/solarSystemBallistics) |

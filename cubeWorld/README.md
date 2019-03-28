@@ -1,5 +1,7 @@
 # cubeWorld
 
+Link to Challenge: [https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud](https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud)
+
 ## Challenge Description
 
 Your task is to find the volume of the structure created by the provided cubes.

@@ -1,5 +1,7 @@
 # solarSystemBallistics
 
+Link to Challenge: [https://app.codesignal.com/challenge/7pHPAEfxbJPs8z4GR](https://app.codesignal.com/challenge/7pHPAEfxbJPs8z4GR)
+
 ## Challenge Description
 
 You are an engineer working for entrepreneur Elom Nusk (no relation) on the HyperWormHole-Loop project. The project will send a vehicle through a wormhole to another body in the solar system. There is a slight technical hiccup which causes vehicles on the far end to be ejected from the wormhole at high velocity.
