@@ -1,0 +1,26 @@
+{
+  "name": "challenge-directory-generator",
+  "version": "1.0.0",
+  "main": "getTests.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node ./out/app.js"
+  },
+  "author": "jimmynguyen",
+  "dependencies": {
+    "chromedriver": "^2.46.0",
+    "prompts": "^2.0.4",
+    "rimraf": "^2.6.3",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "sprintf-js": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^11.12.2",
+    "@types/prompts": "^1.2.0",
+    "@types/rimraf": "^2.0.2",
+    "@types/selenium-webdriver": "^3.0.15",
+    "@types/sprintf-js": "^1.1.2",
+    "typescript": "^3.4.1"
+  }
+}
