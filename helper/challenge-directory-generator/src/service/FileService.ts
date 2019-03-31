@@ -9,12 +9,14 @@ import * as fs from 'fs';
 import { IStringFormatArgumentsMap } from '../interface/IStringFormatArgumentsMap';
 import { IStringFormatArgument } from '../interface/IStringFormatArgument';
 import { TestCaseArgument } from '../entity/TestCaseArgument';
+import { MarkdownLink } from '../entity/MarkdownLink';
 
 abstract class FileService {
 	protected REPOSITORY_ROOT_PATH: string = '../../';
 	protected CHALLENGES_DIR_PATH: string = sprintf('%schallenges/', this.REPOSITORY_ROOT_PATH);
 	protected TEMPLATES_DIR_PATH: string = './template/';
 	protected REPOSITORY_README_TEXT_TO_SEARCH: string = '| --------- | :------: |';
+	protected GITHUB_CHALLENGE_LINK_TEMPLATE: string = 'https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/%s/%s';
 	protected challenge: Challenge;
 	protected challengeDirPath: string;
 	protected challengeSolutionDirPath: string;
@@ -30,11 +32,35 @@ abstract class FileService {
 			Logger.warn(ErrorService.ERRORS.FAILED_TO_UPDATE_README);
 			return;
 		}
-		if (sprintf('[%s]', readmeFile).indexOf(this.challenge.getName()) >= 0) {
-			Logger.warn(ErrorService.ERRORS.CHALLENGE_EXISTS_IN_README, this.challenge.getName());
-			return;
+		if (readmeFile.indexOf(sprintf('[%s]', this.challenge.getName())) < 0) {
+			fs.writeFileSync(readmeFilePath, readmeFile.split(this.REPOSITORY_README_TEXT_TO_SEARCH).join(sprintf('%s\n| [%s](%s) | [%s](%s) |', this.REPOSITORY_README_TEXT_TO_SEARCH, this.challenge.getName(), this.challenge.getLink(), this.challenge.getLanguage().toPascalCase(), this.getGithubChallengeLink())));
+		} else {
+			this.insertLanguageSolutionLinkIntoREADME(readmeFile, readmeFilePath);
 		}
-		fs.writeFileSync(readmeFilePath, readmeFile.split(this.REPOSITORY_README_TEXT_TO_SEARCH).join(sprintf('%s\n| [%s](%s) | [%s](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/%s) |', this.REPOSITORY_README_TEXT_TO_SEARCH, this.challenge.getName(), this.challenge.getLink(), this.challenge.getLanguage().toPascalCase(), this.challenge.getName())));
+	}
+	private insertLanguageSolutionLinkIntoREADME(readmeFile: string, readmeFilePath: string): void {
+		const challengeNameIndex: number = readmeFile.indexOf(sprintf('[%s]', this.challenge.getName()));
+		const solutionStartIndex: number = readmeFile.indexOf(') | [', challengeNameIndex);
+		const solutionEndIndex: number = readmeFile.indexOf(') |', solutionStartIndex + 1);
+		const markdownLinks: MarkdownLink[] = this.getMarkdownLinks(readmeFile.substring(solutionStartIndex + 4, solutionEndIndex + 1));
+		if (markdownLinks.filter(markdownLink => markdownLink.getText() == this.challenge.getLanguage().toPascalCase()).length == 0) {
+			markdownLinks.push(new MarkdownLink(this.challenge.getLanguage().toPascalCase(), this.getGithubChallengeLink()));
+			markdownLinks.sort((a, b) => a.getText().localeCompare(b.getText()));
+			fs.writeFileSync(readmeFilePath, sprintf('%s%s%s', readmeFile.substring(0, solutionStartIndex + 4), markdownLinks.map(markdownLink => markdownLink.toString()).join(', '), readmeFile.substring(solutionEndIndex + 1)));
+		}
+	}
+	private getMarkdownLinks(challengeSolutions: string): MarkdownLink[] {
+		const challengeSolutionLinks: string[] = challengeSolutions.split('), [');
+		let challengeSolutionLinkSplit: string[];
+		let markdownLinks: MarkdownLink[] = [];
+		for (const challengeSolutionLink of challengeSolutionLinks) {
+			challengeSolutionLinkSplit = challengeSolutionLink.split('](');
+			markdownLinks.push(new MarkdownLink(challengeSolutionLinkSplit[0].substring(1), challengeSolutionLinkSplit[1].substring(0, challengeSolutionLinkSplit[1].length-1)));
+		}
+		return markdownLinks;
+	}
+	private getGithubChallengeLink(): string {
+		return sprintf(this.GITHUB_CHALLENGE_LINK_TEMPLATE, this.challenge.getName(), this.challenge.getLanguage());
 	}
 	public async generateChallengeDirectory(): Promise<void> {
 		if (!fs.existsSync(this.challengeDirPath)) {
