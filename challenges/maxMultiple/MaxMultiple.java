@@ -9,7 +9,7 @@ public class MaxMultiple {
 		assert input1.length == expectedOutput.length : String.format("# input1 = %d, # expectedOutput = %d", input1.length, expectedOutput.length);
 		IntStream.range(0, expectedOutput.length).forEach(i -> {
 			int actualOutput = maxMultiple(input0[i], input1[i]);
-			assert actualOutput == expectedOutput[i] : String.format("maxMultiple(\"%d\", \"%d\") returned %d, but expected %d", input0[i], input1[i], actualOutput, expectedOutput[i]);
+			assert actualOutput == expectedOutput[i] : String.format("maxMultiple(%d, %d) returned %d, but expected %d", input0[i], input1[i], actualOutput, expectedOutput[i]);
 		});
 	}
 
