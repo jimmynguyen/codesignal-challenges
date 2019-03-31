@@ -1,13 +1,12 @@
-import { IJavaStringFormatArgument } from "./IJavaStringFormatArgument";
+import { IStringFormatArgumentsMap } from '../IStringFormatArgumentsMap';
+import { IStringFormatArgument } from '../IStringFormatArgument';
 
-interface IJavaStringFormatArgumentsMap {
-	[index:string]: IJavaStringFormatArgument;
-	STRING: IJavaStringFormatArgument;
-	INT: IJavaStringFormatArgument;
-	DOUBLE: IJavaStringFormatArgument;
-	BOOLEAN: IJavaStringFormatArgument;
-	INT_ARRAY: IJavaStringFormatArgument;
-	DEFAULT: IJavaStringFormatArgument;
+interface IJavaStringFormatArgumentsMap extends IStringFormatArgumentsMap {
+	STRING: IStringFormatArgument;
+	INT: IStringFormatArgument;
+	DOUBLE: IStringFormatArgument;
+	BOOLEAN: IStringFormatArgument;
+	INT_ARRAY: IStringFormatArgument;
 }
 
 export { IJavaStringFormatArgumentsMap };

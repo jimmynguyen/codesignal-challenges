@@ -1,5 +1,6 @@
-interface IMainJavaArgumentsMap {
-	[index:string]: string;
+import { IMainArgumentsMap } from '../IMainArgumentsMap';
+
+interface IMainJavaArgumentsMap extends IMainArgumentsMap {
 	CLASS_NAME: string;
 	TEST_INPUTS: string;
 	OUTPUT_TYPE: string;

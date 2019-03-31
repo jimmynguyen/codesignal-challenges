@@ -3,7 +3,8 @@ import { ILanguages } from '../interface/ILanguages';
 
 class LanguageService {
 	public static LANGUAGES: ILanguages = {
-		JAVA: 'java'
+		JAVA: 'java',
+		PYTHON3: 'python3'
 	};
 	public static async validateLanguage(language: string): Promise<string> {
 		language = language.toLowerCase();
