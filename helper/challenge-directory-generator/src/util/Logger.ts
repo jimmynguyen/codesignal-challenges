@@ -5,6 +5,9 @@ class Logger {
 	public static error(...args: any) {
 		console.error(...args);
 	}
+	public static warn(...args: any) {
+		console.warn(...args);
+	}
 }
 
 export { Logger };

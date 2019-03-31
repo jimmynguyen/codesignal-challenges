@@ -14,6 +14,7 @@ async function run(): Promise<void> {
 		const language: string = await LanguageService.validateLanguage(await UserInputService.get(UserInputService.INPUTS.LANGUAGE));
 		const challenge: Challenge = await ChallengeService.getChallenge(await UserInputService.get(UserInputService.INPUTS.CHALLENGE_ID), language);
 		await FileService.generateChallengeDirectory(challenge);
+		await FileService.updateREADMEFile(challenge);
 	} catch (e) {
 		Logger.error(e);
 	}
