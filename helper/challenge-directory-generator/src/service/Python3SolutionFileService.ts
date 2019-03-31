@@ -27,7 +27,7 @@ class Python3SolutionFileService extends FileService {
 		return sprintf('python3 %s.py', this.challenge.getName());
 	}
 	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile('main.py', sprintf('%s.py', this.challenge.getName()));
+		this.createMainSolutionFile('main.py.txt', sprintf('%s.py', this.challenge.getName()));
 	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		const challengeName: string = this.challenge.getName();
