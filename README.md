@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | :------: |
+| [exerciseElaboration](https://app.codesignal.com/challenge/Ght3b8yAccvEpNDSc) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/exerciseElaboration/python3) |
 | [passingMark](https://app.codesignal.com/challenge/ot8fqNgrJmjQrGwpk) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/passingMark/octave) |
 | [largestNumber](https://app.codesignal.com/challenge/voofLc2giXxkixsti) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestNumber) |
 | [maxMultiple](https://app.codesignal.com/challenge/cksc3cndoKiuZhe6Y) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/maxMultiple) |
