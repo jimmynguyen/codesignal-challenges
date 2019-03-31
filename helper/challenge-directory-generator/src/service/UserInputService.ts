@@ -13,10 +13,10 @@ class UserInputService {
 			name: 'language',
 			message: 'What is the programming language for the solution?'
 		},
-		DELETE_EXISTING_CHALLENGE_DIR: {
+		DELETE_EXISTING_CHALLENGE_SOLUTION_DIR: {
 			type: 'confirm',
-			name: 'deleteChallengeDir',
-			message: 'Challenge directory exists. Do you want to delete it?'
+			name: 'deleteChallengeSolutionDir',
+			message: 'Challenge solution directory exists. Do you want to delete it?'
 		}
 	}
 	public static async get(question: prompts.PromptObject<string>): Promise<string> {

@@ -8,6 +8,7 @@ import * as rimraf from 'rimraf';
 import * as fs from 'fs';
 import { IStringFormatArgumentsMap } from '../interface/IStringFormatArgumentsMap';
 import { IStringFormatArgument } from '../interface/IStringFormatArgument';
+import { TestCaseArgument } from '../entity/TestCaseArgument';
 
 abstract class FileService {
 	protected REPOSITORY_ROOT_PATH: string = '../../';
@@ -16,9 +17,11 @@ abstract class FileService {
 	protected REPOSITORY_README_TEXT_TO_SEARCH: string = '| --------- | :------: |';
 	protected challenge: Challenge;
 	protected challengeDirPath: string;
+	protected challengeSolutionDirPath: string;
 	public constructor(challenge: Challenge) {
 		this.challenge = challenge;
 		this.challengeDirPath = sprintf('%s%s/', this.CHALLENGES_DIR_PATH, challenge.getName());
+		this.challengeSolutionDirPath = sprintf('%s%s/', this.challengeDirPath, challenge.getLanguage());
 	}
 	public async updateREADMEFile(): Promise<void> {
 		const readmeFilePath: string = sprintf('%sREADME.md', this.REPOSITORY_ROOT_PATH);
@@ -34,15 +37,18 @@ abstract class FileService {
 		fs.writeFileSync(readmeFilePath, readmeFile.split(this.REPOSITORY_README_TEXT_TO_SEARCH).join(sprintf('%s\n| [%s](%s) | [%s](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/%s) |', this.REPOSITORY_README_TEXT_TO_SEARCH, this.challenge.getName(), this.challenge.getLink(), this.challenge.getLanguage().toPascalCase(), this.challenge.getName())));
 	}
 	public async generateChallengeDirectory(): Promise<void> {
-		if (fs.existsSync(this.challengeDirPath)) {
-			const deleteChallengeDir: boolean = await UserInputService.confirm(UserInputService.INPUTS.DELETE_EXISTING_CHALLENGE_DIR);
-			if (!deleteChallengeDir) {
+		if (!fs.existsSync(this.challengeDirPath)) {
+			fs.mkdirSync(this.challengeDirPath);
+		}
+		this.createChallengeREADMEFile();
+		if (fs.existsSync(this.challengeSolutionDirPath)) {
+			const deleteChallengeSolutionDir: boolean = await UserInputService.confirm(UserInputService.INPUTS.DELETE_EXISTING_CHALLENGE_SOLUTION_DIR);
+			if (!deleteChallengeSolutionDir) {
 				return;
 			}
-			rimraf.sync(this.challengeDirPath);
+			rimraf.sync(this.challengeSolutionDirPath);
 		}
-		fs.mkdirSync(this.challengeDirPath);
-		this.createChallengeREADMEFile();
+		fs.mkdirSync(this.challengeSolutionDirPath);
 		this.createChallengeTestBashFile();
 		this.createChallengeSolutionFiles();
 	}
@@ -52,7 +58,7 @@ abstract class FileService {
 	}
 	protected createChallengeTestBashFile(): void {
 		const testBashFile: string = this.getChallengeTestBashFile();
-		const testBashFilePath = sprintf('%stest.sh', this.challengeDirPath);
+		const testBashFilePath = sprintf('%stest.sh', this.challengeSolutionDirPath);
 		fs.writeFileSync(testBashFilePath, testBashFile);
 	}
 	protected createMainSolutionFile(mainTemplateFileName: string, mainFileName: string): void {
@@ -60,7 +66,7 @@ abstract class FileService {
 		let mainFile: string = fs.readFileSync(mainTemplateFilePath, 'utf8');
 		const argumentsMap: IMainArgumentsMap = this.getMainArgumentsMap();
 		mainFile = this.replaceArguments(mainFile, argumentsMap);
-		const mainFilePath: string = sprintf('%s%s', this.challengeDirPath, mainFileName);
+		const mainFilePath: string = sprintf('%s%s', this.challengeSolutionDirPath, mainFileName);
 		fs.writeFileSync(mainFilePath, mainFile);
 	}
 	protected replaceArguments(file: string, argumentsMap: IMainArgumentsMap): string {
@@ -84,6 +90,7 @@ abstract class FileService {
 	protected abstract createChallengeSolutionFiles(): void;
 	protected abstract getMainArgumentsMap(): IMainArgumentsMap;
 	protected abstract getStringFormatArgumentsMap(): IStringFormatArgumentsMap;
+	protected abstract getTestCaseArgumentValue(testCaseArgument: TestCaseArgument): string;
 }
 
 export { FileService };

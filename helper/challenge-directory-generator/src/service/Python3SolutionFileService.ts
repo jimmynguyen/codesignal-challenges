@@ -6,6 +6,7 @@ import { IMainPy3ArgumentsMap } from '../interface/python3/IMainPy3ArgumentsMap'
 import { IMainArgumentsMap } from '../interface/IMainArgumentsMap';
 import { IPython3StringFormatArgumentsMap } from '../interface/python3/IPython3StringFormatArgumentsMap';
 import { IStringFormatArgumentsMap } from '../interface/IStringFormatArgumentsMap';
+import { TestCaseArgument } from '../entity/TestCaseArgument';
 
 class Python3SolutionFileService extends FileService {
 	private PYTHON3_STRING_FORMAT_ARGUMENTS_MAP: IPython3StringFormatArgumentsMap = {
@@ -15,7 +16,11 @@ class Python3SolutionFileService extends FileService {
 		},
 		STRING: {
 			type: 'String',
-			format: '\\\'%s\\\''
+			format: '\\"{}\\"'
+		},
+		BOOLEAN: {
+			type: 'boolean',
+			format: '{}'
 		}
 	};
 	protected templatesDirPath: string;
@@ -34,7 +39,7 @@ class Python3SolutionFileService extends FileService {
 		const testCases: TestCase[] = this.challenge.getTestCases();
 		const argumentsMap: IMainPy3ArgumentsMap = {
 			METHOD_NAME: challengeName,
-			TEST_OUTPUTS: testCases.map(testCase => testCase.getOutput().getValue()).join(', '),
+			TEST_OUTPUTS: testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getOutput())).join(', '),
 			METHOD_ARGS_DEFINITION: '',
 			METHOD_ARGS: '',
 			METHOD_ARGS_STRING_FORMAT_TEMPLATE: '',
@@ -48,7 +53,7 @@ class Python3SolutionFileService extends FileService {
 		for (const [index, inputType] of inputTypes.entries()) {
 			isLastIteration = index == inputTypes.length - 1;
 			delimiter = isLastIteration ? '' : '\n\t';
-			argumentsMap.TEST_INPUTS += sprintf('input%d = [%s]%s', index, testCases.map(testCase => testCase.getInputs()[index].getValue()).join(', '), delimiter);
+			argumentsMap.TEST_INPUTS += sprintf('input%d = [%s]%s', index, testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getInputs()[index])).join(', '), delimiter);
 			argumentsMap.NUM_TESTS_ASSERTION += sprintf('assert len(input%d) == len(expectedOutput), \'# input%d = \{\}, # expectedOutput = \{\}\'.format(len(input%d), len(expectedOutput))%s', index, index, index, delimiter);
 			delimiter = isLastIteration ? '' : ', ';
 			argumentsMap.METHOD_ARGS += sprintf('input%d[i]%s', index, delimiter);
@@ -60,6 +65,14 @@ class Python3SolutionFileService extends FileService {
 	}
 	protected getStringFormatArgumentsMap(): IStringFormatArgumentsMap {
 		return this.PYTHON3_STRING_FORMAT_ARGUMENTS_MAP;
+	}
+	protected getTestCaseArgumentValue(testCaseArgument: TestCaseArgument): string {
+		switch (testCaseArgument.getType()) {
+			case this.PYTHON3_STRING_FORMAT_ARGUMENTS_MAP.BOOLEAN.type:
+				return testCaseArgument.getValue().toPascalCase();
+			default:
+				return testCaseArgument.getValue();
+		}
 	}
 }
 

@@ -3,6 +3,7 @@ import { FileService } from "../service/FileService";
 import { LanguageService } from "../service/LanguageService";
 import { JavaSolutionFileService } from "../service/JavaSolutionFileService";
 import { Python3SolutionFileService } from "../service/Python3SolutionFileService";
+import { OctaveSolutionFileService } from "../service/OctaveSolutionFileService";
 
 class FileServiceFactory {
 	public static getByLanguage(challenge: Challenge): FileService | undefined {
@@ -13,6 +14,9 @@ class FileServiceFactory {
 				break;
 			case LanguageService.LANGUAGES.PYTHON3:
 				fileService = new Python3SolutionFileService(challenge);
+				break;
+			case LanguageService.LANGUAGES.OCTAVE:
+				fileService = new OctaveSolutionFileService(challenge);
 				break;
 		}
 		return fileService;
