@@ -4,13 +4,14 @@ import { TestCaseArgument } from '../entity/TestCaseArgument';
 import { TestCaseArgumentTypesResult } from '../entity/TestCaseArgumentTypesResult';
 import { WebDriver, Builder, Capabilities, WebElement, until, By } from 'selenium-webdriver';
 import * as chrome from 'selenium-webdriver/chrome';
+import { UserInputService } from './UserInputService';
 
 class ChallengeService {
 	private static URL_TEMPLATE: string = 'https://app.codesignal.com/challenge/{challengeId}';
 	private static WINDOW_SIZE: any = { width: 1280, height: 960 };
 	private static TIMEOUT: number = 2000;
-	public static async getChallenge(challengeId: string, language: string): Promise<Challenge> {
-		let challenge: Challenge = new Challenge(challengeId, language);
+	public static async getChallenge(language: string): Promise<Challenge> {
+		let challenge: Challenge = new Challenge(await ChallengeService.getChallengeId(), language);
 		let driver: WebDriver = await new Builder().withCapabilities(Capabilities.chrome()).setChromeOptions(new chrome.Options().headless().windowSize(ChallengeService.WINDOW_SIZE)).build();
 		const linkToChallenge = ChallengeService.URL_TEMPLATE.replace('{challengeId}', challenge.getId());
 		challenge.setLink(linkToChallenge);
@@ -24,6 +25,15 @@ class ChallengeService {
 			await driver.quit();
 		}
 		return challenge;
+	}
+	private static async getChallengeId(): Promise<string> {
+		let challengeId: string;
+		if (process.argv.length > 3) {
+			challengeId = process.argv[3];
+		} else {
+			challengeId = await UserInputService.get(UserInputService.INPUTS.CHALLENGE_ID);
+		}
+		return challengeId;
 	}
 	private static async getMethodHeader(driver: WebDriver): Promise<string> {
 		let languageDropdownButton: WebElement = await driver.wait(until.elementLocated(By.xpath('//div[@data-name="language-selector"]')), ChallengeService.TIMEOUT);
