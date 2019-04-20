@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | :------: |
+| [isPermutation](https://app.codesignal.com/challenge/r3f8PoCN4YCn634an) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isPermutation/octave) |
 | [countDistantPairs](https://app.codesignal.com/challenge/Npv4LdeuiEZBbw2JF) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countDistantPairs/java) |
 | [exerciseElaboration](https://app.codesignal.com/challenge/Ght3b8yAccvEpNDSc) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/exerciseElaboration/python3) |
 | [passingMark](https://app.codesignal.com/challenge/ot8fqNgrJmjQrGwpk) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/passingMark/octave) |
