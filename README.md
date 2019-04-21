@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | :------: |
+| [sortByLength](https://app.codesignal.com/challenge/Y4m8j4dDxFSxyuDjh) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sortByLength/octave) |
 | [isSumOfConsecutive2](https://app.codesignal.com/challenge/CY2qYcwMqPxp6Rsst) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive2/octave) |
 | [isPermutation](https://app.codesignal.com/challenge/r3f8PoCN4YCn634an) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isPermutation/octave) |
 | [countDistantPairs](https://app.codesignal.com/challenge/Npv4LdeuiEZBbw2JF) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countDistantPairs/java) |
