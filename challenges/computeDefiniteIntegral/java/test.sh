@@ -1,0 +1,1 @@
+javac ComputeDefiniteIntegral.java && java -ea ComputeDefiniteIntegral

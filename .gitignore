@@ -1,4 +1,57 @@
+### Repository ###
+trash
+
+### OS X ###
+.DS_Store
+
+### Visual Studio Code ###
+.vscode
+
+### C++ ###
+# Executables
+*.out
+
+### Octave ###
+# Octave session info
+octave-workspace
+
+### Node ###
+# Dependency directories
+node_modules/
+
+### Java ###
+# Compiled class file
+*.class
+
+# Package Files
+*.jar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# IntelliJ
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+# Eclipse
+.metadata
 .classpath
 .project
-.settings
-.vscode
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath

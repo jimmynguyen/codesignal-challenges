@@ -4,7 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | :------: |
-| [computeDefiniteIntegral](https://app.codesignal.com/challenge/i7AAfRDur9TybJQ2P) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/octave) |
+| [computeDefiniteIntegral](https://app.codesignal.com/challenge/i7AAfRDur9TybJQ2P) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/octave) |
 | [findEmailDomain](https://app.codesignal.com/challenge/HHKmRM9PLczxAFFTy) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findEmailDomain/octave) |
 | [sortByLength](https://app.codesignal.com/challenge/Y4m8j4dDxFSxyuDjh) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sortByLength/octave) |
 | [isSumOfConsecutive2](https://app.codesignal.com/challenge/CY2qYcwMqPxp6Rsst) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive2/octave) |
