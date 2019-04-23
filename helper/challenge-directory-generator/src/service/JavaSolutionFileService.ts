@@ -41,7 +41,7 @@ class JavaSolutionFileService extends FileService {
 		this.templatesDirPath = sprintf('%sjava/', this.TEMPLATES_DIR_PATH);
 	}
 	protected getChallengeTestBashFile(): string {
-		return sprintf('java -ea %s.java', this.challenge.getName().toPascalCase());
+		return sprintf('javac %s.java && java -ea %s', this.challenge.getName().toPascalCase(), this.challenge.getName().toPascalCase());
 	}
 	protected createChallengeSolutionFiles(): void {
 		this.createMainSolutionFile('Main.java.txt', sprintf('%s.java', this.challenge.getName().toPascalCase()));
@@ -85,6 +85,8 @@ class JavaSolutionFileService extends FileService {
 	}
 	protected getTestCaseArgumentValue(testCaseArgument: TestCaseArgument): string {
 		switch (testCaseArgument.getType()) {
+			case this.JAVA_STRING_FORMAT_ARGUMENTS_MAP.INT_ARRAY.type:
+				return testCaseArgument.getValue().replace('[', '{').replace(']', '}');
 			default:
 				return testCaseArgument.getValue();
 		}
