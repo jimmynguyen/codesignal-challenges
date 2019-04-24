@@ -1,0 +1,1 @@
+javac SpecialPolynomial.java && java -ea SpecialPolynomial
