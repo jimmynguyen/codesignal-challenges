@@ -10,20 +10,6 @@ import { IPython3StringFormatArgumentsMap } from '../../interface/solution/pytho
 import { FileService } from '../FileService';
 
 class Python3SolutionFileService extends FileService {
-	private PYTHON3_STRING_FORMAT_ARGUMENTS_MAP: IPython3StringFormatArgumentsMap = {
-		DEFAULT: {
-			type: 'default',
-			format: '{}'
-		},
-		STRING: {
-			type: 'String',
-			format: '\\"{}\\"'
-		},
-		BOOLEAN: {
-			type: 'boolean',
-			format: '{}'
-		}
-	};
 	protected templatesDirPath: string;
 	constructor(challenge: Challenge) {
 		super(challenge);
@@ -65,11 +51,25 @@ class Python3SolutionFileService extends FileService {
 		return argumentsMap;
 	}
 	protected getStringFormatArgumentsMap(): IStringFormatArgumentsMap {
-		return this.PYTHON3_STRING_FORMAT_ARGUMENTS_MAP;
+		const map: IPython3StringFormatArgumentsMap = {
+			DEFAULT: {
+				type: 'default',
+				format: '{}'
+			},
+			STRING: {
+				type: 'String',
+				format: '\\"{}\\"'
+			},
+			BOOLEAN: {
+				type: 'boolean',
+				format: '{}'
+			}
+		};
+		return map;
 	}
 	protected getTestCaseArgumentValue(testCaseArgument: TestCaseArgument): string {
 		switch (testCaseArgument.getType()) {
-			case this.PYTHON3_STRING_FORMAT_ARGUMENTS_MAP.BOOLEAN.type:
+			case this.getStringFormatArgumentsMap().BOOLEAN.type:
 				return testCaseArgument.getValue().toPascalCase();
 			default:
 				return testCaseArgument.getValue();

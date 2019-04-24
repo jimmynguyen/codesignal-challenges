@@ -10,24 +10,6 @@ import { IOctaveStringFormatArgumentsMap } from '../../interface/solution/octave
 import { FileService } from '../FileService';
 
 class OctaveSolutionFileService extends FileService {
-	private OCTAVE_STRING_FORMAT_ARGUMENTS_MAP: IOctaveStringFormatArgumentsMap = {
-		DEFAULT: {
-			type: 'default',
-			format: '%s'
-		},
-		STRING: {
-			type: 'String',
-			format: '%s'
-		},
-		INT: {
-			type: 'int',
-			format: '%d'
-		},
-		DOUBLE: {
-			type: 'double',
-			format: '%f'
-		}
-	};
 	protected templatesDirPath: string;
 	constructor(challenge: Challenge) {
 		super(challenge);
@@ -73,7 +55,25 @@ class OctaveSolutionFileService extends FileService {
 		return methodArgsStringFormatValues;
 	}
 	protected getStringFormatArgumentsMap(): IStringFormatArgumentsMap {
-		return this.OCTAVE_STRING_FORMAT_ARGUMENTS_MAP;
+		const map: IOctaveStringFormatArgumentsMap = {
+			DEFAULT: {
+				type: 'default',
+				format: '%s'
+			},
+			STRING: {
+				type: 'String',
+				format: '%s'
+			},
+			INT: {
+				type: 'int',
+				format: '%d'
+			},
+			DOUBLE: {
+				type: 'double',
+				format: '%f'
+			}
+		};
+		return map;
 	}
 	protected getTestCaseArgumentValue(testCaseArgument: TestCaseArgument): string {
 		switch (testCaseArgument.getType()) {

@@ -10,32 +10,6 @@ import { IMainJavaArgumentsMap } from '../../interface/solution/java/IMainJavaAr
 import { FileService } from '../FileService';
 
 class JavaSolutionFileService extends FileService {
-	private JAVA_STRING_FORMAT_ARGUMENTS_MAP: IJavaStringFormatArgumentsMap = {
-		DEFAULT: {
-			type: 'default',
-			format: '%s'
-		},
-		STRING: {
-			type: 'String',
-			format: '\\"%s\\"'
-		},
-		INT: {
-			type: 'int',
-			format: '%d'
-		},
-		DOUBLE: {
-			type: 'double',
-			format: '%f'
-		},
-		BOOLEAN: {
-			type: 'boolean',
-			format: '%b'
-		},
-		INT_ARRAY: {
-			type: 'int[]',
-			format: '%s'
-		}
-	};
 	protected templatesDirPath: string;
 	constructor(challenge: Challenge) {
 		super(challenge);
@@ -82,11 +56,37 @@ class JavaSolutionFileService extends FileService {
 		return argumentsMap;
 	}
 	protected getStringFormatArgumentsMap(): IStringFormatArgumentsMap {
-		return this.JAVA_STRING_FORMAT_ARGUMENTS_MAP;
+		const map: IJavaStringFormatArgumentsMap = {
+			DEFAULT: {
+				type: 'default',
+				format: '%s'
+			},
+			STRING: {
+				type: 'String',
+				format: '\\"%s\\"'
+			},
+			INT: {
+				type: 'int',
+				format: '%d'
+			},
+			DOUBLE: {
+				type: 'double',
+				format: '%f'
+			},
+			BOOLEAN: {
+				type: 'boolean',
+				format: '%b'
+			},
+			INT_ARRAY: {
+				type: 'int[]',
+				format: '%s'
+			}
+		};
+		return map;
 	}
 	protected getTestCaseArgumentValue(testCaseArgument: TestCaseArgument): string {
 		switch (testCaseArgument.getType()) {
-			case this.JAVA_STRING_FORMAT_ARGUMENTS_MAP.INT_ARRAY.type:
+			case this.getStringFormatArgumentsMap().INT_ARRAY.type:
 				return testCaseArgument.getValue().replace('[', '{').replace(']', '}');
 			default:
 				return testCaseArgument.getValue();
