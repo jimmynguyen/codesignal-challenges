@@ -24,7 +24,7 @@ abstract class FileService {
 	public constructor(challenge: Challenge) {
 		this.challenge = challenge;
 		this.challengeDirPath = sprintf('%s%s/', this.CHALLENGES_DIR_PATH, challenge.getName());
-		this.challengeSolutionDirPath = sprintf('%s%s/', this.challengeDirPath, challenge.getLanguage());
+		this.challengeSolutionDirPath = sprintf('%s%s/', this.challengeDirPath, challenge.getLanguage().name);
 	}
 	public async updateREADMEFile(): Promise<void> {
 		const readmeFilePath: string = sprintf('%sREADME.md', this.REPOSITORY_ROOT_PATH);
@@ -34,7 +34,7 @@ abstract class FileService {
 			return;
 		}
 		if (readmeFile.indexOf(sprintf('[%s]', this.challenge.getName())) < 0) {
-			fs.writeFileSync(readmeFilePath, readmeFile.split(this.REPOSITORY_README_TEXT_TO_SEARCH).join(sprintf('%s\n| [%s](%s) | [%s](%s) |', this.REPOSITORY_README_TEXT_TO_SEARCH, this.challenge.getName(), this.challenge.getLink(), this.challenge.getLanguage().toPascalCase(), this.getGithubChallengeLink())));
+			fs.writeFileSync(readmeFilePath, readmeFile.split(this.REPOSITORY_README_TEXT_TO_SEARCH).join(sprintf('%s\n| [%s](%s) | [%s](%s) |', this.REPOSITORY_README_TEXT_TO_SEARCH, this.challenge.getName(), this.challenge.getLink(), this.challenge.getLanguage().fullName, this.getGithubChallengeLink())));
 		} else {
 			this.insertLanguageSolutionLinkIntoREADME(readmeFile, readmeFilePath);
 		}
@@ -44,8 +44,8 @@ abstract class FileService {
 		const solutionStartIndex: number = readmeFile.indexOf(') | [', challengeNameIndex);
 		const solutionEndIndex: number = readmeFile.indexOf(') |', solutionStartIndex + 1);
 		const markdownLinks: MarkdownLink[] = this.getMarkdownLinks(readmeFile.substring(solutionStartIndex + 5, solutionEndIndex));
-		if (markdownLinks.filter(markdownLink => markdownLink.getText() == this.challenge.getLanguage().toPascalCase()).length == 0) {
-			markdownLinks.push(new MarkdownLink(this.challenge.getLanguage().toPascalCase(), this.getGithubChallengeLink()));
+		if (markdownLinks.filter(markdownLink => markdownLink.getText() == this.challenge.getLanguage().fullName).length == 0) {
+			markdownLinks.push(new MarkdownLink(this.challenge.getLanguage().fullName, this.getGithubChallengeLink()));
 			markdownLinks.sort((a, b) => a.getText().localeCompare(b.getText()));
 			fs.writeFileSync(readmeFilePath, sprintf('%s%s%s', readmeFile.substring(0, solutionStartIndex + 4), markdownLinks.map(markdownLink => markdownLink.toString()).join(', '), readmeFile.substring(solutionEndIndex + 1)));
 		}
@@ -61,7 +61,7 @@ abstract class FileService {
 		return markdownLinks;
 	}
 	private getGithubChallengeLink(): string {
-		return sprintf(this.GITHUB_CHALLENGE_LINK_TEMPLATE, this.challenge.getName(), this.challenge.getLanguage());
+		return sprintf(this.GITHUB_CHALLENGE_LINK_TEMPLATE, this.challenge.getName(), this.challenge.getLanguage().name);
 	}
 	public async generateChallengeDirectory(): Promise<void> {
 		if (!fs.existsSync(this.challengeDirPath)) {

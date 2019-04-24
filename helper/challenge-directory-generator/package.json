@@ -20,7 +20,7 @@
     "@types/node": "^11.12.2",
     "@types/prompts": "^1.2.0",
     "@types/rimraf": "^2.0.2",
-    "@types/selenium-webdriver": "^3.0.15",
+    "@types/selenium-webdriver": "^4.0.0",
     "@types/sprintf-js": "^1.1.2",
     "typescript": "^3.4.1"
   }

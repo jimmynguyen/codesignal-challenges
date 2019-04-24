@@ -7,7 +7,7 @@ class ErrorService {
 		UNSUPPORTED_LANGUAGE: 'language "%s" is not supported',
 		FAILED_TO_UPDATE_README: 'failed to update repository README.md file'
 	};
-	public static throw(errorTemplate: string, ...args: any): void {
+	public static throw(errorTemplate: string, ...args: any): never  {
 		throw sprintf('ERR: %s', sprintf(errorTemplate, ...args));
 	}
 }

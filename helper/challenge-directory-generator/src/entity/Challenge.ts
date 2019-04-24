@@ -1,12 +1,13 @@
+import { ILanguage } from '../interface/ILanguage';
 import { TestCase } from './TestCase';
 
 class Challenge {
 	private id: string = '';
 	private name: string = '';
 	private link: string = '';
-	private language: string = '';
+	private language: ILanguage;
 	private testCases: TestCase[] = [];
-	public constructor(id: string, language: string) {
+	public constructor(id: string, language: ILanguage) {
 		this.id = id;
 		this.language = language;
 	}
@@ -28,10 +29,10 @@ class Challenge {
 	public setLink(link: string): void {
 		this.link = link;
 	}
-	public getLanguage(): string {
+	public getLanguage(): ILanguage {
 		return this.language;
 	}
-	public setLanguage(language: string): void {
+	public setLanguage(language: ILanguage): void {
 		this.language = language;
 	}
 	public getTestCases(): TestCase[] {

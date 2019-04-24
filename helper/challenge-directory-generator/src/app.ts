@@ -2,6 +2,7 @@ import { isUndefined } from 'util';
 
 import { Challenge } from './entity/Challenge';
 import { FileServiceFactory } from './factory/FileServiceFactory';
+import { ILanguage } from './interface/ILanguage';
 import { ChallengeService } from './service/ChallengeService';
 import { ErrorService } from './service/ErrorService';
 import { FileService } from './service/FileService';
@@ -14,7 +15,7 @@ String.prototype.toPascalCase = function (this: string) {
 
 async function run(): Promise<void> {
 	try {
-		const language: string = await LanguageService.getLanguage();
+		const language: ILanguage = await LanguageService.getLanguage();
 		const challenge: Challenge = await ChallengeService.getChallenge(language);
 		const fileService: FileService | undefined = FileServiceFactory.getByLanguage(challenge);
 		if (isUndefined(fileService)) {

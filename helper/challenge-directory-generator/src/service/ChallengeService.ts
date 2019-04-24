@@ -5,13 +5,14 @@ import { Challenge } from '../entity/Challenge';
 import { TestCase } from '../entity/TestCase';
 import { TestCaseArgument } from '../entity/TestCaseArgument';
 import { TestCaseArgumentTypesResult } from '../entity/TestCaseArgumentTypesResult';
+import { ILanguage } from '../interface/ILanguage';
 import { UserInputService } from './UserInputService';
 
 class ChallengeService {
 	private static URL_TEMPLATE: string = 'https://app.codesignal.com/challenge/{challengeId}';
 	private static WINDOW_SIZE: any = { width: 1280, height: 960 };
-	private static TIMEOUT: number = 2000;
-	public static async getChallenge(language: string): Promise<Challenge> {
+	private static TIMEOUT: number = 5000;
+	public static async getChallenge(language: ILanguage): Promise<Challenge> {
 		let challenge: Challenge = new Challenge(await ChallengeService.getChallengeId(), language);
 		let driver: WebDriver = await new Builder().withCapabilities(Capabilities.chrome()).setChromeOptions(new chrome.Options().headless().windowSize(ChallengeService.WINDOW_SIZE)).build();
 		const linkToChallenge = ChallengeService.URL_TEMPLATE.replace('{challengeId}', challenge.getId());

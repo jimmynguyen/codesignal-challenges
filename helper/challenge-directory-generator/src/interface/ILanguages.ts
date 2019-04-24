@@ -1,8 +1,11 @@
+import { ILanguage } from "./ILanguage";
+
 interface ILanguages {
-	[index:string] : string;
-	JAVA: string;
-	PYTHON3: string;
-	OCTAVE: string;
+	[index:string] : ILanguage;
+	JAVA: ILanguage;
+	JAVASCRIPT: ILanguage;
+	PYTHON3: ILanguage;
+	OCTAVE: ILanguage;
 }
 
 export { ILanguages };
