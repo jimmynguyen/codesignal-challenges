@@ -1,12 +1,13 @@
-import { FileService } from './FileService';
-import { Challenge } from '../entity/Challenge';
 import { sprintf } from 'sprintf-js';
-import { IMainArgumentsMap } from '../interface/IMainArgumentsMap';
-import { IStringFormatArgumentsMap } from '../interface/IStringFormatArgumentsMap';
-import { IOctaveStringFormatArgumentsMap } from '../interface/octave/IOctaveStringFormatArgumentsMap';
-import { TestCaseArgument } from '../entity/TestCaseArgument';
-import { TestCase } from '../entity/TestCase';
-import { IMainMArgumentsMap } from '../interface/octave/IMainMArgumentsMap';
+
+import { Challenge } from '../../entity/Challenge';
+import { TestCase } from '../../entity/TestCase';
+import { TestCaseArgument } from '../../entity/TestCaseArgument';
+import { IMainArgumentsMap } from '../../interface/solution/IMainArgumentsMap';
+import { IStringFormatArgumentsMap } from '../../interface/solution/IStringFormatArgumentsMap';
+import { IMainMArgumentsMap } from '../../interface/solution/octave/IMainMArgumentsMap';
+import { IOctaveStringFormatArgumentsMap } from '../../interface/solution/octave/IOctaveStringFormatArgumentsMap';
+import { FileService } from '../FileService';
 
 class OctaveSolutionFileService extends FileService {
 	private OCTAVE_STRING_FORMAT_ARGUMENTS_MAP: IOctaveStringFormatArgumentsMap = {

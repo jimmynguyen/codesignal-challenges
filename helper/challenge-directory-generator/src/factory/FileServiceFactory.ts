@@ -1,9 +1,10 @@
-import { Challenge } from "../entity/Challenge";
-import { FileService } from "../service/FileService";
-import { LanguageService } from "../service/LanguageService";
-import { JavaSolutionFileService } from "../service/JavaSolutionFileService";
-import { Python3SolutionFileService } from "../service/Python3SolutionFileService";
-import { OctaveSolutionFileService } from "../service/OctaveSolutionFileService";
+import { Challenge } from '../entity/Challenge';
+import { FileService } from '../service/FileService';
+import { LanguageService } from '../service/LanguageService';
+import { JavaSolutionFileService } from '../service/solution/JavaSolutionFileService';
+import { KotlinSolutionFileService } from '../service/solution/KotlinSolutionFileService';
+import { OctaveSolutionFileService } from '../service/solution/OctaveSolutionFileService';
+import { Python3SolutionFileService } from '../service/solution/Python3SolutionFileService';
 
 class FileServiceFactory {
 	public static getByLanguage(challenge: Challenge): FileService | undefined {

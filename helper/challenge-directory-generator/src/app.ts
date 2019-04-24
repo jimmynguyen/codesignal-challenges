@@ -1,11 +1,12 @@
-import { Logger } from './util/Logger';
-import { LanguageService } from './service/LanguageService';
-import { Challenge } from './entity/Challenge';
-import { ChallengeService } from './service/ChallengeService';
-import { FileService } from './service/FileService';
 import { isUndefined } from 'util';
-import { ErrorService } from './service/ErrorService';
+
+import { Challenge } from './entity/Challenge';
 import { FileServiceFactory } from './factory/FileServiceFactory';
+import { ChallengeService } from './service/ChallengeService';
+import { ErrorService } from './service/ErrorService';
+import { FileService } from './service/FileService';
+import { LanguageService } from './service/LanguageService';
+import { Logger } from './util/Logger';
 
 String.prototype.toPascalCase = function (this: string) {
 	return this.charAt(0).toUpperCase() + this.substring(1);

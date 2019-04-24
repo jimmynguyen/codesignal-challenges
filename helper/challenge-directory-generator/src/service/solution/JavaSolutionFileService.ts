@@ -1,12 +1,13 @@
-import { Challenge } from '../entity/Challenge';
-import { FileService } from './FileService';
 import { sprintf } from 'sprintf-js';
-import { IMainJavaArgumentsMap } from '../interface/java/IMainJavaArgumentsMap';
-import { IJavaStringFormatArgumentsMap } from '../interface/java/IJavaStringFormatArgumentsMap';
-import { TestCase } from '../entity/TestCase';
-import { IMainArgumentsMap } from '../interface/IMainArgumentsMap';
-import { IStringFormatArgumentsMap } from '../interface/IStringFormatArgumentsMap';
-import { TestCaseArgument } from '../entity/TestCaseArgument';
+
+import { Challenge } from '../../entity/Challenge';
+import { TestCase } from '../../entity/TestCase';
+import { TestCaseArgument } from '../../entity/TestCaseArgument';
+import { IMainArgumentsMap } from '../../interface/solution/IMainArgumentsMap';
+import { IStringFormatArgumentsMap } from '../../interface/solution/IStringFormatArgumentsMap';
+import { IJavaStringFormatArgumentsMap } from '../../interface/solution/java/IJavaStringFormatArgumentsMap';
+import { IMainJavaArgumentsMap } from '../../interface/solution/java/IMainJavaArgumentsMap';
+import { FileService } from '../FileService';
 
 class JavaSolutionFileService extends FileService {
 	private JAVA_STRING_FORMAT_ARGUMENTS_MAP: IJavaStringFormatArgumentsMap = {

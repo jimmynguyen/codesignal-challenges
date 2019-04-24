@@ -1,5 +1,5 @@
-import { IStringFormatArgumentsMap } from '../IStringFormatArgumentsMap';
 import { IStringFormatArgument } from '../IStringFormatArgument';
+import { IStringFormatArgumentsMap } from '../IStringFormatArgumentsMap';
 
 interface IJavaStringFormatArgumentsMap extends IStringFormatArgumentsMap {
 	STRING: IStringFormatArgument;

@@ -1,4 +1,5 @@
 import * as prompts from 'prompts';
+
 import { IInputs } from '../interface/IInputs';
 
 class UserInputService {

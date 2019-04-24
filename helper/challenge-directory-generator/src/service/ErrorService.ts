@@ -1,4 +1,5 @@
 import { sprintf } from 'sprintf-js';
+
 import { IErrors } from '../interface/IErrors';
 
 class ErrorService {

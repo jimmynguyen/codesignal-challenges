@@ -1,5 +1,5 @@
-import { ErrorService } from './ErrorService';
 import { ILanguages } from '../interface/ILanguages';
+import { ErrorService } from './ErrorService';
 import { UserInputService } from './UserInputService';
 
 class LanguageService {

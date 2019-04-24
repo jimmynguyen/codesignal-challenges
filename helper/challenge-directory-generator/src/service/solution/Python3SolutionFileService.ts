@@ -1,12 +1,13 @@
-import { Challenge } from '../entity/Challenge';
-import { FileService } from './FileService';
 import { sprintf } from 'sprintf-js';
-import { TestCase } from '../entity/TestCase';
-import { IMainPy3ArgumentsMap } from '../interface/python3/IMainPy3ArgumentsMap';
-import { IMainArgumentsMap } from '../interface/IMainArgumentsMap';
-import { IPython3StringFormatArgumentsMap } from '../interface/python3/IPython3StringFormatArgumentsMap';
-import { IStringFormatArgumentsMap } from '../interface/IStringFormatArgumentsMap';
-import { TestCaseArgument } from '../entity/TestCaseArgument';
+
+import { Challenge } from '../../entity/Challenge';
+import { TestCase } from '../../entity/TestCase';
+import { TestCaseArgument } from '../../entity/TestCaseArgument';
+import { IMainArgumentsMap } from '../../interface/solution/IMainArgumentsMap';
+import { IStringFormatArgumentsMap } from '../../interface/solution/IStringFormatArgumentsMap';
+import { IMainPy3ArgumentsMap } from '../../interface/solution/python3/IMainPy3ArgumentsMap';
+import { IPython3StringFormatArgumentsMap } from '../../interface/solution/python3/IPython3StringFormatArgumentsMap';
+import { FileService } from '../FileService';
 
 class Python3SolutionFileService extends FileService {
 	private PYTHON3_STRING_FORMAT_ARGUMENTS_MAP: IPython3StringFormatArgumentsMap = {

@@ -1,9 +1,10 @@
+import { Builder, By, Capabilities, until, WebDriver, WebElement } from 'selenium-webdriver';
+import * as chrome from 'selenium-webdriver/chrome';
+
 import { Challenge } from '../entity/Challenge';
 import { TestCase } from '../entity/TestCase';
 import { TestCaseArgument } from '../entity/TestCaseArgument';
 import { TestCaseArgumentTypesResult } from '../entity/TestCaseArgumentTypesResult';
-import { WebDriver, Builder, Capabilities, WebElement, until, By } from 'selenium-webdriver';
-import * as chrome from 'selenium-webdriver/chrome';
 import { UserInputService } from './UserInputService';
 
 class ChallengeService {

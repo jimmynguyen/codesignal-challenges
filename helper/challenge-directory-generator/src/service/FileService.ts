@@ -1,15 +1,16 @@
-import { Challenge } from '../entity/Challenge';
+import * as fs from 'fs';
+import * as rimraf from 'rimraf';
 import { sprintf } from 'sprintf-js';
+
+import { Challenge } from '../entity/Challenge';
+import { MarkdownLink } from '../entity/MarkdownLink';
+import { TestCaseArgument } from '../entity/TestCaseArgument';
+import { IMainArgumentsMap } from '../interface/solution/IMainArgumentsMap';
+import { IStringFormatArgument } from '../interface/solution/IStringFormatArgument';
+import { IStringFormatArgumentsMap } from '../interface/solution/IStringFormatArgumentsMap';
+import { Logger } from '../util/Logger';
 import { ErrorService } from './ErrorService';
 import { UserInputService } from './UserInputService';
-import { Logger } from '../util/Logger';
-import { IMainArgumentsMap } from '../interface/IMainArgumentsMap';
-import * as rimraf from 'rimraf';
-import * as fs from 'fs';
-import { IStringFormatArgumentsMap } from '../interface/IStringFormatArgumentsMap';
-import { IStringFormatArgument } from '../interface/IStringFormatArgument';
-import { TestCaseArgument } from '../entity/TestCaseArgument';
-import { MarkdownLink } from '../entity/MarkdownLink';
 
 abstract class FileService {
 	protected REPOSITORY_ROOT_PATH: string = '../../';
