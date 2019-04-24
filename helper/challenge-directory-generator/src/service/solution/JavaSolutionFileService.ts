@@ -45,7 +45,7 @@ class JavaSolutionFileService extends FileService {
 		return sprintf('javac %s.java && java -ea %s', this.challenge.getName().toPascalCase(), this.challenge.getName().toPascalCase());
 	}
 	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile('Main.java.txt', sprintf('%s.java', this.challenge.getName().toPascalCase()));
+		this.createMainSolutionFile('Main.java', sprintf('%s.java', this.challenge.getName().toPascalCase()));
 	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		const challengeName: string = this.challenge.getName();

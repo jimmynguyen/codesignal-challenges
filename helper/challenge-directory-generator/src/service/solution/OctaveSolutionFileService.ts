@@ -37,7 +37,7 @@ class OctaveSolutionFileService extends FileService {
 		return sprintf('octave --eval "test %s"', this.challenge.getName());
 	}
 	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile('main.m.txt', sprintf('%s.m', this.challenge.getName()));
+		this.createMainSolutionFile('main.m', sprintf('%s.m', this.challenge.getName()));
 	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		const challengeName: string = this.challenge.getName();
