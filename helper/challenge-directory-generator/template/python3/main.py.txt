@@ -8,3 +8,4 @@ if __name__ == '__main__':
 	for i, expected in enumerate(expectedOutput):
 		actual = [METHOD_NAME]([METHOD_ARGS])
 		assert actual == expected, '[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_TEMPLATE]) returned {}, but expected {}'.format([METHOD_ARGS_STRING_FORMAT_VALUES], actual, expected)
+	print('PASSES {} out of {} tests'.format(len(expectedOutput), len(expectedOutput)))
