@@ -42,7 +42,7 @@ abstract class FileService {
 		const challengeNameIndex: number = readmeFile.indexOf(sprintf('[%s]', this.challenge.getName()));
 		const solutionStartIndex: number = readmeFile.indexOf(') | [', challengeNameIndex);
 		const solutionEndIndex: number = readmeFile.indexOf(') |', solutionStartIndex + 1);
-		const markdownLinks: MarkdownLink[] = this.getMarkdownLinks(readmeFile.substring(solutionStartIndex + 4, solutionEndIndex + 1));
+		const markdownLinks: MarkdownLink[] = this.getMarkdownLinks(readmeFile.substring(solutionStartIndex + 5, solutionEndIndex));
 		if (markdownLinks.filter(markdownLink => markdownLink.getText() == this.challenge.getLanguage().toPascalCase()).length == 0) {
 			markdownLinks.push(new MarkdownLink(this.challenge.getLanguage().toPascalCase(), this.getGithubChallengeLink()));
 			markdownLinks.sort((a, b) => a.getText().localeCompare(b.getText()));
@@ -55,7 +55,7 @@ abstract class FileService {
 		let markdownLinks: MarkdownLink[] = [];
 		for (const challengeSolutionLink of challengeSolutionLinks) {
 			challengeSolutionLinkSplit = challengeSolutionLink.split('](');
-			markdownLinks.push(new MarkdownLink(challengeSolutionLinkSplit[0].substring(1), challengeSolutionLinkSplit[1].substring(0, challengeSolutionLinkSplit[1].length-1)));
+			markdownLinks.push(new MarkdownLink(challengeSolutionLinkSplit[0], challengeSolutionLinkSplit[1]));
 		}
 		return markdownLinks;
 	}
