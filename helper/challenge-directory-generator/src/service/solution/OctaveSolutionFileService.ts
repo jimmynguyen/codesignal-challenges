@@ -41,6 +41,7 @@ class OctaveSolutionFileService extends FileService {
 			delimiter = isLastIteration ? '' : '\n';
 			argumentsMap.TESTS += sprintf('%%!assert(%s(%s), %s)%s', challengeName, this.getMethodArgsStringFormatValues(testCase), this.getTestCaseArgumentValue(testCase.getOutput()), delimiter);
 		}
+		this.setMainArgumentsMapValues(argumentsMap);
 		return argumentsMap;
 	}
 	private getMethodArgsStringFormatValues(testCase: TestCase): string {
@@ -80,6 +81,9 @@ class OctaveSolutionFileService extends FileService {
 			default:
 				return testCaseArgument.getValue();
 		}
+	}
+	protected setMainArgumentsMapValues(argumentsMap: IMainArgumentsMap): void {
+		return;
 	}
 }
 

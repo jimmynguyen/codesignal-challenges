@@ -115,12 +115,16 @@ abstract class FileService {
 	protected readFile(filePath: string): string {
 		return fs.readFileSync(filePath, 'utf8');
 	}
+	protected isArray(type: string): boolean {
+		return type.substring(type.length-2) == '[]';
+	}
 	protected abstract resourcesDirPath: string;
 	protected abstract getChallengeTestBashFile(): string;
 	protected abstract createChallengeSolutionFiles(): void;
 	protected abstract getMainArgumentsMap(): IMainArgumentsMap;
 	protected abstract getStringFormatArgumentsMap(): IStringFormatArgumentsMap;
 	protected abstract getTestCaseArgumentValue(testCaseArgument: TestCaseArgument): string;
+	protected abstract setMainArgumentsMapValues(argumentsMap: IMainArgumentsMap): void;
 }
 
 export { FileService };

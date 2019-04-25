@@ -13,6 +13,9 @@ interface IMainJavaArgumentsMap extends IMainArgumentsMap {
 	OUTPUT_TYPE_STRING_FORMAT_TEMPLATE: string;
 	METHOD_ARGS_STRING_FORMAT_VALUES: string;
 	METHOD_ARGS_DEFINITION: string;
+	ACTUAL_OUTPUT_STRING_FORMAT_VALUE: string;
+	EXPECTED_OUTPUT_STRING_FORMAT_VALUE: string;
+	IMPORTS: string;
 }
 
 export { IMainJavaArgumentsMap };

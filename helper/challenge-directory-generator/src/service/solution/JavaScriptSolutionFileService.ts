@@ -47,7 +47,7 @@ class JavaScriptSolutionFileService extends FileService {
 			argumentsMap.METHOD_ARGS += sprintf('input%d[i]%s', index, delimiter);
 			argumentsMap.METHOD_ARGS_DEFINITION += sprintf('input%d%s', index, delimiter);
 		}
-		this.setActualExpectedComparison(argumentsMap, outputType);
+		this.setMainArgumentsMapValues(argumentsMap);
 		return argumentsMap;
 	}
 	protected getStringFormatArgumentsMap(): IStringFormatArgumentsMap {
@@ -65,16 +65,31 @@ class JavaScriptSolutionFileService extends FileService {
 				return testCaseArgument.getValue();
 		}
 	}
-	private setActualExpectedComparison(argumentsMap: IMainJavaScriptArgumentsMap, outputType: string): void {
+	protected setMainArgumentsMapValues(argumentsMap: IMainArgumentsMap): void {
+		let functionImports: string[] = [];
+		this.setActualExpectedComparison(argumentsMap, functionImports);
+		this.setFunctionImports(argumentsMap, functionImports);
+	}
+	protected setActualExpectedComparison(argumentsMap: IMainArgumentsMap, functionImports: string[]): void {
+		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();
 		if (this.isArray(outputType)) {
 			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'arraysEqual(actualOutput, expectedOutput[i])';
-			argumentsMap.FUNCTION_IMPORTS += sprintf('\n%s\n', this.readFile(sprintf('%sarraysEqual.js', this.resourcesDirPath)));
+			functionImports.push('arraysEqual');
 		} else {
 			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'actualOutput == expectedOutput[i]';
 		}
 	}
-	private isArray(outputType: string): boolean {
-		return outputType.substring(outputType.length-2) == '[]';
+	protected setFunctionImports(argumentsMap: IMainArgumentsMap, functionImports: string[]): void {
+		if (functionImports.length == 0) {
+			return;
+		}
+		let uniqueFunctionImports: string[] = [];
+		for (let functionImport of functionImports) {
+			if (!uniqueFunctionImports.includes(functionImport)) {
+				uniqueFunctionImports.push(functionImport);
+			}
+		}
+		argumentsMap.FUNCTION_IMPORTS += sprintf('\n%s\n', uniqueFunctionImports.sort().map((x) => this.readFile(sprintf('%s%s.js', this.resourcesDirPath, x))).join('\n'));
 	}
 }
 

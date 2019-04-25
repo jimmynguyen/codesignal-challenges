@@ -48,6 +48,7 @@ class Python3SolutionFileService extends FileService {
 			argumentsMap.METHOD_ARGS_STRING_FORMAT_VALUES += sprintf('input%s[i]%s', index, delimiter);
 			argumentsMap.METHOD_ARGS_DEFINITION += sprintf('input%s%s', index, delimiter);
 		}
+		this.setMainArgumentsMapValues(argumentsMap);
 		return argumentsMap;
 	}
 	protected getStringFormatArgumentsMap(): IStringFormatArgumentsMap {
@@ -74,6 +75,9 @@ class Python3SolutionFileService extends FileService {
 			default:
 				return testCaseArgument.getValue();
 		}
+	}
+	protected setMainArgumentsMapValues(argumentsMap: IMainArgumentsMap): void {
+		return;
 	}
 }
 
