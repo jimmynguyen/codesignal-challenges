@@ -1,0 +1,1 @@
+javac ImproperFractionToMixed.java && java -ea ImproperFractionToMixed
