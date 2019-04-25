@@ -1,0 +1,1 @@
+coffee --compile improperFractionToMixed.coffee && node improperFractionToMixed.js
