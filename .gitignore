@@ -11,6 +11,11 @@ trash
 # Executables
 *.out
 
+### C# ###
+# Executables
+*.exe
+*.exe.mdb
+
 ### Octave ###
 # Octave session info
 octave-workspace
