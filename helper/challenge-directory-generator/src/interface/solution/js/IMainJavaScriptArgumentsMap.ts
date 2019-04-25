@@ -7,6 +7,7 @@ interface IMainJavaScriptArgumentsMap extends IMainArgumentsMap {
 	METHOD_NAME: string;
 	METHOD_ARGS: string;
 	METHOD_ARGS_DEFINITION: string;
+	FUNCTION_IMPORTS: string;
 }
 
 export { IMainJavaScriptArgumentsMap };

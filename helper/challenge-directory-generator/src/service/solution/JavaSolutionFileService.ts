@@ -10,10 +10,10 @@ import { IMainJavaArgumentsMap } from '../../interface/solution/java/IMainJavaAr
 import { FileService } from '../FileService';
 
 class JavaSolutionFileService extends FileService {
-	protected templatesDirPath: string;
+	protected resourcesDirPath: string;
 	constructor(challenge: Challenge) {
 		super(challenge);
-		this.templatesDirPath = sprintf('%sjava/', this.TEMPLATES_DIR_PATH);
+		this.resourcesDirPath = sprintf('%sjava/', this.RESOURCES_DIR_PATH);
 	}
 	protected getChallengeTestBashFile(): string {
 		return sprintf('javac %s.java && java -ea %s', this.challenge.getName().toPascalCase(), this.challenge.getName().toPascalCase());

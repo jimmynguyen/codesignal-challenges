@@ -10,10 +10,10 @@ import { IMainJavaScriptArgumentsMap } from '../../interface/solution/js/IMainJa
 import { FileService } from '../FileService';
 
 class JavaScriptSolutionFileService extends FileService {
-	protected templatesDirPath: string;
+	protected resourcesDirPath: string;
 	constructor(challenge: Challenge) {
 		super(challenge);
-		this.templatesDirPath = sprintf('%sjs/', this.TEMPLATES_DIR_PATH);
+		this.resourcesDirPath = sprintf('%sjs/', this.RESOURCES_DIR_PATH);
 	}
 	protected getChallengeTestBashFile(): string {
 		return sprintf('node %s.js', this.challenge.getName());
@@ -28,10 +28,12 @@ class JavaScriptSolutionFileService extends FileService {
 		const argumentsMap: IMainJavaScriptArgumentsMap = {
 			METHOD_NAME: challengeName,
 			TEST_OUTPUTS: testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getOutput())).join(', '),
+			ACTUAL_EXPECTED_COMPARISON: '',
 			TEST_INPUTS: '',
 			NUM_TESTS_ASSERTION: '',
 			METHOD_ARGS: '',
-			METHOD_ARGS_DEFINITION: ''
+			METHOD_ARGS_DEFINITION: '',
+			FUNCTION_IMPORTS: '',
 		};
 		let delimiter: string;
 		let isLastIteration: boolean;
@@ -45,6 +47,7 @@ class JavaScriptSolutionFileService extends FileService {
 			argumentsMap.METHOD_ARGS += sprintf('input%d[i]%s', index, delimiter);
 			argumentsMap.METHOD_ARGS_DEFINITION += sprintf('input%d%s', index, delimiter);
 		}
+		this.setActualExpectedComparison(argumentsMap, outputType);
 		return argumentsMap;
 	}
 	protected getStringFormatArgumentsMap(): IStringFormatArgumentsMap {
@@ -62,7 +65,17 @@ class JavaScriptSolutionFileService extends FileService {
 				return testCaseArgument.getValue();
 		}
 	}
-
+	private setActualExpectedComparison(argumentsMap: IMainJavaScriptArgumentsMap, outputType: string): void {
+		if (this.isArray(outputType)) {
+			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'arraysEqual(actualOutput, expectedOutput[i])';
+			argumentsMap.FUNCTION_IMPORTS += sprintf('\n%s\n', this.readFile(sprintf('%sarraysEqual.js', this.resourcesDirPath)));
+		} else {
+			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'actualOutput == expectedOutput[i]';
+		}
+	}
+	private isArray(outputType: string): boolean {
+		return outputType.substring(outputType.length-2) == '[]';
+	}
 }
 
 export { JavaScriptSolutionFileService };

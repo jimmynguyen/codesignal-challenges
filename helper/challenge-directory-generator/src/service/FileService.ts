@@ -15,7 +15,7 @@ import { UserInputService } from './UserInputService';
 abstract class FileService {
 	protected REPOSITORY_ROOT_PATH: string = '../../';
 	protected CHALLENGES_DIR_PATH: string = sprintf('%schallenges/', this.REPOSITORY_ROOT_PATH);
-	protected TEMPLATES_DIR_PATH: string = './template/';
+	protected RESOURCES_DIR_PATH: string = './resources/';
 	protected REPOSITORY_README_TEXT_TO_SEARCH: string = '| --------- | :------: |';
 	protected GITHUB_CHALLENGE_LINK_TEMPLATE: string = 'https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/%s/%s';
 	protected challenge: Challenge;
@@ -28,7 +28,7 @@ abstract class FileService {
 	}
 	public async updateREADMEFile(): Promise<void> {
 		const readmeFilePath: string = sprintf('%sREADME.md', this.REPOSITORY_ROOT_PATH);
-		let readmeFile: string = fs.readFileSync(readmeFilePath, 'utf8');
+		let readmeFile: string = this.readFile(readmeFilePath);
 		if (readmeFile.indexOf(this.REPOSITORY_README_TEXT_TO_SEARCH) < 0) {
 			Logger.warn(ErrorService.ERRORS.FAILED_TO_UPDATE_README);
 			return;
@@ -89,8 +89,8 @@ abstract class FileService {
 		fs.writeFileSync(testBashFilePath, testBashFile);
 	}
 	protected createMainSolutionFile(mainTemplateFileName: string, mainFileName: string): void {
-		const mainTemplateFilePath: string = sprintf('%s%s', this.templatesDirPath, mainTemplateFileName);
-		let mainFile: string = fs.readFileSync(mainTemplateFilePath, 'utf8');
+		const mainTemplateFilePath: string = sprintf('%s%s', this.resourcesDirPath, mainTemplateFileName);
+		let mainFile: string = this.readFile(mainTemplateFilePath);
 		const argumentsMap: IMainArgumentsMap = this.getMainArgumentsMap();
 		mainFile = this.replaceArguments(mainFile, argumentsMap);
 		const mainFilePath: string = sprintf('%s%s', this.challengeSolutionDirPath, mainFileName);
@@ -112,7 +112,10 @@ abstract class FileService {
 		}
 		return stringFormatArgumentsMap.DEFAULT.format;
 	}
-	protected abstract templatesDirPath: string;
+	protected readFile(filePath: string): string {
+		return fs.readFileSync(filePath, 'utf8');
+	}
+	protected abstract resourcesDirPath: string;
 	protected abstract getChallengeTestBashFile(): string;
 	protected abstract createChallengeSolutionFiles(): void;
 	protected abstract getMainArgumentsMap(): IMainArgumentsMap;
