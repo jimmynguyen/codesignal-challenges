@@ -1,0 +1,1 @@
+kotlinc specialPolynomial.kt -include-runtime -d specialPolynomial.jar && java -ea -jar specialPolynomial.jar
