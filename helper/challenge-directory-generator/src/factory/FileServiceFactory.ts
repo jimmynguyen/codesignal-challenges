@@ -5,10 +5,11 @@ import { JavaScriptSolutionFileService } from '../service/solution/JavaScriptSol
 import { JavaSolutionFileService } from '../service/solution/JavaSolutionFileService';
 import { OctaveSolutionFileService } from '../service/solution/OctaveSolutionFileService';
 import { Python3SolutionFileService } from '../service/solution/Python3SolutionFileService';
+import { DefaultSolutionFileService } from '../service/solution/DefaultSolutionFileService';
 
 class FileServiceFactory {
-	public static getByLanguage(challenge: Challenge): FileService | undefined {
-		let fileService: FileService | undefined;
+	public static getByLanguage(challenge: Challenge): FileService {
+		let fileService: FileService;
 		switch (challenge.getLanguage()) {
 			case LanguageService.LANGUAGES.JAVA:
 				fileService = new JavaSolutionFileService(challenge);
@@ -21,6 +22,9 @@ class FileServiceFactory {
 				break;
 			case LanguageService.LANGUAGES.OCTAVE:
 				fileService = new OctaveSolutionFileService(challenge);
+				break;
+			default:
+				fileService = new DefaultSolutionFileService(challenge);
 				break;
 		}
 		return fileService;

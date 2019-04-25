@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as rimraf from 'rimraf';
 import { sprintf } from 'sprintf-js';
+import { isUndefined } from 'util';
 
 import { Challenge } from '../entity/Challenge';
 import { MarkdownLink } from '../entity/MarkdownLink';
@@ -83,16 +84,19 @@ abstract class FileService {
 		const readmeFilePath = sprintf('%sREADME.md', this.challengeDirPath);
 		fs.writeFileSync(readmeFilePath, sprintf('# %s\n\nLink to Challenge: [%s](%s)', this.challenge.getName(), this.challenge.getLink(), this.challenge.getLink()));
 	}
-	protected createChallengeTestBashFile(): void {
-		const testBashFile: string = this.getChallengeTestBashFile();
+	protected async createChallengeTestBashFile(): Promise<void> {
+		const testBashFile: string = await this.getChallengeTestBashFile();
 		const testBashFilePath = sprintf('%stest.sh', this.challengeSolutionDirPath);
 		fs.writeFileSync(testBashFilePath, testBashFile);
 	}
-	protected createMainSolutionFile(mainTemplateFileName: string, mainFileName: string): void {
-		const mainTemplateFilePath: string = sprintf('%s%s', this.resourcesDirPath, mainTemplateFileName);
-		let mainFile: string = this.readFile(mainTemplateFilePath);
-		const argumentsMap: IMainArgumentsMap = this.getMainArgumentsMap();
-		mainFile = this.replaceArguments(mainFile, argumentsMap);
+	protected createMainSolutionFile(mainTemplateFileName: string | undefined, mainFileName: string): void {
+		let mainFile: string = '';
+		if (!isUndefined(mainTemplateFileName)) {
+			const mainTemplateFilePath: string = sprintf('%s%s', this.resourcesDirPath, mainTemplateFileName);
+			mainFile = this.readFile(mainTemplateFilePath);
+			const argumentsMap: IMainArgumentsMap = this.getMainArgumentsMap();
+			mainFile = this.replaceArguments(mainFile, argumentsMap);
+		}
 		const mainFilePath: string = sprintf('%s%s', this.challengeSolutionDirPath, mainFileName);
 		fs.writeFileSync(mainFilePath, mainFile);
 	}
@@ -119,7 +123,7 @@ abstract class FileService {
 		return type.substring(type.length-2) == '[]';
 	}
 	protected abstract resourcesDirPath: string;
-	protected abstract getChallengeTestBashFile(): string;
+	protected abstract async getChallengeTestBashFile(): Promise<string>;
 	protected abstract createChallengeSolutionFiles(): void;
 	protected abstract getMainArgumentsMap(): IMainArgumentsMap;
 	protected abstract getStringFormatArgumentsMap(): IStringFormatArgumentsMap;

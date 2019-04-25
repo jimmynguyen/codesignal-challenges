@@ -15,11 +15,11 @@ class JavaScriptSolutionFileService extends FileService {
 		super(challenge);
 		this.resourcesDirPath = sprintf('%sjs/', this.RESOURCES_DIR_PATH);
 	}
-	protected getChallengeTestBashFile(): string {
+	protected async getChallengeTestBashFile(): Promise<string> {
 		return sprintf('node %s.js', this.challenge.getName());
 	}
 	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile('main.js', sprintf('%s.js', this.challenge.getName()));
+		this.createMainSolutionFile('main.js', sprintf('%s.%s', this.challenge.getName(), this.challenge.getLanguage().fileExtension));
 	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		const challengeName: string = this.challenge.getName();

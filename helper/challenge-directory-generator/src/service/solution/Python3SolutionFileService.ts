@@ -15,11 +15,11 @@ class Python3SolutionFileService extends FileService {
 		super(challenge);
 		this.resourcesDirPath = sprintf('%spython3/', this.RESOURCES_DIR_PATH);
 	}
-	protected getChallengeTestBashFile(): string {
+	protected async getChallengeTestBashFile(): Promise<string> {
 		return sprintf('python3 %s.py', this.challenge.getName());
 	}
 	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile('main.py', sprintf('%s.py', this.challenge.getName()));
+		this.createMainSolutionFile('main.py', sprintf('%s.%s', this.challenge.getName(), this.challenge.getLanguage().fileExtension));
 	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		const challengeName: string = this.challenge.getName();

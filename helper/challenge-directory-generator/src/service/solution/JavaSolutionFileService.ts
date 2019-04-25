@@ -13,13 +13,13 @@ class JavaSolutionFileService extends FileService {
 	protected resourcesDirPath: string;
 	constructor(challenge: Challenge) {
 		super(challenge);
-		this.resourcesDirPath = sprintf('%sjava/', this.RESOURCES_DIR_PATH);
+		this.resourcesDirPath = sprintf('%s%s/', this.RESOURCES_DIR_PATH, challenge.getLanguage().name);
 	}
-	protected getChallengeTestBashFile(): string {
+	protected async getChallengeTestBashFile(): Promise<string> {
 		return sprintf('javac %s.java && java -ea %s', this.challenge.getName().toPascalCase(), this.challenge.getName().toPascalCase());
 	}
 	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile('Main.java', sprintf('%s.java', this.challenge.getName().toPascalCase()));
+		this.createMainSolutionFile('Main.java', sprintf('%s.%s', this.challenge.getName().toPascalCase(), this.challenge.getLanguage().fileExtension));
 	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		const challengeName: string = this.challenge.getName();

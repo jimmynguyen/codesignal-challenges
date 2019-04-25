@@ -14,6 +14,21 @@ class UserInputService {
 			name: 'language',
 			message: 'What is the programming language for the solution?'
 		},
+		LANGUAGE_FULL_NAME: {
+			type: 'text',
+			name: 'languageFullName',
+			message: 'What is the full name of the programming language for the solution?'
+		},
+		LANGUAGE_FILE_EXTENSION: {
+			type: 'text',
+			name: 'languageFileExtension',
+			message: 'What is the file extension of the programming language for the solution?'
+		},
+		TEST_BASH_FILE: {
+			type: 'text',
+			name: 'testBaseFile',
+			message: 'What is the file contents for the test.sh file for the solution?'
+		},
 		DELETE_EXISTING_CHALLENGE_SOLUTION_DIR: {
 			type: 'confirm',
 			name: 'deleteChallengeSolutionDir',

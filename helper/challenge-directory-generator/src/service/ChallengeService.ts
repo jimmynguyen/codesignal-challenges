@@ -12,7 +12,7 @@ class ChallengeService {
 	private static URL_TEMPLATE: string = 'https://app.codesignal.com/challenge/{challengeId}';
 	private static WINDOW_SIZE: any = { width: 1280, height: 960 };
 	private static TIMEOUT: number = 5000;
-	public static async getChallenge(language: ILanguage): Promise<Challenge> {
+	public static async getChallengeByLanguage(language: ILanguage): Promise<Challenge> {
 		let challenge: Challenge = new Challenge(await ChallengeService.getChallengeId(), language);
 		let driver: WebDriver = await new Builder().withCapabilities(Capabilities.chrome()).setChromeOptions(new chrome.Options().headless().windowSize(ChallengeService.WINDOW_SIZE)).build();
 		const linkToChallenge = ChallengeService.URL_TEMPLATE.replace('{challengeId}', challenge.getId());

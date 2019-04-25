@@ -15,11 +15,11 @@ class OctaveSolutionFileService extends FileService {
 		super(challenge);
 		this.resourcesDirPath = sprintf('%soctave/', this.RESOURCES_DIR_PATH);
 	}
-	protected getChallengeTestBashFile(): string {
+	protected async getChallengeTestBashFile(): Promise<string> {
 		return sprintf('octave --eval "test %s"', this.challenge.getName());
 	}
 	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile('main.m', sprintf('%s.m', this.challenge.getName()));
+		this.createMainSolutionFile('main.m', sprintf('%s.%s', this.challenge.getName(), this.challenge.getLanguage().fileExtension));
 	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		const challengeName: string = this.challenge.getName();

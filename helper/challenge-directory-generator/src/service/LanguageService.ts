@@ -2,55 +2,55 @@ import { isUndefined } from 'util';
 
 import { ILanguage } from '../interface/ILanguage';
 import { ILanguages } from '../interface/ILanguages';
-import { ErrorService } from './ErrorService';
 import { UserInputService } from './UserInputService';
 
 class LanguageService {
 	public static LANGUAGES: ILanguages = {
 		JAVA: {
 			name: 'java',
-			fullName: 'Java'
+			fullName: 'Java',
+			fileExtension: 'java'
 		},
 		JAVASCRIPT: {
 			name: 'js',
-			fullName: 'JavaScript'
+			fullName: 'JavaScript',
+			fileExtension: 'js'
 		},
 		PYTHON3: {
 			name: 'python3',
-			fullName: 'Python3'
+			fullName: 'Python3',
+			fileExtension: 'py'
 		},
 		OCTAVE: {
 			name: 'octave',
-			fullName: 'Octave'
-		},
-		INVALID: {
-			name: 'invalid',
-			fullName: 'INVALID'
+			fullName: 'Octave',
+			fileExtension: 'm'
 		}
 	};
 	public static async getLanguage(): Promise<ILanguage> {
-		let language: string;
+		let languageName: string;
 		if (process.argv.length > 2) {
-			language = process.argv[2];
+			languageName = process.argv[2];
 		} else {
-			language = await UserInputService.get(UserInputService.INPUTS.LANGUAGE);
+			languageName = await UserInputService.get(UserInputService.INPUTS.LANGUAGE);
 		}
-		return LanguageService.validateLanguage(language);
-	}
-	private static async validateLanguage(name: string): Promise<ILanguage> {
-		let language: ILanguage = this.findLanguageByName(name.toLowerCase())
+		let language: ILanguage | undefined = LanguageService.findLanguageByName(languageName);
 		if (isUndefined(language)) {
-			ErrorService.throw(ErrorService.ERRORS.UNSUPPORTED_LANGUAGE, name);
+			language = {
+				name: languageName,
+				fullName: await UserInputService.get(UserInputService.INPUTS.LANGUAGE_FULL_NAME),
+				fileExtension: await UserInputService.get(UserInputService.INPUTS.LANGUAGE_FILE_EXTENSION)
+			};
 		}
 		return language;
 	}
-	private static findLanguageByName(name: string): ILanguage {
+	private static findLanguageByName(name: string): ILanguage | undefined {
 		for (const languageKey in this.LANGUAGES) {
-			if (this.LANGUAGES[languageKey].name == name && this.LANGUAGES[languageKey].name != this.LANGUAGES.INVALID.name) {
+			if (this.LANGUAGES[languageKey].name == name && this.LANGUAGES[languageKey].name != this.LANGUAGES.NOT_FOUND.name) {
 				return this.LANGUAGES[languageKey];
 			}
 		}
-		return this.LANGUAGES.INVALID;
+		return undefined;
 	}
 }
 

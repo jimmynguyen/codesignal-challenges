@@ -1,10 +1,7 @@
-import { isUndefined } from 'util';
-
 import { Challenge } from './entity/Challenge';
 import { FileServiceFactory } from './factory/FileServiceFactory';
 import { ILanguage } from './interface/ILanguage';
 import { ChallengeService } from './service/ChallengeService';
-import { ErrorService } from './service/ErrorService';
 import { FileService } from './service/FileService';
 import { LanguageService } from './service/LanguageService';
 import { Logger } from './util/Logger';
@@ -16,14 +13,10 @@ String.prototype.toPascalCase = function (this: string) {
 async function run(): Promise<void> {
 	try {
 		const language: ILanguage = await LanguageService.getLanguage();
-		const challenge: Challenge = await ChallengeService.getChallenge(language);
-		const fileService: FileService | undefined = FileServiceFactory.getByLanguage(challenge);
-		if (isUndefined(fileService)) {
-			ErrorService.throw(ErrorService.ERRORS.UNSUPPORTED_LANGUAGE, language);
-		} else {
-			await fileService.generateChallengeDirectory();
-			await fileService.updateREADMEFile();
-		}
+		const challenge: Challenge = await ChallengeService.getChallengeByLanguage(language);
+		const fileService: FileService = FileServiceFactory.getByLanguage(challenge);
+		await fileService.generateChallengeDirectory();
+		await fileService.updateREADMEFile();
 	} catch (e) {
 		Logger.error(e);
 	}
