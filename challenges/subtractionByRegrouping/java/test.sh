@@ -1,0 +1,1 @@
+javac SubtractionByRegrouping.java && java -ea SubtractionByRegrouping
