@@ -24,6 +24,11 @@ class UserInputService {
 			name: 'languageFileExtension',
 			message: 'What is the file extension of the programming language for the solution?'
 		},
+		RUN_HEADLESS: {
+			type: 'confirm',
+			name: 'headless',
+			message: 'Do you want to run the program headless?'
+		},
 		TEST_BASH_FILE: {
 			type: 'text',
 			name: 'testBaseFile',

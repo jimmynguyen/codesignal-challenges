@@ -14,7 +14,7 @@ class ChallengeService {
 	private static TIMEOUT: number = 5000;
 	public static async getChallengeByLanguage(language: ILanguage): Promise<Challenge> {
 		let challenge: Challenge = new Challenge(await ChallengeService.getChallengeId(), language);
-		let driver: WebDriver = await new Builder().withCapabilities(Capabilities.chrome()).setChromeOptions(new chrome.Options().headless().windowSize(ChallengeService.WINDOW_SIZE)).build();
+		let driver: WebDriver = await new Builder().withCapabilities(Capabilities.chrome()).setChromeOptions(await ChallengeService.getChromeOptions()).build();
 		const linkToChallenge = ChallengeService.URL_TEMPLATE.replace('{challengeId}', challenge.getId());
 		challenge.setLink(linkToChallenge);
 		try {
@@ -36,6 +36,21 @@ class ChallengeService {
 			challengeId = await UserInputService.get(UserInputService.INPUTS.CHALLENGE_ID);
 		}
 		return challengeId;
+	}
+	private static async getChromeOptions(): Promise<chrome.Options> {
+		let options: chrome.Options;
+		let headless: boolean = true;
+		if (process.argv.length > 4) {
+			headless = process.argv[4] == 'headless';
+		} else {
+			headless = await UserInputService.confirm(UserInputService.INPUTS.RUN_HEADLESS);
+		}
+		if (headless) {
+			options = new chrome.Options().headless().windowSize(ChallengeService.WINDOW_SIZE);
+		} else {
+			options = new chrome.Options();
+		}
+		return options;
 	}
 	private static async getMethodHeader(driver: WebDriver): Promise<string> {
 		let languageDropdownButton: WebElement = await driver.wait(until.elementLocated(By.xpath('//div[@data-name="language-selector"]')), ChallengeService.TIMEOUT);
