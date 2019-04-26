@@ -17,7 +17,7 @@ abstract class FileService {
 	protected REPOSITORY_ROOT_PATH: string = '../../';
 	protected CHALLENGES_DIR_PATH: string = sprintf('%schallenges/', this.REPOSITORY_ROOT_PATH);
 	protected RESOURCES_DIR_PATH: string = './resources/';
-	protected REPOSITORY_README_TEXT_TO_SEARCH: string = '| --------- | :------: |';
+	protected REPOSITORY_README_TEXT_TO_SEARCH: string = '| --------- | -------- |';
 	protected GITHUB_CHALLENGE_LINK_TEMPLATE: string = 'https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/%s/%s';
 	protected challenge: Challenge;
 	protected challengeDirPath: string;

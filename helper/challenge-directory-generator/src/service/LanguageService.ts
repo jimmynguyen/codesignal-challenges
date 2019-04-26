@@ -46,7 +46,7 @@ class LanguageService {
 	}
 	private static findLanguageByName(name: string): ILanguage | undefined {
 		for (const languageKey in this.LANGUAGES) {
-			if (this.LANGUAGES[languageKey].name == name && this.LANGUAGES[languageKey].name != this.LANGUAGES.NOT_FOUND.name) {
+			if (this.LANGUAGES[languageKey].name == name) {
 				return this.LANGUAGES[languageKey];
 			}
 		}
