@@ -50,6 +50,6 @@ main = ->
 	return
 
 symbolsPermutation = (word1, word2) ->
-	word1.length == word2.length and word1.split("").sort().join("")  == word2.split("").sort().join("")
+	word1.split("").sort().join("")  == word2.split("").sort().join("")
 
 main()
