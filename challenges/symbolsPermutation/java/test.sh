@@ -1,0 +1,1 @@
+javac SymbolsPermutation.java && java -ea SymbolsPermutation
