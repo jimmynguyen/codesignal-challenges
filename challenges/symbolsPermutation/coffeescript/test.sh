@@ -1,0 +1,1 @@
+coffee --compile symbolsPermutation.coffee && node symbolsPermutation.js
