@@ -17,7 +17,7 @@ function main(): void {
 }
 
 function symbolsPermutation(word1: string, word2: string): boolean {
-	return word1.length == word2.length && word1.split('').sort().join('') == word2.split('').sort().join('');
+	return word1.split('').sort().join('') == word2.split('').sort().join('');
 }
 
 main();
