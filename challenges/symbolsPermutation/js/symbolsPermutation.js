@@ -16,8 +16,8 @@ function main() {
 	console.log(`PASSES ${testsPassed} out of ${expectedOutput.length} tests`);
 }
 
-function symbolsPermutation(word1, word2) {
-	return word1.length == word2.length && word1.split('').sort().join('') == word2.split('').sort().join('');
+function symbolsPermutation(a, b) {
+	return a.split('').sort().join('') == b.split('').sort().join('');
 }
 
 main();
