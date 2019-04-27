@@ -17,11 +17,11 @@ class FileServiceFactory {
 			case LanguageService.LANGUAGES.JAVASCRIPT:
 				fileService = new JavaScriptSolutionFileService(challenge);
 				break;
-			case LanguageService.LANGUAGES.PYTHON3:
-				fileService = new Python3SolutionFileService(challenge);
-				break;
 			case LanguageService.LANGUAGES.OCTAVE:
 				fileService = new OctaveSolutionFileService(challenge);
+				break;
+			case LanguageService.LANGUAGES.PYTHON3:
+				fileService = new Python3SolutionFileService(challenge);
 				break;
 			default:
 				fileService = new DefaultSolutionFileService(challenge);

@@ -10,17 +10,6 @@ import { IOctaveStringFormatArgumentsMap } from '../../interface/solution/octave
 import { FileService } from '../FileService';
 
 class OctaveSolutionFileService extends FileService {
-	protected resourcesDirPath: string;
-	constructor(challenge: Challenge) {
-		super(challenge);
-		this.resourcesDirPath = sprintf('%soctave/', this.RESOURCES_DIR_PATH);
-	}
-	protected async getChallengeTestBashFile(): Promise<string> {
-		return sprintf('octave --eval "test %s"', this.challenge.getName());
-	}
-	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile('main.m', sprintf('%s.%s', this.challenge.getName(), this.challenge.getLanguage().fileExtension));
-	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		const challengeName: string = this.challenge.getName();
 		const testCases: TestCase[] = this.challenge.getTestCases();

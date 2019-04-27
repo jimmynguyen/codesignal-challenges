@@ -1,0 +1,1 @@
+kotlinc %s.kt -include-runtime -d %s.jar && java -ea -jar %s.jar

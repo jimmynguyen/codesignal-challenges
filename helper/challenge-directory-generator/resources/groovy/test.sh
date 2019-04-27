@@ -1,0 +1,1 @@
+groovy %s.groovy

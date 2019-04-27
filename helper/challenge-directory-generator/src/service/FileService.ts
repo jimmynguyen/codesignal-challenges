@@ -22,10 +22,16 @@ abstract class FileService {
 	protected challenge: Challenge;
 	protected challengeDirPath: string;
 	protected challengeSolutionDirPath: string;
+	protected resourcesDirPath: string;
 	public constructor(challenge: Challenge) {
 		this.challenge = challenge;
 		this.challengeDirPath = sprintf('%s%s/', this.CHALLENGES_DIR_PATH, challenge.getName());
 		this.challengeSolutionDirPath = sprintf('%s%s/', this.challengeDirPath, challenge.getLanguage().name);
+		this.resourcesDirPath = this.getResourcesDirPath();
+	}
+	private getResourcesDirPath(): string {
+		const path: string = sprintf('%s%s/', this.RESOURCES_DIR_PATH, this.challenge.getLanguage().name);
+		return this.exists(path) ? path : this.RESOURCES_DIR_PATH;
 	}
 	public async updateREADMEFile(): Promise<void> {
 		const readmeFilePath: string = sprintf('%sREADME.md', this.REPOSITORY_ROOT_PATH);
@@ -39,6 +45,23 @@ abstract class FileService {
 		} else {
 			this.insertLanguageSolutionLinkIntoREADME(readmeFile, readmeFilePath);
 		}
+	}
+	public async generateChallengeDirectory(): Promise<void> {
+		if (!fs.existsSync(this.challengeDirPath)) {
+			fs.mkdirSync(this.challengeDirPath);
+		}
+		this.createChallengeREADMEFile();
+		if (fs.existsSync(this.challengeSolutionDirPath)) {
+			const deleteChallengeSolutionDir: boolean = await UserInputService.confirm(UserInputService.INPUTS.DELETE_EXISTING_CHALLENGE_SOLUTION_DIR);
+			if (!deleteChallengeSolutionDir) {
+				return;
+			}
+			rimraf.sync(this.challengeSolutionDirPath);
+		}
+		fs.mkdirSync(this.challengeSolutionDirPath);
+		this.createChallengeTestBashFile();
+		this.createMainSolutionFile();
+		this.copyChallengeSolutionFiles();
 	}
 	private insertLanguageSolutionLinkIntoREADME(readmeFile: string, readmeFilePath: string): void {
 		const challengeNameIndex: number = readmeFile.indexOf(sprintf('[%s]', this.challenge.getName()));
@@ -64,39 +87,48 @@ abstract class FileService {
 	private getGithubChallengeLink(): string {
 		return sprintf(this.GITHUB_CHALLENGE_LINK_TEMPLATE, this.challenge.getName(), this.challenge.getLanguage().name);
 	}
-	public async generateChallengeDirectory(): Promise<void> {
-		if (!fs.existsSync(this.challengeDirPath)) {
-			fs.mkdirSync(this.challengeDirPath);
-		}
-		this.createChallengeREADMEFile();
-		if (fs.existsSync(this.challengeSolutionDirPath)) {
-			const deleteChallengeSolutionDir: boolean = await UserInputService.confirm(UserInputService.INPUTS.DELETE_EXISTING_CHALLENGE_SOLUTION_DIR);
-			if (!deleteChallengeSolutionDir) {
-				return;
-			}
-			rimraf.sync(this.challengeSolutionDirPath);
-		}
-		fs.mkdirSync(this.challengeSolutionDirPath);
-		this.createChallengeTestBashFile();
-		this.createChallengeSolutionFiles();
-	}
 	private createChallengeREADMEFile(): void {
 		const readmeFilePath = sprintf('%sREADME.md', this.challengeDirPath);
 		fs.writeFileSync(readmeFilePath, sprintf('# %s\n\nLink to Challenge: [%s](%s)', this.challenge.getName(), this.challenge.getLink(), this.challenge.getLink()));
 	}
-	protected async createChallengeTestBashFile(): Promise<void> {
+	private async createChallengeTestBashFile(): Promise<void> {
 		const testBashFile: string = await this.getChallengeTestBashFile();
 		const testBashFilePath = sprintf('%stest.sh', this.challengeSolutionDirPath);
 		fs.writeFileSync(testBashFilePath, testBashFile);
 	}
-	protected createMainSolutionFile(mainTemplateFileName: string | undefined, mainFileName: string): void {
+	private async getChallengeTestBashFile(): Promise<string> {
+		const testBashFilePath: string = sprintf('%stest.sh', this.resourcesDirPath);
+		if (this.exists(testBashFilePath)) {
+			let testBashFile: string = this.readFile(testBashFilePath);
+			return testBashFile.replace('%s', this.challenge.getName());
+		}
+		return await UserInputService.get(UserInputService.INPUTS.TEST_BASH_FILE);
+	}
+	private copyChallengeSolutionFiles(): void {
+		const copyFolderPath: string = sprintf('%scopy/', this.resourcesDirPath);
+		if (this.exists(copyFolderPath)) {
+			this.copyFiles(copyFolderPath, this.challengeSolutionDirPath);
+		}
+	}
+	private copyFiles(srcDirPath: string, destDirPath: string) {
+		const filesToCopy: fs.Dirent[] = fs.readdirSync(srcDirPath, { withFileTypes: true });
+		for (let file of filesToCopy) {
+			if (file.isFile()) {
+				fs.copyFileSync(sprintf('%s%s', srcDirPath, file.name), sprintf('%s%s', destDirPath, file.name));
+			} else if (file.isDirectory()) {
+				this.copyFiles(sprintf('%s%s/', srcDirPath, file.name), destDirPath);
+			}
+		}
+	}
+	protected createMainSolutionFile(): void {
+		const mainTemplateFilePath: string = sprintf('%smain.template', this.resourcesDirPath);
 		let mainFile: string = '';
-		if (!isUndefined(mainTemplateFileName)) {
-			const mainTemplateFilePath: string = sprintf('%s%s', this.resourcesDirPath, mainTemplateFileName);
+		if (this.exists(mainTemplateFilePath)) {
 			mainFile = this.readFile(mainTemplateFilePath);
 			const argumentsMap: IMainArgumentsMap = this.getMainArgumentsMap();
 			mainFile = this.replaceArguments(mainFile, argumentsMap);
 		}
+		const mainFileName: string = sprintf('%s.%s', this.challenge.getName(), this.challenge.getLanguage().fileExtension);
 		const mainFilePath: string = sprintf('%s%s', this.challengeSolutionDirPath, mainFileName);
 		fs.writeFileSync(mainFilePath, mainFile);
 	}
@@ -119,12 +151,12 @@ abstract class FileService {
 	protected readFile(filePath: string): string {
 		return fs.readFileSync(filePath, 'utf8');
 	}
+	protected exists(filePath: string): boolean {
+		return fs.existsSync(filePath);
+	}
 	protected isArray(type: string): boolean {
 		return type.substring(type.length-2) == '[]';
 	}
-	protected abstract resourcesDirPath: string;
-	protected abstract async getChallengeTestBashFile(): Promise<string>;
-	protected abstract createChallengeSolutionFiles(): void;
 	protected abstract getMainArgumentsMap(): IMainArgumentsMap;
 	protected abstract getStringFormatArgumentsMap(): IStringFormatArgumentsMap;
 	protected abstract getTestCaseArgumentValue(testCaseArgument: TestCaseArgument): string;

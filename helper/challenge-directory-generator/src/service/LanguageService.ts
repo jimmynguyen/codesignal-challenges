@@ -6,6 +6,26 @@ import { UserInputService } from './UserInputService';
 
 class LanguageService {
 	public static LANGUAGES: ILanguages = {
+		CSHARP: {
+			name: 'c#',
+			fullName: 'C#',
+			fileExtension: 'cs'
+		},
+		CPLUSPLUS: {
+			name: 'c++',
+			fullName: 'C++',
+			fileExtension: 'cpp'
+		},
+		GO: {
+			name: 'go',
+			fullName: 'Go',
+			fileExtension: 'go'
+		},
+		GROOVY:  {
+			name: 'groovy',
+			fullName: 'Groovy',
+			fileExtension: 'groovy'
+		},
 		JAVA: {
 			name: 'java',
 			fullName: 'Java',
@@ -16,15 +36,25 @@ class LanguageService {
 			fullName: 'JavaScript',
 			fileExtension: 'js'
 		},
-		PYTHON3: {
-			name: 'python3',
-			fullName: 'Python3',
-			fileExtension: 'py'
+		KOTLIN: {
+			name: 'kotlin',
+			fullName: 'Kotlin',
+			fileExtension: 'kt'
 		},
 		OCTAVE: {
 			name: 'octave',
 			fullName: 'Octave',
 			fileExtension: 'm'
+		},
+		PYTHON3: {
+			name: 'python3',
+			fullName: 'Python3',
+			fileExtension: 'py'
+		},
+		TYPESCRIPT: {
+			name: 'typescript',
+			fullName: 'TypeScript',
+			fileExtension: 'ts'
 		}
 	};
 	public static async getLanguage(): Promise<ILanguage> {

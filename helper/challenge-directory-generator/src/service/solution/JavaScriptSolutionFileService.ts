@@ -10,17 +10,6 @@ import { IMainJavaScriptArgumentsMap } from '../../interface/solution/js/IMainJa
 import { FileService } from '../FileService';
 
 class JavaScriptSolutionFileService extends FileService {
-	protected resourcesDirPath: string;
-	constructor(challenge: Challenge) {
-		super(challenge);
-		this.resourcesDirPath = sprintf('%sjs/', this.RESOURCES_DIR_PATH);
-	}
-	protected async getChallengeTestBashFile(): Promise<string> {
-		return sprintf('node %s.js', this.challenge.getName());
-	}
-	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile('main.js', sprintf('%s.%s', this.challenge.getName(), this.challenge.getLanguage().fileExtension));
-	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		const challengeName: string = this.challenge.getName();
 		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();
@@ -89,7 +78,7 @@ class JavaScriptSolutionFileService extends FileService {
 				uniqueFunctionImports.push(functionImport);
 			}
 		}
-		argumentsMap.FUNCTION_IMPORTS += sprintf('\n%s\n', uniqueFunctionImports.sort().map((x) => this.readFile(sprintf('%s%s.js', this.resourcesDirPath, x))).join('\n'));
+		argumentsMap.FUNCTION_IMPORTS += sprintf('\n%s\n', uniqueFunctionImports.sort().map((x) => this.readFile(sprintf('%sfunctions/%s.js', this.resourcesDirPath, x))).join('\n'));
 	}
 }
 

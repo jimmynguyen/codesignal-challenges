@@ -8,17 +8,6 @@ import { FileService } from '../FileService';
 import { UserInputService } from '../UserInputService';
 
 class DefaultSolutionFileService extends FileService {
-	protected resourcesDirPath: string;
-	public constructor(challenge: Challenge) {
-		super(challenge);
-		this.resourcesDirPath = this.RESOURCES_DIR_PATH;
-	}
-	protected async getChallengeTestBashFile(): Promise<string> {
-		return await UserInputService.get(UserInputService.INPUTS.TEST_BASH_FILE);
-	}
-	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile(undefined, sprintf('%s.%s', this.challenge.getName(), this.challenge.getLanguage().fileExtension))
-	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		throw new Error('Method not implemented.');
 	}

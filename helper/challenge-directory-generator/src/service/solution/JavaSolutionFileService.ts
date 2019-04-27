@@ -10,17 +10,6 @@ import { IMainJavaArgumentsMap } from '../../interface/solution/java/IMainJavaAr
 import { FileService } from '../FileService';
 
 class JavaSolutionFileService extends FileService {
-	protected resourcesDirPath: string;
-	constructor(challenge: Challenge) {
-		super(challenge);
-		this.resourcesDirPath = sprintf('%s%s/', this.RESOURCES_DIR_PATH, challenge.getLanguage().name);
-	}
-	protected async getChallengeTestBashFile(): Promise<string> {
-		return sprintf('javac %s.java && java -ea %s', this.challenge.getName().toPascalCase(), this.challenge.getName().toPascalCase());
-	}
-	protected createChallengeSolutionFiles(): void {
-		this.createMainSolutionFile('Main.java', sprintf('%s.%s', this.challenge.getName().toPascalCase(), this.challenge.getLanguage().fileExtension));
-	}
 	protected getMainArgumentsMap(): IMainArgumentsMap {
 		const challengeName: string = this.challenge.getName();
 		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();

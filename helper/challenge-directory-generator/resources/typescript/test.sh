@@ -1,0 +1,1 @@
+tsc %s.ts && node %s.js

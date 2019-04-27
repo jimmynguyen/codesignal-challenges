@@ -1,0 +1,1 @@
+coffee --compile %s.coffee && node %s.js

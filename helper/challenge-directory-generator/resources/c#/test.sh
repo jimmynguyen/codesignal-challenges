@@ -1,0 +1,1 @@
+mcs -out:%s.exe %s.cs && mono %s.exe
