@@ -15,7 +15,7 @@ class JavaSolutionFileService extends FileService {
 		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();
 		const testCases: TestCase[] = this.challenge.getTestCases();
 		const argumentsMap: IMainJavaArgumentsMap = {
-			CLASS_NAME: challengeName.toPascalCase(),
+			CLASS_NAME: challengeName,
 			OUTPUT_TYPE: outputType,
 			METHOD_NAME: challengeName,
 			ACTUAL_EXPECTED_COMPARISON: '',

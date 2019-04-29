@@ -100,7 +100,7 @@ abstract class FileService {
 		const testBashFilePath: string = sprintf('%stest.sh', this.resourcesDirPath);
 		if (this.exists(testBashFilePath)) {
 			let testBashFile: string = this.readFile(testBashFilePath);
-			return testBashFile.replace('%s', this.challenge.getName());
+			return testBashFile.split('%s').join(this.challenge.getName());
 		}
 		return await UserInputService.get(UserInputService.INPUTS.TEST_BASH_FILE);
 	}
