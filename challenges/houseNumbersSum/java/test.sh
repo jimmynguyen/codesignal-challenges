@@ -1,0 +1,1 @@
+javac houseNumbersSum.java && java -ea houseNumbersSum
