@@ -1,0 +1,1 @@
+javac centuryFromYear.java && java -ea centuryFromYear

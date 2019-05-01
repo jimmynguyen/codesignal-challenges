@@ -4,7 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
-| [centuryFromYear](https://app.codesignal.com/challenge/FWYRbc5nQWCBgEtyT) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/centuryFromYear/octave) |
+| [centuryFromYear](https://app.codesignal.com/challenge/FWYRbc5nQWCBgEtyT) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/centuryFromYear/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/centuryFromYear/octave) |
 | [houseNumbersSum](https://app.codesignal.com/challenge/bMQGHkhtm9ft43yxL) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/houseNumbersSum/java), [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/houseNumbersSum/js), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/houseNumbersSum/octave), [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/houseNumbersSum/python3) |
 | [deleteWhitespaces](https://app.codesignal.com/challenge/JYMbCfBwmwqWdjgeY) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteWhitespaces/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteWhitespaces/octave) |
 | [arraySumAdjacentDifference](https://app.codesignal.com/challenge/h7i7qTRoon4KSekYk) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arraySumAdjacentDifference/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arraySumAdjacentDifference/octave) |
