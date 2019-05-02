@@ -1,11 +1,11 @@
-function main() {
+function main(): void {
 	[TEST_INPUTS]
-	const expectedOutput = [[TEST_OUTPUTS]];
+	const expectedOutput: [OUTPUT_TYPE][] = [[TEST_OUTPUTS]];
 	[NUM_TESTS_ASSERTION]
 	let testsPassed = 0;
-	for (let i = 0; i < expectedOutput.length; i++) {
-		let actualOutput = [METHOD_NAME]([METHOD_ARGS]);
-		let outputComparison = [ACTUAL_EXPECTED_COMPARISON];
+	for (let i: number = 0; i < expectedOutput.length; i++) {
+		let actualOutput: [OUTPUT_TYPE] = [METHOD_NAME]([METHOD_ARGS]);
+		let outputComparison: boolean = [ACTUAL_EXPECTED_COMPARISON];
 		console.assert(outputComparison, `[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_VALUES]) returned ${actualOutput}, but expected ${expectedOutput[i]}`);
 		if (outputComparison) {
 			testsPassed++;
@@ -14,7 +14,7 @@ function main() {
 	console.log(`PASSES ${testsPassed} out of ${expectedOutput.length} tests`);
 }
 [FUNCTION_IMPORTS]
-function [METHOD_NAME]([METHOD_ARGS_DEFINITION]) {
+function [METHOD_NAME]([METHOD_ARGS_DEFINITION]): [OUTPUT_TYPE] {
 	throw new Error("Method not implemented.");
 }
 

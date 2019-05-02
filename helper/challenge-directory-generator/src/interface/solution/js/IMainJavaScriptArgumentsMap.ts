@@ -8,6 +8,7 @@ interface IMainJavaScriptArgumentsMap extends IMainArgumentsMap {
 	METHOD_ARGS: string;
 	METHOD_ARGS_DEFINITION: string;
 	FUNCTION_IMPORTS: string;
+	METHOD_ARGS_STRING_FORMAT_VALUES: string;
 }
 
 export { IMainJavaScriptArgumentsMap };

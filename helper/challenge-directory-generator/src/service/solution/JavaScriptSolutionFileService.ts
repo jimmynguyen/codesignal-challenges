@@ -1,6 +1,5 @@
 import { sprintf } from 'sprintf-js';
 
-import { Challenge } from '../../entity/Challenge';
 import { TestCase } from '../../entity/TestCase';
 import { TestCaseArgument } from '../../entity/TestCaseArgument';
 import { IMainArgumentsMap } from '../../interface/solution/IMainArgumentsMap';
@@ -11,31 +10,17 @@ import { FileService } from '../FileService';
 
 class JavaScriptSolutionFileService extends FileService {
 	protected getMainArgumentsMap(): IMainArgumentsMap {
-		const challengeName: string = this.challenge.getName();
-		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();
-		const testCases: TestCase[] = this.challenge.getTestCases();
 		const argumentsMap: IMainJavaScriptArgumentsMap = {
-			METHOD_NAME: challengeName,
-			TEST_OUTPUTS: testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getOutput())).join(', '),
+			METHOD_NAME: this.challenge.getName(),
+			TEST_OUTPUTS: '',
 			ACTUAL_EXPECTED_COMPARISON: '',
 			TEST_INPUTS: '',
 			NUM_TESTS_ASSERTION: '',
 			METHOD_ARGS: '',
 			METHOD_ARGS_DEFINITION: '',
 			FUNCTION_IMPORTS: '',
+			METHOD_ARGS_STRING_FORMAT_VALUES: ''
 		};
-		let delimiter: string;
-		let isLastIteration: boolean;
-		const numInputs = testCases[0].getInputs().length;
-		for (let index = 0; index < numInputs; index++) {
-			isLastIteration = index == numInputs - 1;
-			delimiter = isLastIteration ? '' : '\n\t';
-			argumentsMap.TEST_INPUTS += sprintf('const input%d = [%s];%s', index, testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getInputs()[index])).join(', '), delimiter);
-			argumentsMap.NUM_TESTS_ASSERTION += sprintf('console.assert(input%d.length == expectedOutput.length, `# input%d = ${input%d.length}, # expectedOutput = ${expectedOutput.length}`);%s', index, index, index, delimiter);
-			delimiter = isLastIteration ? '' : ', ';
-			argumentsMap.METHOD_ARGS += sprintf('input%d[i]%s', index, delimiter);
-			argumentsMap.METHOD_ARGS_DEFINITION += sprintf('input%d%s', index, delimiter);
-		}
 		this.setMainArgumentsMapValues(argumentsMap);
 		return argumentsMap;
 	}
@@ -55,7 +40,22 @@ class JavaScriptSolutionFileService extends FileService {
 		}
 	}
 	protected setMainArgumentsMapValues(argumentsMap: IMainArgumentsMap): void {
+		let delimiter: string;
+		let isLastIteration: boolean;
 		let functionImports: string[] = [];
+		const testCases: TestCase[] = this.challenge.getTestCases();
+		const numInputs = testCases[0].getInputs().length;
+		for (let index = 0; index < numInputs; index++) {
+			isLastIteration = index == numInputs - 1;
+			delimiter = isLastIteration ? '' : '\n\t';
+			this.setTestInputs(argumentsMap, testCases, index, delimiter);
+			this.setNumTestsAssertion(argumentsMap, index, delimiter);
+			delimiter = isLastIteration ? '' : ', ';
+			this.setMethodArgs(argumentsMap, index, delimiter);
+			this.setMethodArgsDefinition(argumentsMap, index, delimiter);
+			this.setMethodArgsStringFormatValues(argumentsMap, index, delimiter);
+		}
+		this.setTestOutputs(argumentsMap, testCases);
 		this.setActualExpectedComparison(argumentsMap, functionImports);
 		this.setFunctionImports(argumentsMap, functionImports);
 	}
@@ -78,7 +78,25 @@ class JavaScriptSolutionFileService extends FileService {
 				uniqueFunctionImports.push(functionImport);
 			}
 		}
-		argumentsMap.FUNCTION_IMPORTS += sprintf('\n%s\n', uniqueFunctionImports.sort().map((x) => this.readFile(sprintf('%sfunctions/%s.js', this.resourcesDirPath, x))).join('\n'));
+		argumentsMap.FUNCTION_IMPORTS += sprintf('\n%s\n', uniqueFunctionImports.sort().map((x) => this.readFile(sprintf('%sfunctions/%s.%s', this.resourcesDirPath, x, this.challenge.getLanguage().fileExtension))).join('\n'));
+	}
+	protected setTestOutputs(argumentsMap: IMainArgumentsMap, testCases: TestCase[]) {
+		argumentsMap.TEST_OUTPUTS += testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getOutput())).join(', ');
+	}
+	protected setTestInputs(argumentsMap: IMainArgumentsMap, testCases: TestCase[], index: number, delimiter: string) {
+		argumentsMap.TEST_INPUTS += sprintf('const input%d = [%s];%s', index, testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getInputs()[index])).join(', '), delimiter);
+	}
+	protected setNumTestsAssertion(argumentsMap: IMainArgumentsMap, index: number, delimiter: string) {
+		argumentsMap.NUM_TESTS_ASSERTION += sprintf('console.assert(input%d.length == expectedOutput.length, `# input%d = ${input%d.length}, # expectedOutput = ${expectedOutput.length}`);%s', index, index, index, delimiter);
+	}
+	protected setMethodArgs(argumentsMap: IMainArgumentsMap, index: number, delimiter: string) {
+		argumentsMap.METHOD_ARGS += sprintf('input%d[i]%s', index, delimiter);
+	}
+	protected setMethodArgsDefinition(argumentsMap: IMainArgumentsMap, index: number, delimiter: string) {
+		argumentsMap.METHOD_ARGS_DEFINITION += sprintf('input%d%s', index, delimiter);
+	}
+	protected setMethodArgsStringFormatValues(argumentsMap: IMainArgumentsMap, index: number, delimiter: string) {
+		argumentsMap.METHOD_ARGS_STRING_FORMAT_VALUES += sprintf('${input%d}%s', index, delimiter);
 	}
 }
 
