@@ -1,0 +1,1 @@
+tsc pagesNumberingWithInk.ts && node pagesNumberingWithInk.js
