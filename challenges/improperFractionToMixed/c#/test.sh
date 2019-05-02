@@ -1,1 +1,1 @@
-mcs -out:improperFractionToMixed.exe improperFractionToMixed.cs && mono improperFractionToMixed.exe
+mcs -out:ImproperFractionToMixed.exe ImproperFractionToMixed.cs && mono ImproperFractionToMixed.exe
