@@ -10,7 +10,7 @@ std::vector<int> improperFractionToMixed(std::vector<int> a)
 }
 
 //https://stackoverflow.com/questions/8581832/converting-a-vectorint-to-string
-std::string vector_to_str(std::vector<int> vec)
+const char* vector_to_c_str(std::vector<int> vec)
 {
 	std::ostringstream oss;
 	if (!vec.empty())
@@ -21,7 +21,7 @@ std::string vector_to_str(std::vector<int> vec)
 		// Now add the last element with no delimiter
 		oss << vec.back();
 	}
-	return oss.str();
+	return oss.str().c_str();
 }
 
 void custom_assert(bool assertion, std::string message) {
@@ -32,18 +32,18 @@ void custom_assert(bool assertion, std::string message) {
 
 int main(int argc, char *argv[])
 {
-	std::vector<std::vector<int>> input0{{7, 2}, {10, 3}};
-	std::vector<std::vector<int>> expected_output{{3, 1, 2}, {3, 1, 3}};
+	std::vector<std::vector<int>> input0{{7, 2}, {10, 3}, {23, 22}, {7, 3}, {8, 5}, {15, 4}, {18, 7}};
+	std::vector<std::vector<int>> expectedOutput{{3, 1, 2}, {3, 1, 3}, {1, 1, 22}, {2, 1, 3}, {1, 3, 5}, {3, 3, 4}, {2, 4, 7}};
 	char message[100];
-	sprintf(message, "# input0 = %d, # expectedOutput = %d", (int)input0.size(), (int)expected_output.size());
-	custom_assert(input0.size() == expected_output.size(), std::string(message));
-	for (int i = 0; i < expected_output.size(); i++)
+	sprintf(message, "# input0 = %d, # expectedOutput = %d", (int)input0.size(), (int)expectedOutput.size());
+	custom_assert(input0.size() == expectedOutput.size(), std::string(message));
+	for (int i = 0; i < expectedOutput.size(); i++)
 	{
-		std::vector<int> actual_output = improperFractionToMixed(input0[i]);
-		sprintf(message, "improperFractionToMixed(%s) returned %s, but expected %s", vector_to_str(input0[i]).c_str(), vector_to_str(actual_output).c_str(), vector_to_str(expected_output[i]).c_str());
-		custom_assert(actual_output == expected_output[i], std::string(message));
+		std::vector<int> actualOutput = improperFractionToMixed(input0[i]);
+		sprintf(message, "improperFractionToMixed(%s) returned %s, but expected %s", vector_to_c_str(input0[i]), vector_to_c_str(actualOutput), vector_to_c_str(expectedOutput[i]));
+		custom_assert(actualOutput == expectedOutput[i], std::string(message));
 	}
-	sprintf(message, "PASSES %d out of %d tests", (int)expected_output.size(), (int)expected_output.size());
+	sprintf(message, "PASSES %d out of %d tests", (int)expectedOutput.size(), (int)expectedOutput.size());
 	std::cout << message << std::endl;
 	return 0;
 }
