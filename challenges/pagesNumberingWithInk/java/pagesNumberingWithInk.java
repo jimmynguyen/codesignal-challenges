@@ -18,7 +18,7 @@ public class pagesNumberingWithInk {
 		int currentNumberOfDigits = Integer.toString(current).length();
 		while (numberOfDigits >= currentNumberOfDigits) {
 			numberOfDigits -= currentNumberOfDigits;
-			currentNumberOfDigits = Integer.toString(current++).length();
+			currentNumberOfDigits = Integer.toString(++current).length();
 		}
 		return current-1;
 	}
