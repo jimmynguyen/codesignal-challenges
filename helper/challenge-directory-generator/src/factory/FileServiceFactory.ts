@@ -1,6 +1,7 @@
 import { Challenge } from '../entity/Challenge';
 import { FileService } from '../service/FileService';
 import { LanguageService } from '../service/LanguageService';
+import { CoffeeScriptSolutionFileService } from '../service/solution/CoffeeScriptSolutionFileService';
 import { DefaultSolutionFileService } from '../service/solution/DefaultSolutionFileService';
 import { JavaScriptSolutionFileService } from '../service/solution/JavaScriptSolutionFileService';
 import { JavaSolutionFileService } from '../service/solution/JavaSolutionFileService';
@@ -13,6 +14,9 @@ class FileServiceFactory {
 	public static getByLanguage(challenge: Challenge): FileService {
 		let fileService: FileService;
 		switch (challenge.getLanguage()) {
+			case LanguageService.LANGUAGES.COFFEESCRIPT:
+				fileService = new CoffeeScriptSolutionFileService(challenge);
+				break;
 			case LanguageService.LANGUAGES.JAVA:
 				fileService = new JavaSolutionFileService(challenge);
 				break;

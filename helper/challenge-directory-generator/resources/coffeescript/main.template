@@ -1,0 +1,20 @@
+main = ->
+	[TEST_INPUTS]
+	expectedOutput = [[TEST_OUTPUTS]]
+	[NUM_TESTS_ASSERTION]
+	testsPassed = 0
+	i = 0
+	while i < expectedOutput.length
+		actualOutput = [METHOD_NAME] [METHOD_ARGS]
+		outputComparison = [ACTUAL_EXPECTED_COMPARISON]
+		console.assert outputComparison, "[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_VALUES]) returned #{actualOutput}, but expected #{expectedOutput[i]}"
+		if outputComparison
+			testsPassed++
+		i++
+	console.log "PASSES #{testsPassed} out of #{expectedOutput.length} tests"
+	return
+[FUNCTION_IMPORTS]
+[METHOD_NAME] = ([METHOD_ARGS_DEFINITION]) ->
+	throw new Error "Method not implemented."
+
+main()

@@ -16,6 +16,11 @@ class LanguageService {
 			fullName: 'C++',
 			fileExtension: 'cpp'
 		},
+		COFFEESCRIPT: {
+			name: 'coffeescript',
+			fullName: 'CoffeeScript',
+			fileExtension: 'coffee'
+		},
 		GO: {
 			name: 'go',
 			fullName: 'Go',

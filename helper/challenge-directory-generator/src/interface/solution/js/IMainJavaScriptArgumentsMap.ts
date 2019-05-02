@@ -6,9 +6,10 @@ interface IMainJavaScriptArgumentsMap extends IMainArgumentsMap {
 	NUM_TESTS_ASSERTION: string;
 	METHOD_NAME: string;
 	METHOD_ARGS: string;
-	METHOD_ARGS_DEFINITION: string;
-	FUNCTION_IMPORTS: string;
+	ACTUAL_EXPECTED_COMPARISON: string;
 	METHOD_ARGS_STRING_FORMAT_VALUES: string;
+	FUNCTION_IMPORTS: string;
+	METHOD_ARGS_DEFINITION: string;
 }
 
 export { IMainJavaScriptArgumentsMap };
