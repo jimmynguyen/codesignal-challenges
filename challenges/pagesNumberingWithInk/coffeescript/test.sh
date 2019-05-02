@@ -1,0 +1,1 @@
+coffee --compile pagesNumberingWithInk.coffee && node pagesNumberingWithInk.js
