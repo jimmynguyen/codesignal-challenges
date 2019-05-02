@@ -1,0 +1,1 @@
+javac pagesNumberingWithInk.java && java -ea pagesNumberingWithInk
