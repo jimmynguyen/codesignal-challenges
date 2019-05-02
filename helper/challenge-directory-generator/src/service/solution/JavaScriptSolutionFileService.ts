@@ -2,15 +2,15 @@ import { sprintf } from 'sprintf-js';
 
 import { TestCase } from '../../entity/TestCase';
 import { TestCaseArgument } from '../../entity/TestCaseArgument';
-import { IMainArgumentsMap } from '../../interface/solution/IMainArgumentsMap';
+import { IArgumentsMap } from '../../interface/solution/IArgumentsMap';
 import { IStringFormatArgumentsMap } from '../../interface/solution/IStringFormatArgumentsMap';
+import { IJavaScriptArgumentsMap } from '../../interface/solution/js/IJavaScriptArgumentsMap';
 import { IJavaScriptStringFormatArgumentsMap } from '../../interface/solution/js/IJavaScriptStringFormatArgumentsMap';
-import { IMainJavaScriptArgumentsMap } from '../../interface/solution/js/IMainJavaScriptArgumentsMap';
 import { FileService } from '../FileService';
 
 class JavaScriptSolutionFileService extends FileService {
-	protected getMainArgumentsMap(): IMainArgumentsMap {
-		const argumentsMap: IMainJavaScriptArgumentsMap = {
+	protected getMainArgumentsMap(): IArgumentsMap {
+		const argumentsMap: IJavaScriptArgumentsMap = {
 			METHOD_NAME: this.challenge.getName(),
 			TEST_OUTPUTS: '',
 			ACTUAL_EXPECTED_COMPARISON: '',
@@ -39,7 +39,7 @@ class JavaScriptSolutionFileService extends FileService {
 				return testCaseArgument.getValue();
 		}
 	}
-	protected setMainArgumentsMapValues(argumentsMap: IMainArgumentsMap): void {
+	protected setMainArgumentsMapValues(argumentsMap: IArgumentsMap): void {
 		let delimiter: string;
 		let isLastIteration: boolean;
 		let functionImports: string[] = [];
@@ -59,7 +59,25 @@ class JavaScriptSolutionFileService extends FileService {
 		this.setActualExpectedComparison(argumentsMap, functionImports);
 		this.setFunctionImports(argumentsMap, functionImports);
 	}
-	protected setActualExpectedComparison(argumentsMap: IMainArgumentsMap, functionImports: string[]): void {
+	protected setTestInputs(argumentsMap: IArgumentsMap, testCases: TestCase[], index: number, delimiter: string) {
+		argumentsMap.TEST_INPUTS += sprintf('const input%d = [%s];%s', index, testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getInputs()[index])).join(', '), delimiter);
+	}
+	protected setNumTestsAssertion(argumentsMap: IArgumentsMap, index: number, delimiter: string) {
+		argumentsMap.NUM_TESTS_ASSERTION += sprintf('console.assert(input%d.length == expectedOutput.length, `# input%d = ${input%d.length}, # expectedOutput = ${expectedOutput.length}`);%s', index, index, index, delimiter);
+	}
+	protected setMethodArgs(argumentsMap: IArgumentsMap, index: number, delimiter: string) {
+		argumentsMap.METHOD_ARGS += sprintf('input%d[i]%s', index, delimiter);
+	}
+	protected setMethodArgsDefinition(argumentsMap: IArgumentsMap, index: number, delimiter: string) {
+		argumentsMap.METHOD_ARGS_DEFINITION += sprintf('input%d%s', index, delimiter);
+	}
+	protected setMethodArgsStringFormatValues(argumentsMap: IArgumentsMap, index: number, delimiter: string) {
+		argumentsMap.METHOD_ARGS_STRING_FORMAT_VALUES += sprintf('${input%d}%s', index, delimiter);
+	}
+	protected setTestOutputs(argumentsMap: IArgumentsMap, testCases: TestCase[]) {
+		argumentsMap.TEST_OUTPUTS += testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getOutput())).join(', ');
+	}
+	protected setActualExpectedComparison(argumentsMap: IArgumentsMap, functionImports: string[]): void {
 		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();
 		if (this.isArray(outputType)) {
 			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'arraysEqual(actualOutput, expectedOutput[i])';
@@ -68,7 +86,7 @@ class JavaScriptSolutionFileService extends FileService {
 			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'actualOutput == expectedOutput[i]';
 		}
 	}
-	protected setFunctionImports(argumentsMap: IMainArgumentsMap, functionImports: string[]): void {
+	protected setFunctionImports(argumentsMap: IArgumentsMap, functionImports: string[]): void {
 		if (functionImports.length == 0) {
 			return;
 		}
@@ -79,24 +97,6 @@ class JavaScriptSolutionFileService extends FileService {
 			}
 		}
 		argumentsMap.FUNCTION_IMPORTS += sprintf('\n%s\n', uniqueFunctionImports.sort().map((x) => this.readFile(sprintf('%sfunctions/%s.%s', this.resourcesDirPath, x, this.challenge.getLanguage().fileExtension))).join('\n'));
-	}
-	protected setTestOutputs(argumentsMap: IMainArgumentsMap, testCases: TestCase[]) {
-		argumentsMap.TEST_OUTPUTS += testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getOutput())).join(', ');
-	}
-	protected setTestInputs(argumentsMap: IMainArgumentsMap, testCases: TestCase[], index: number, delimiter: string) {
-		argumentsMap.TEST_INPUTS += sprintf('const input%d = [%s];%s', index, testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getInputs()[index])).join(', '), delimiter);
-	}
-	protected setNumTestsAssertion(argumentsMap: IMainArgumentsMap, index: number, delimiter: string) {
-		argumentsMap.NUM_TESTS_ASSERTION += sprintf('console.assert(input%d.length == expectedOutput.length, `# input%d = ${input%d.length}, # expectedOutput = ${expectedOutput.length}`);%s', index, index, index, delimiter);
-	}
-	protected setMethodArgs(argumentsMap: IMainArgumentsMap, index: number, delimiter: string) {
-		argumentsMap.METHOD_ARGS += sprintf('input%d[i]%s', index, delimiter);
-	}
-	protected setMethodArgsDefinition(argumentsMap: IMainArgumentsMap, index: number, delimiter: string) {
-		argumentsMap.METHOD_ARGS_DEFINITION += sprintf('input%d%s', index, delimiter);
-	}
-	protected setMethodArgsStringFormatValues(argumentsMap: IMainArgumentsMap, index: number, delimiter: string) {
-		argumentsMap.METHOD_ARGS_STRING_FORMAT_VALUES += sprintf('${input%d}%s', index, delimiter);
 	}
 }
 

@@ -1,19 +1,18 @@
 import { sprintf } from 'sprintf-js';
 
-import { Challenge } from '../../entity/Challenge';
 import { TestCase } from '../../entity/TestCase';
 import { TestCaseArgument } from '../../entity/TestCaseArgument';
-import { IMainArgumentsMap } from '../../interface/solution/IMainArgumentsMap';
+import { IArgumentsMap } from '../../interface/solution/IArgumentsMap';
 import { IStringFormatArgumentsMap } from '../../interface/solution/IStringFormatArgumentsMap';
-import { IMainMArgumentsMap } from '../../interface/solution/octave/IMainMArgumentsMap';
+import { IOctaveArgumentsMap } from '../../interface/solution/octave/IOctaveArgumentsMap';
 import { IOctaveStringFormatArgumentsMap } from '../../interface/solution/octave/IOctaveStringFormatArgumentsMap';
 import { FileService } from '../FileService';
 
 class OctaveSolutionFileService extends FileService {
-	protected getMainArgumentsMap(): IMainArgumentsMap {
+	protected getMainArgumentsMap(): IArgumentsMap {
 		const challengeName: string = this.challenge.getName();
 		const testCases: TestCase[] = this.challenge.getTestCases();
-		const argumentsMap: IMainMArgumentsMap = {
+		const argumentsMap: IOctaveArgumentsMap = {
 			METHOD_NAME: challengeName,
 			METHOD_ARGS_DEFINITION: '',
 			TESTS: ''
@@ -71,7 +70,7 @@ class OctaveSolutionFileService extends FileService {
 				return testCaseArgument.getValue();
 		}
 	}
-	protected setMainArgumentsMapValues(argumentsMap: IMainArgumentsMap): void {
+	protected setMainArgumentsMapValues(argumentsMap: IArgumentsMap): void {
 		return;
 	}
 }

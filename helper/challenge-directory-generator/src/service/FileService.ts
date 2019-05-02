@@ -6,7 +6,7 @@ import { isUndefined } from 'util';
 import { Challenge } from '../entity/Challenge';
 import { MarkdownLink } from '../entity/MarkdownLink';
 import { TestCaseArgument } from '../entity/TestCaseArgument';
-import { IMainArgumentsMap } from '../interface/solution/IMainArgumentsMap';
+import { IArgumentsMap } from '../interface/solution/IArgumentsMap';
 import { IStringFormatArgument } from '../interface/solution/IStringFormatArgument';
 import { IStringFormatArgumentsMap } from '../interface/solution/IStringFormatArgumentsMap';
 import { Logger } from '../util/Logger';
@@ -96,13 +96,16 @@ abstract class FileService {
 		const testBashFilePath = sprintf('%stest.sh', this.challengeSolutionDirPath);
 		fs.writeFileSync(testBashFilePath, testBashFile);
 	}
-	private async getChallengeTestBashFile(): Promise<string> {
+	protected async getChallengeTestBashFile(): Promise<string> {
 		const testBashFilePath: string = sprintf('%stest.sh', this.resourcesDirPath);
 		if (this.exists(testBashFilePath)) {
 			let testBashFile: string = this.readFile(testBashFilePath);
-			return testBashFile.split('%s').join(this.challenge.getName());
+			return testBashFile.split('%s').join(this.getChallengeTestBashFileParameter());
 		}
 		return await UserInputService.get(UserInputService.INPUTS.TEST_BASH_FILE);
+	}
+	protected getChallengeTestBashFileParameter(): string {
+		return this.challenge.getName();
 	}
 	private copyChallengeSolutionFiles(): void {
 		const copyFolderPath: string = sprintf('%scopy/', this.resourcesDirPath);
@@ -125,14 +128,14 @@ abstract class FileService {
 		let mainFile: string = '';
 		if (this.exists(mainTemplateFilePath)) {
 			mainFile = this.readFile(mainTemplateFilePath);
-			const argumentsMap: IMainArgumentsMap = this.getMainArgumentsMap();
+			const argumentsMap: IArgumentsMap = this.getMainArgumentsMap();
 			mainFile = this.replaceArguments(mainFile, argumentsMap);
 		}
 		const mainFileName: string = sprintf('%s.%s', this.challenge.getName(), this.challenge.getLanguage().fileExtension);
 		const mainFilePath: string = sprintf('%s%s', this.challengeSolutionDirPath, mainFileName);
 		fs.writeFileSync(mainFilePath, mainFile);
 	}
-	protected replaceArguments(file: string, argumentsMap: IMainArgumentsMap): string {
+	protected replaceArguments(file: string, argumentsMap: IArgumentsMap): string {
 		for (const argument in argumentsMap) {
 			file = file.split(sprintf('[%s]', argument)).join(argumentsMap[argument]);
 		}
@@ -157,10 +160,10 @@ abstract class FileService {
 	protected isArray(type: string): boolean {
 		return type.substring(type.length-2) == '[]';
 	}
-	protected abstract getMainArgumentsMap(): IMainArgumentsMap;
+	protected abstract getMainArgumentsMap(): IArgumentsMap;
 	protected abstract getStringFormatArgumentsMap(): IStringFormatArgumentsMap;
 	protected abstract getTestCaseArgumentValue(testCaseArgument: TestCaseArgument): string;
-	protected abstract setMainArgumentsMapValues(argumentsMap: IMainArgumentsMap): void;
+	protected abstract setMainArgumentsMapValues(argumentsMap: IArgumentsMap): void;
 }
 
 export { FileService };

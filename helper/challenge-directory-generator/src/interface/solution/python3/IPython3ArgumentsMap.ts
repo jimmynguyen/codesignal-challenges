@@ -1,7 +1,7 @@
-import { IMainArgumentsMap } from '../IMainArgumentsMap';
+import { IArgumentsMap } from '../IArgumentsMap';
 
-interface IMainPy3ArgumentsMap extends IMainArgumentsMap {
-    METHOD_NAME: string;
+interface IPython3ArgumentsMap extends IArgumentsMap {
+	METHOD_NAME: string;
 	METHOD_ARGS_DEFINITION: string;
 	TEST_INPUTS: string;
 	TEST_OUTPUTS: string;
@@ -11,4 +11,4 @@ interface IMainPy3ArgumentsMap extends IMainArgumentsMap {
 	METHOD_ARGS_STRING_FORMAT_VALUES: string;
 }
 
-export { IMainPy3ArgumentsMap };
+export { IPython3ArgumentsMap };

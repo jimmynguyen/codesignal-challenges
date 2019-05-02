@@ -1,19 +1,18 @@
 import { sprintf } from 'sprintf-js';
 
-import { Challenge } from '../../entity/Challenge';
 import { TestCase } from '../../entity/TestCase';
 import { TestCaseArgument } from '../../entity/TestCaseArgument';
-import { IMainArgumentsMap } from '../../interface/solution/IMainArgumentsMap';
+import { IArgumentsMap } from '../../interface/solution/IArgumentsMap';
 import { IStringFormatArgumentsMap } from '../../interface/solution/IStringFormatArgumentsMap';
-import { IMainPy3ArgumentsMap } from '../../interface/solution/python3/IMainPy3ArgumentsMap';
+import { IPython3ArgumentsMap } from '../../interface/solution/python3/IPython3ArgumentsMap';
 import { IPython3StringFormatArgumentsMap } from '../../interface/solution/python3/IPython3StringFormatArgumentsMap';
 import { FileService } from '../FileService';
 
 class Python3SolutionFileService extends FileService {
-	protected getMainArgumentsMap(): IMainArgumentsMap {
+	protected getMainArgumentsMap(): IArgumentsMap {
 		const challengeName: string = this.challenge.getName();
 		const testCases: TestCase[] = this.challenge.getTestCases();
-		const argumentsMap: IMainPy3ArgumentsMap = {
+		const argumentsMap: IPython3ArgumentsMap = {
 			METHOD_NAME: challengeName,
 			TEST_OUTPUTS: testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getOutput())).join(', '),
 			METHOD_ARGS_DEFINITION: '',
@@ -65,7 +64,7 @@ class Python3SolutionFileService extends FileService {
 				return testCaseArgument.getValue();
 		}
 	}
-	protected setMainArgumentsMapValues(argumentsMap: IMainArgumentsMap): void {
+	protected setMainArgumentsMapValues(argumentsMap: IArgumentsMap): void {
 		return;
 	}
 }

@@ -1,6 +1,6 @@
-import { IMainArgumentsMap } from '../IMainArgumentsMap';
+import { IArgumentsMap } from '../IArgumentsMap';
 
-interface IMainJavaArgumentsMap extends IMainArgumentsMap {
+interface IJavaArgumentsMap extends IArgumentsMap {
 	CLASS_NAME: string;
 	TEST_INPUTS: string;
 	OUTPUT_TYPE: string;
@@ -18,4 +18,4 @@ interface IMainJavaArgumentsMap extends IMainArgumentsMap {
 	IMPORTS: string;
 }
 
-export { IMainJavaArgumentsMap };
+export { IJavaArgumentsMap };

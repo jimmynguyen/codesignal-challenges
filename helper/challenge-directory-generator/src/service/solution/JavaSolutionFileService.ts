@@ -1,26 +1,28 @@
 import { sprintf } from 'sprintf-js';
 
-import { Challenge } from '../../entity/Challenge';
 import { TestCase } from '../../entity/TestCase';
 import { TestCaseArgument } from '../../entity/TestCaseArgument';
-import { IMainArgumentsMap } from '../../interface/solution/IMainArgumentsMap';
+import { IArgumentsMap } from '../../interface/solution/IArgumentsMap';
 import { IStringFormatArgumentsMap } from '../../interface/solution/IStringFormatArgumentsMap';
+import { IJavaArgumentsMap } from '../../interface/solution/java/IJavaArgumentsMap';
 import { IJavaStringFormatArgumentsMap } from '../../interface/solution/java/IJavaStringFormatArgumentsMap';
-import { IMainJavaArgumentsMap } from '../../interface/solution/java/IMainJavaArgumentsMap';
 import { FileService } from '../FileService';
 
 class JavaSolutionFileService extends FileService {
-	protected getMainArgumentsMap(): IMainArgumentsMap {
+	protected importTemplateString: string = 'import %s;\n';
+	protected getChallengeTestBashFileParameter(): string {
+		return this.challenge.getName().toPascalCase();
+	}
+	protected getMainArgumentsMap(): IArgumentsMap {
 		const challengeName: string = this.challenge.getName();
 		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();
-		const testCases: TestCase[] = this.challenge.getTestCases();
-		const argumentsMap: IMainJavaArgumentsMap = {
-			CLASS_NAME: challengeName,
-			OUTPUT_TYPE: outputType,
+		const argumentsMap: IJavaArgumentsMap = {
+			CLASS_NAME: challengeName.toPascalCase(),
+			OUTPUT_TYPE: '',
 			METHOD_NAME: challengeName,
 			ACTUAL_EXPECTED_COMPARISON: '',
 			OUTPUT_TYPE_STRING_FORMAT_TEMPLATE: this.getStringFormat(outputType),
-			TEST_OUTPUTS: testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getOutput())).join(', '),
+			TEST_OUTPUTS: '',
 			TEST_INPUTS: '',
 			NUM_TESTS_ASSERTION: '',
 			METHOD_ARGS: '',
@@ -71,8 +73,8 @@ class JavaSolutionFileService extends FileService {
 				return testCaseArgument.getValue();
 		}
 	}
-	protected setMainArgumentsMapValues(argumentsMap: IMainArgumentsMap): void {
-		let imports: string[] = ['java.util.stream.IntStream'];
+	protected setMainArgumentsMapValues(argumentsMap: IArgumentsMap): void {
+		let imports: string[] = this.initializeImports();
 		const testCases: TestCase[] = this.challenge.getTestCases();
 		const inputTypes: string[] = testCases[0].getInputs().map(input => input.getType());
 		let delimiter: string;
@@ -80,22 +82,24 @@ class JavaSolutionFileService extends FileService {
 		for (const [index, inputType] of inputTypes.entries()) {
 			isLastIteration = index == inputTypes.length - 1;
 			delimiter = isLastIteration ? '' : '\n\t\t';
-			argumentsMap.TEST_INPUTS += sprintf('%s[] input%d = new %s[] {%s};%s', inputType, index, inputType, testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getInputs()[index])).join(', '), delimiter);
-			argumentsMap.NUM_TESTS_ASSERTION += sprintf('assert input%d.length == expectedOutput.length : String.format("# input%d = %%d, # expectedOutput = %%d", input%d.length, expectedOutput.length);%s', index, index, index, delimiter);
+			this.setTestInputs(argumentsMap, inputType, testCases, index, delimiter);
+			this.setNumTestsAssertion(argumentsMap, index, delimiter);
 			delimiter = isLastIteration ? '' : ', ';
-			argumentsMap.METHOD_ARGS += sprintf('input%d[i]%s', index, delimiter);
-			argumentsMap.METHOD_ARGS_STRING_FORMAT_TEMPLATE += sprintf('%s%s', this.getStringFormat(inputType), delimiter);
-			argumentsMap.METHOD_ARGS_DEFINITION += sprintf('%s input%d%s', inputType, index, delimiter);
+			this.setMethodArgs(argumentsMap, index, delimiter);
+			this.setMethodArgsDefinition(argumentsMap, inputType, index, delimiter);
+			this.setMethodArgsStringFormatTemplate(argumentsMap, inputType, delimiter);
 			this.setMethodArgsStringFormatValues(argumentsMap, imports, inputType, sprintf('input%d[i]', index), delimiter);
 		}
+		this.setOutputType(argumentsMap);
+		this.setTestOutputs(argumentsMap, testCases);
 		this.setActualExpectedComparison(argumentsMap, imports);
 		this.setOutputStringFormatValues(argumentsMap, imports);
 		this.setImports(argumentsMap, imports);
 	}
-	protected setMethodArgsStringFormatValues(argumentsMap: IMainArgumentsMap, imports: string[], type: string, variable: string, delimiter: string) {
-		argumentsMap.METHOD_ARGS_STRING_FORMAT_VALUES += sprintf('%s%s', this.getStringFormatValue(type, variable, imports), delimiter);
+	protected initializeImports(): string[] {
+		return ['java.util.stream.IntStream'];
 	}
-	protected setActualExpectedComparison(argumentsMap: IMainArgumentsMap, imports: string[]): void {
+	protected setActualExpectedComparison(argumentsMap: IArgumentsMap, imports: string[]): void {
 		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();
 		if (this.isArray(outputType)) {
 			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'Arrays.equals(actualOutput, expectedOutput[i])';
@@ -106,7 +110,7 @@ class JavaSolutionFileService extends FileService {
 			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'actualOutput == expectedOutput[i]';
 		}
 	}
-	protected setOutputStringFormatValues(argumentsMap: IMainArgumentsMap, imports: string[]): void {
+	protected setOutputStringFormatValues(argumentsMap: IArgumentsMap, imports: string[]): void {
 		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();
 		argumentsMap.ACTUAL_OUTPUT_STRING_FORMAT_VALUE = this.getStringFormatValue(outputType, 'actualOutput', imports);
 		argumentsMap.EXPECTED_OUTPUT_STRING_FORMAT_VALUE = this.getStringFormatValue(outputType, 'expectedOutput[i]', imports);
@@ -119,7 +123,7 @@ class JavaSolutionFileService extends FileService {
 			return variable;
 		}
 	}
-	protected setImports(argumentsMap: IMainArgumentsMap, imports: string[]): void {
+	protected setImports(argumentsMap: IArgumentsMap, imports: string[]): void {
 		if (imports.length == 0) {
 			return;
 		}
@@ -129,7 +133,31 @@ class JavaSolutionFileService extends FileService {
 				uniqueImports.push(x);
 			}
 		}
-		argumentsMap.IMPORTS = uniqueImports.sort().map((x) => sprintf('import %s;\n', x)).join('');
+		argumentsMap.IMPORTS = uniqueImports.sort().map((x) => sprintf(this.importTemplateString, x)).join('');
+	}
+	protected setOutputType(argumentsMap: IArgumentsMap) {
+		argumentsMap.OUTPUT_TYPE = this.challenge.getTestCases()[0].getOutput().getType();
+	}
+	protected setTestOutputs(argumentsMap: IArgumentsMap, testCases: TestCase[]) {
+		argumentsMap.TEST_OUTPUTS += testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getOutput())).join(', ');
+	}
+	protected setTestInputs(argumentsMap: IArgumentsMap, inputType: string, testCases: TestCase[], index: number, delimiter: string) {
+		argumentsMap.TEST_INPUTS += sprintf('%s[] input%d = new %s[] {%s};%s', inputType, index, inputType, testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getInputs()[index])).join(', '), delimiter);
+	}
+	protected setNumTestsAssertion(argumentsMap: IArgumentsMap, index: number, delimiter: string) {
+		argumentsMap.NUM_TESTS_ASSERTION += sprintf('assert input%d.length == expectedOutput.length : String.format("# input%d = %%d, # expectedOutput = %%d", input%d.length, expectedOutput.length);%s', index, index, index, delimiter);
+	}
+	protected setMethodArgs(argumentsMap: IArgumentsMap, index: number, delimiter: string) {
+		argumentsMap.METHOD_ARGS += sprintf('input%d[i]%s', index, delimiter);
+	}
+	protected setMethodArgsDefinition(argumentsMap: IArgumentsMap, inputType: string, index: number, delimiter: string) {
+		argumentsMap.METHOD_ARGS_DEFINITION += sprintf('%s input%d%s', inputType, index, delimiter);
+	}
+	protected setMethodArgsStringFormatTemplate(argumentsMap: IArgumentsMap, inputType: string, delimiter: string) {
+		argumentsMap.METHOD_ARGS_STRING_FORMAT_TEMPLATE += sprintf('%s%s', this.getStringFormat(inputType), delimiter);
+	}
+	protected setMethodArgsStringFormatValues(argumentsMap: IArgumentsMap, imports: string[], type: string, variable: string, delimiter: string) {
+		argumentsMap.METHOD_ARGS_STRING_FORMAT_VALUES += sprintf('%s%s', this.getStringFormatValue(type, variable, imports), delimiter);
 	}
 }
 

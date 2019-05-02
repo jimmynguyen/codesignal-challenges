@@ -1,6 +1,6 @@
-import { IMainArgumentsMap } from '../IMainArgumentsMap';
+import { IArgumentsMap } from '../IArgumentsMap';
 
-interface IMainJavaScriptArgumentsMap extends IMainArgumentsMap {
+interface IJavaScriptArgumentsMap extends IArgumentsMap {
 	TEST_INPUTS: string;
 	TEST_OUTPUTS: string;
 	NUM_TESTS_ASSERTION: string;
@@ -12,4 +12,4 @@ interface IMainJavaScriptArgumentsMap extends IMainArgumentsMap {
 	METHOD_ARGS_DEFINITION: string;
 }
 
-export { IMainJavaScriptArgumentsMap };
+export { IJavaScriptArgumentsMap };

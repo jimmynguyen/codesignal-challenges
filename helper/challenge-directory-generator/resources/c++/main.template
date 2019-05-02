@@ -1,0 +1,28 @@
+[IMPORTS]
+[OUTPUT_TYPE] [METHOD_NAME]([METHOD_ARGS_DEFINITION])
+{
+	throw std::logic_error("Method not implemented.");
+}
+[FUNCTION_IMPORTS]
+void custom_assert(bool assertion, std::string message) {
+	if (!assertion) {
+		throw std::runtime_error(message);
+	}
+}
+
+int main(int argc, char *argv[])
+{
+	[TEST_INPUTS]
+	std::vector<[OUTPUT_TYPE]> expectedOutput{[TEST_OUTPUTS]};
+	char message[100];
+	[NUM_TESTS_ASSERTION]
+	for (int i = 0; i < expectedOutput.size(); i++)
+	{
+		[OUTPUT_TYPE] actualOutput = [METHOD_NAME]([METHOD_ARGS]);
+		sprintf(message, "[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_TEMPLATE]) returned [OUTPUT_TYPE_STRING_FORMAT_TEMPLATE], but expected [OUTPUT_TYPE_STRING_FORMAT_TEMPLATE]", [METHOD_ARGS_STRING_FORMAT_VALUES], [ACTUAL_OUTPUT_STRING_FORMAT_VALUE], [EXPECTED_OUTPUT_STRING_FORMAT_VALUE]);
+		custom_assert(actualOutput == expectedOutput[i], std::string(message));
+	}
+	sprintf(message, "PASSES %d out of %d tests", (int)expectedOutput.size(), (int)expectedOutput.size());
+	std::cout << message << std::endl;
+	return 0;
+}
