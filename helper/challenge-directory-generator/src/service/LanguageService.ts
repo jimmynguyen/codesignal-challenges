@@ -46,6 +46,11 @@ class LanguageService {
 			fullName: 'Octave',
 			fileExtension: 'm'
 		},
+		PYTHON2: {
+			name: 'python2',
+			fullName: 'Python2',
+			fileExtension: 'py'
+		},
 		PYTHON3: {
 			name: 'python3',
 			fullName: 'Python3',

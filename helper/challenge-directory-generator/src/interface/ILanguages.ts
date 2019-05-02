@@ -10,6 +10,7 @@ interface ILanguages {
 	JAVASCRIPT: ILanguage;
 	KOTLIN: ILanguage;
 	OCTAVE: ILanguage;
+	PYTHON2: ILanguage;
 	PYTHON3: ILanguage;
 	TYPESCRIPT: ILanguage
 }

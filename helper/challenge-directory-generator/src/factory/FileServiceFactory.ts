@@ -20,6 +20,7 @@ class FileServiceFactory {
 			case LanguageService.LANGUAGES.OCTAVE:
 				fileService = new OctaveSolutionFileService(challenge);
 				break;
+			case LanguageService.LANGUAGES.PYTHON2:
 			case LanguageService.LANGUAGES.PYTHON3:
 				fileService = new Python3SolutionFileService(challenge);
 				break;
