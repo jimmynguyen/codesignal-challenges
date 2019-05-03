@@ -3,6 +3,7 @@ import { FileService } from '../service/FileService';
 import { LanguageService } from '../service/LanguageService';
 import { CoffeeScriptSolutionFileService } from '../service/solution/CoffeeScriptSolutionFileService';
 import { CPlusPlusSolutionFileService } from '../service/solution/CPlusPlusSolutionFileService';
+import { CSharpSolutionFileService } from '../service/solution/CSharpSolutionFileService';
 import { DefaultSolutionFileService } from '../service/solution/DefaultSolutionFileService';
 import { JavaScriptSolutionFileService } from '../service/solution/JavaScriptSolutionFileService';
 import { JavaSolutionFileService } from '../service/solution/JavaSolutionFileService';
@@ -19,6 +20,9 @@ class FileServiceFactory {
 				break;
 			case LanguageService.LANGUAGES.CPLUSPLUS:
 				fileService = new CPlusPlusSolutionFileService(challenge);
+				break;
+			case LanguageService.LANGUAGES.CSHARP:
+				fileService = new CSharpSolutionFileService(challenge);
 				break;
 			case LanguageService.LANGUAGES.JAVA:
 				fileService = new JavaSolutionFileService(challenge);

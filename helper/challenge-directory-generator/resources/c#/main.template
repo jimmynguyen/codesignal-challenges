@@ -1,0 +1,23 @@
+[IMPORTS]
+class [CLASS_NAME] {
+	static void Main() {
+		[TEST_INPUTS]
+		[OUTPUT_TYPE][] expectedOutput = new [OUTPUT_TYPE][] {[TEST_OUTPUTS]};
+		[NUM_TESTS_ASSERTION]
+		for (int i = 0; i < expectedOutput.Length; i++) {
+			[OUTPUT_TYPE] actualOutput = [METHOD_NAME]([METHOD_ARGS]);
+			Assert([ACTUAL_EXPECTED_COMPARISON], String.Format("[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_TEMPLATE]) returned [ACTUAL_OUTPUT_STRING_FORMAT_TEMPLATE], but expected [EXPECTED_OUTPUT_STRING_FORMAT_TEMPLATE]", [METHOD_ARGS_STRING_FORMAT_VALUES], [ACTUAL_OUTPUT_STRING_FORMAT_VALUE], [EXPECTED_OUTPUT_STRING_FORMAT_VALUE]));
+		}
+		Console.WriteLine(String.Format("PASSES {0} out of {1} tests", expectedOutput.Length, expectedOutput.Length));
+	}
+
+	static void Assert(bool assertion, String message) {
+		if (!assertion) {
+			throw new Exception(message);
+		}
+	}
+
+	static [OUTPUT_TYPE] [METHOD_NAME]([METHOD_ARGS_DEFINITION]) {
+		throw new Exception("Method not implemented.");
+	}
+}

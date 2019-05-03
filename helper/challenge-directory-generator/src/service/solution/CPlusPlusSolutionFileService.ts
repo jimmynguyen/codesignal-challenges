@@ -12,6 +12,9 @@ class CPlusPlusSolutionFileService extends JavaSolutionFileService {
 	protected getChallengeTestBashFileParameter(): string {
 		return this.challenge.getName();
 	}
+	protected getMainSolutionFileName(): string {
+		return this.challenge.getName();
+	}
 	protected getMainArgumentsMap(): IArgumentsMap {
 		this.functionImports = [];
 		let argumentsMap: ICPlusPlusArgumentsMap = <ICPlusPlusArgumentsMap> super.getMainArgumentsMap();

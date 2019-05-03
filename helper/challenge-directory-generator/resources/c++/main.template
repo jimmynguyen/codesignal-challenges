@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	for (int i = 0; i < expectedOutput.size(); i++)
 	{
 		[OUTPUT_TYPE] actualOutput = [METHOD_NAME]([METHOD_ARGS]);
-		sprintf(message, "[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_TEMPLATE]) returned [OUTPUT_TYPE_STRING_FORMAT_TEMPLATE], but expected [OUTPUT_TYPE_STRING_FORMAT_TEMPLATE]", [METHOD_ARGS_STRING_FORMAT_VALUES], [ACTUAL_OUTPUT_STRING_FORMAT_VALUE], [EXPECTED_OUTPUT_STRING_FORMAT_VALUE]);
+		sprintf(message, "[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_TEMPLATE]) returned [ACTUAL_OUTPUT_STRING_FORMAT_TEMPLATE], but expected [EXPECTED_OUTPUT_STRING_FORMAT_TEMPLATE]", [METHOD_ARGS_STRING_FORMAT_VALUES], [ACTUAL_OUTPUT_STRING_FORMAT_VALUE], [EXPECTED_OUTPUT_STRING_FORMAT_VALUE]);
 		custom_assert(actualOutput == expectedOutput[i], std::string(message));
 	}
 	sprintf(message, "PASSES %d out of %d tests", (int)expectedOutput.size(), (int)expectedOutput.size());

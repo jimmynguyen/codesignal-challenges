@@ -131,9 +131,12 @@ abstract class FileService {
 			const argumentsMap: IArgumentsMap = this.getMainArgumentsMap();
 			mainFile = this.replaceArguments(mainFile, argumentsMap);
 		}
-		const mainFileName: string = sprintf('%s.%s', this.challenge.getName(), this.challenge.getLanguage().fileExtension);
+		const mainFileName: string = sprintf('%s.%s', this.getMainSolutionFileName(), this.challenge.getLanguage().fileExtension);
 		const mainFilePath: string = sprintf('%s%s', this.challengeSolutionDirPath, mainFileName);
 		fs.writeFileSync(mainFilePath, mainFile);
+	}
+	protected getMainSolutionFileName(): string {
+		return this.challenge.getName();
 	}
 	protected replaceArguments(file: string, argumentsMap: IArgumentsMap): string {
 		for (const argument in argumentsMap) {
