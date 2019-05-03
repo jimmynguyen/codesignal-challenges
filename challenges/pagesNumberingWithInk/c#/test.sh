@@ -1,0 +1,1 @@
+mcs -out:PagesNumberingWithInk.exe PagesNumberingWithInk.cs && mono PagesNumberingWithInk.exe
