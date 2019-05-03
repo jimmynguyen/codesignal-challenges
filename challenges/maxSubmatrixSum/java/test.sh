@@ -1,0 +1,1 @@
+javac MaxSubmatrixSum.java && java -ea MaxSubmatrixSum
