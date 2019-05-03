@@ -1,0 +1,1 @@
+coffee --compile maxSubmatrixSum.coffee && node maxSubmatrixSum.js
