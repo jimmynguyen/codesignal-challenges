@@ -7,7 +7,7 @@ main = ->
 	while i < expectedOutput.length
 		actualOutput = [METHOD_NAME] [METHOD_ARGS]
 		outputComparison = [ACTUAL_EXPECTED_COMPARISON]
-		console.assert outputComparison, "[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_VALUES]) returned #{actualOutput}, but expected #{expectedOutput[i]}"
+		console.assert outputComparison, "[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_VALUES]) returned #{JSON.stringify actualOutput}, but expected #{JSON.stringify expectedOutput[i]}"
 		if outputComparison
 			testsPassed++
 		i++

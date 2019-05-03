@@ -72,7 +72,7 @@ class JavaScriptSolutionFileService extends FileService {
 		argumentsMap.METHOD_ARGS_DEFINITION += sprintf('input%d%s', index, delimiter);
 	}
 	protected setMethodArgsStringFormatValues(argumentsMap: IArgumentsMap, index: number, delimiter: string) {
-		argumentsMap.METHOD_ARGS_STRING_FORMAT_VALUES += sprintf('${input%d}%s', index, delimiter);
+		argumentsMap.METHOD_ARGS_STRING_FORMAT_VALUES += sprintf('${JSON.stringify(input%d)}%s', index, delimiter);
 	}
 	protected setTestOutputs(argumentsMap: IArgumentsMap, testCases: TestCase[]) {
 		argumentsMap.TEST_OUTPUTS += testCases.map(testCase => this.getTestCaseArgumentValue(testCase.getOutput())).join(', ');

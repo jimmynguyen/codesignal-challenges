@@ -12,7 +12,7 @@ class CoffeeScriptSolutionFileService extends JavaScriptSolutionFileService {
 		argumentsMap.NUM_TESTS_ASSERTION += sprintf('console.assert input%d.length == expectedOutput.length, "# input%d = #{input%d.length}, # expectedOutput = #{expectedOutput.length}"%s', index, index, index, delimiter);
 	}
 	protected setMethodArgsStringFormatValues(argumentsMap: IArgumentsMap, index: number, delimiter: string) {
-		argumentsMap.METHOD_ARGS_STRING_FORMAT_VALUES += sprintf('#{input%d}%s', index, delimiter);
+		argumentsMap.METHOD_ARGS_STRING_FORMAT_VALUES += sprintf('#{JSON.stringify input%d}%s', index, delimiter);
 	}
 }
 

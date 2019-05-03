@@ -41,7 +41,7 @@ class ChallengeService {
 		let options: chrome.Options;
 		let headless: boolean = true;
 		if (process.argv.length > 4) {
-			headless = process.argv[4] == 'headless';
+			headless = process.argv[4] == 'yes' || process.argv[4] == 'y';
 		} else {
 			headless = await UserInputService.confirm(UserInputService.INPUTS.RUN_HEADLESS);
 		}
@@ -94,7 +94,7 @@ class ChallengeService {
 		let inputs: TestCaseArgument[] = [];
 		let inputWebElements: WebElement[] = await driver.findElements(By.xpath('//pre[contains(@class, "task-tests--value") and not(contains(@class, "-answer"))]/div'));
 		for (const [index, inputWebElement] of inputWebElements.entries()) {
-			inputs.push(new TestCaseArgument((await inputWebElement.getAttribute('innerText')).split(': ')[1], inputTypes[index]));
+			inputs.push(new TestCaseArgument((await inputWebElement.getAttribute('innerText')).split(': ')[1].replace(/(\r\n|\n|\r)/gm,'').replace(/ +(?= )/g,''), inputTypes[index]));
 		}
 		return inputs;
 	}

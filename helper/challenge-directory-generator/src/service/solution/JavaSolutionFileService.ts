@@ -18,7 +18,6 @@ class JavaSolutionFileService extends FileService {
 	}
 	protected getMainArgumentsMap(): IArgumentsMap {
 		const challengeName: string = this.challenge.getName();
-		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();
 		const argumentsMap: IJavaArgumentsMap = {
 			CLASS_NAME: challengeName.toPascalCase(),
 			OUTPUT_TYPE: '',
@@ -65,6 +64,10 @@ class JavaSolutionFileService extends FileService {
 			INT_ARRAY: {
 				type: 'int[]',
 				format: '%s'
+			},
+			INT_ARRAY_ARRAY: {
+				type: 'int[][]',
+				format: '%s'
 			}
 		};
 		return map;
@@ -73,6 +76,8 @@ class JavaSolutionFileService extends FileService {
 		switch (testCaseArgument.getType()) {
 			case this.getStringFormatArgumentsMap().INT_ARRAY.type:
 				return testCaseArgument.getValue().replace('[', '{').replace(']', '}');
+			case this.getStringFormatArgumentsMap().INT_ARRAY_ARRAY.type:
+				return testCaseArgument.getValue().replace(/\[/g, '{').replace(/]/g, '}');
 			default:
 				return testCaseArgument.getValue();
 		}
@@ -131,7 +136,7 @@ class JavaSolutionFileService extends FileService {
 	protected getStringFormatValue(type: string, variable: string, imports: string[]): string {
 		if (this.isArray(type)) {
 			imports.push('java.util.Arrays');
-			return sprintf('Arrays.toString(%s)', variable);
+			return sprintf('Arrays.deepToString(%s)', variable);
 		} else {
 			return variable;
 		}

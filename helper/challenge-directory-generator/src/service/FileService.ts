@@ -52,7 +52,12 @@ abstract class FileService {
 		}
 		this.createChallengeREADMEFile();
 		if (fs.existsSync(this.challengeSolutionDirPath)) {
-			const deleteChallengeSolutionDir: boolean = await UserInputService.confirm(UserInputService.INPUTS.DELETE_EXISTING_CHALLENGE_SOLUTION_DIR);
+			let deleteChallengeSolutionDir: boolean;
+			if (process.argv.length > 5) {
+				deleteChallengeSolutionDir = process.argv[5] == 'yes' || process.argv[4] == 'y';
+			} else {
+				deleteChallengeSolutionDir = await UserInputService.confirm(UserInputService.INPUTS.DELETE_EXISTING_CHALLENGE_SOLUTION_DIR);
+			}
 			if (!deleteChallengeSolutionDir) {
 				return;
 			}

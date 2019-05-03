@@ -6,7 +6,7 @@ function main(): void {
 	for (let i: number = 0; i < expectedOutput.length; i++) {
 		let actualOutput: [OUTPUT_TYPE] = [METHOD_NAME]([METHOD_ARGS]);
 		let outputComparison: boolean = [ACTUAL_EXPECTED_COMPARISON];
-		console.assert(outputComparison, `[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_VALUES]) returned ${actualOutput}, but expected ${expectedOutput[i]}`);
+		console.assert(outputComparison, `[METHOD_NAME]([METHOD_ARGS_STRING_FORMAT_VALUES]) returned ${JSON.stringify(actualOutput)}, but expected ${JSON.stringify(expectedOutput[i])}`);
 		if (outputComparison) {
 			testsPassed++;
 		}

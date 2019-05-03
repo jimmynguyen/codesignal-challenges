@@ -60,12 +60,19 @@ class OctaveSolutionFileService extends FileService {
 			DOUBLE: {
 				type: 'double',
 				format: '%f'
+			},
+			INT_ARRAY_ARRAY: {
+				type: 'int[][]',
+				format: '%s'
 			}
 		};
 		return map;
 	}
 	protected getTestCaseArgumentValue(testCaseArgument: TestCaseArgument): string {
 		switch (testCaseArgument.getType()) {
+			case this.getStringFormatArgumentsMap().INT_ARRAY_ARRAY.type:
+				let value = testCaseArgument.getValue();
+				return sprintf('{%s}', value.substring(1, value.length-1));
 			default:
 				return testCaseArgument.getValue();
 		}

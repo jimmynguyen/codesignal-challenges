@@ -7,6 +7,7 @@ interface IJavaStringFormatArgumentsMap extends IStringFormatArgumentsMap {
 	DOUBLE: IStringFormatArgument;
 	BOOLEAN: IStringFormatArgument;
 	INT_ARRAY: IStringFormatArgument;
+	INT_ARRAY_ARRAY: IStringFormatArgument;
 }
 
 export { IJavaStringFormatArgumentsMap };

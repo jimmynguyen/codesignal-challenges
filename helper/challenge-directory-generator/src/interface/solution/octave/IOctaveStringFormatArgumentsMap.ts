@@ -5,6 +5,7 @@ interface IOctaveStringFormatArgumentsMap extends IStringFormatArgumentsMap {
 	STRING: IStringFormatArgument;
 	INT: IStringFormatArgument;
 	DOUBLE: IStringFormatArgument;
+	INT_ARRAY_ARRAY: IStringFormatArgument;
 }
 
 export { IOctaveStringFormatArgumentsMap };
