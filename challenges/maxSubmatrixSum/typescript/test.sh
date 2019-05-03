@@ -1,0 +1,1 @@
+tsc maxSubmatrixSum.ts && node maxSubmatrixSum.js
