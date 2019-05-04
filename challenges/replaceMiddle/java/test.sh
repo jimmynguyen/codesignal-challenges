@@ -1,0 +1,1 @@
+javac ReplaceMiddle.java && java -ea ReplaceMiddle
