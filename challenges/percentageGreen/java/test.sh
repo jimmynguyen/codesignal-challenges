@@ -1,0 +1,1 @@
+javac PercentageGreen.java && java -ea PercentageGreen
