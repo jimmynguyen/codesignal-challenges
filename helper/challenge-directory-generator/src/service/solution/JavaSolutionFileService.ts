@@ -122,7 +122,7 @@ class JavaSolutionFileService extends FileService {
 		if (this.isArray(outputType)) {
 			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'Arrays.equals(actualOutput, expectedOutput[i])';
 			imports.push('java.util.Arrays');
-		} else if (outputType.charAt(0) == outputType.charAt(0).toUpperCase()) {
+		} else if (this.isObject(outputType)) {
 			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'actualOutput.equals(expectedOutput[i])';
 		} else {
 			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'actualOutput == expectedOutput[i]';
@@ -134,12 +134,21 @@ class JavaSolutionFileService extends FileService {
 		argumentsMap.EXPECTED_OUTPUT_STRING_FORMAT_VALUE = this.getStringFormatValue(outputType, 'expectedOutput[i]', imports);
 	}
 	protected getStringFormatValue(type: string, variable: string, imports: string[]): string {
-		if (this.isArray(type)) {
+		if (this.isArrayOfArray(type) || (this.isArray(type) && this.isObject(type))) {
 			imports.push('java.util.Arrays');
 			return sprintf('Arrays.deepToString(%s)', variable);
+		} else if (this.isArray(type)) {
+			imports.push('java.util.Arrays');
+			return sprintf('Arrays.toString(%s)', variable);
 		} else {
 			return variable;
 		}
+	}
+	protected isArrayOfArray(type: string): boolean {
+		return type.substring(type.length-4) == '[][]';
+	}
+	protected isObject(type: string): boolean {
+		return type.charAt(0) == type.charAt(0).toUpperCase();
 	}
 	protected setImports(argumentsMap: IArgumentsMap, imports: string[]): void {
 		if (imports.length == 0) {
