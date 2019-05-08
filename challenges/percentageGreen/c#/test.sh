@@ -1,0 +1,1 @@
+mcs -out:PercentageGreen.exe PercentageGreen.cs && mono PercentageGreen.exe
