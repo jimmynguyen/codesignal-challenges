@@ -1,0 +1,1 @@
+coffee --compile percentageGreen.coffee && node percentageGreen.js
