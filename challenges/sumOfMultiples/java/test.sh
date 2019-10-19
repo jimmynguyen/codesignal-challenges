@@ -1,0 +1,1 @@
+javac SumOfMultiples.java && java -ea SumOfMultiples
