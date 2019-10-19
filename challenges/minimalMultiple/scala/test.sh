@@ -1,0 +1,1 @@
+scalac minimalMultiple.scala && scala minimalMultiple

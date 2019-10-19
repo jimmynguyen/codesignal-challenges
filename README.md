@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [minimalMultiple](https://app.codesignal.com/challenge/mdLiKRe5bDDPYmvTN) | [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/minimalMultiple/scala) |
 | [findSquareSide](https://app.codesignal.com/challenge/mCGWhBSaQ2nY2ZoiC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findSquareSide/octave) |
 | [reflectString](https://app.codesignal.com/challenge/keqZL6SYysHeyoEuQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reflectString/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reflectString/scala) |
 | [primeFactors2](https://app.codesignal.com/challenge/2cnGDhLAdiShkfdNn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/primeFactors2/java) |
