@@ -1,7 +1,6 @@
 import * as fs from 'fs';
 import * as rimraf from 'rimraf';
 import { sprintf } from 'sprintf-js';
-import { isUndefined } from 'util';
 
 import { Challenge } from '../entity/Challenge';
 import { MarkdownLink } from '../entity/MarkdownLink';

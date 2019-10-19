@@ -4,6 +4,16 @@ import { IInputs } from '../interface/IInputs';
 
 class UserInputService {
 	public static INPUTS: IInputs = {
+		USERNAME: {
+			type: 'text',
+			name: 'username',
+			message: 'What is your CodeSignal username or email?'
+		},
+		PASSWORD: {
+			type: 'text',
+			name: 'password',
+			message: 'What is your CodeSignal password?'
+		},
 		CHALLENGE_ID: {
 			type: 'text',
 			name: 'challengeId',

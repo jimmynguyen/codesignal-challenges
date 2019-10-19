@@ -18,6 +18,16 @@ class ChallengeService {
 		const linkToChallenge = ChallengeService.URL_TEMPLATE.replace('{challengeId}', challenge.getId());
 		challenge.setLink(linkToChallenge);
 		try {
+			let username = await ChallengeService.getUsername();
+			let password = await ChallengeService.getPassword();
+			await driver.get("https://app.codesignal.com/login")
+			let usernameInput: WebElement = await driver.wait(until.elementLocated(By.xpath('//input[@name="username"]')), ChallengeService.TIMEOUT);
+			await usernameInput.sendKeys(username);
+			let passwordInput: WebElement = await driver.wait(until.elementLocated(By.xpath('//input[@name="password"]')), ChallengeService.TIMEOUT);
+			await passwordInput.sendKeys(password);
+			let signInButton: WebElement = await driver.wait(until.elementLocated(By.xpath('//*[@class="coder-login--button"]')), ChallengeService.TIMEOUT);
+			await signInButton.click();
+			await driver.wait(until.elementLocated(By.xpath('//h3[text()="Daily Challenge"]')), ChallengeService.TIMEOUT);
 			await driver.get(linkToChallenge);
 			let methodHeader: string = await ChallengeService.getMethodHeader(driver);
 			challenge.setName(ChallengeService.getChallengeName(methodHeader));
@@ -52,6 +62,24 @@ class ChallengeService {
 		}
 		return options;
 	}
+	private static async getUsername(): Promise<string> {
+		let username: string;
+		if (process.argv.length > 5) {
+			username = process.argv[5];
+		} else {
+			username = await UserInputService.get(UserInputService.INPUTS.USERNAME);
+		}
+		return username;
+	}
+	private static async getPassword(): Promise<string> {
+		let password: string;
+		if (process.argv.length > 6) {
+			password = process.argv[6];
+		} else {
+			password = await UserInputService.get(UserInputService.INPUTS.CHALLENGE_ID);
+		}
+		return password;
+	}
 	private static async getMethodHeader(driver: WebDriver): Promise<string> {
 		let languageDropdownButton: WebElement = await driver.wait(until.elementLocated(By.xpath('//div[@data-name="language-selector"]')), ChallengeService.TIMEOUT);
 		await languageDropdownButton.click();
@@ -78,7 +106,7 @@ class ChallengeService {
 	}
 	private static async getTestCases(driver: WebDriver, testCaseArgumentTypes: TestCaseArgumentTypesResult): Promise<TestCase[]> {
 		let testCases: TestCase[] = [];
-		let testCaseWebElements: WebElement[] = await driver.wait(until.elementsLocated(By.xpath('//div[@class="accordion--head" and child::div/span[@class="-layout-h -center -space-h-8" and not(child::div)]]')), ChallengeService.TIMEOUT);
+		let testCaseWebElements: WebElement[] = await driver.wait(until.elementsLocated(By.xpath('//div[contains(@class, "accordion") and contains(@class, "-theme-dark-blue") and child::div[@class="accordion--head" and child::div/span[@class="-layout-h -center -space-h-8" and not(div/div[contains(@class, "icon")])]]]')), ChallengeService.TIMEOUT);
 		for (const testCaseWebElement of testCaseWebElements) {
 			testCases.push(await ChallengeService.getTestCase(driver, testCaseWebElement, testCaseArgumentTypes));
 		}
@@ -99,7 +127,8 @@ class ChallengeService {
 		return inputs;
 	}
 	private static async getTestCaseOutput(driver: WebDriver, outputType: string): Promise<TestCaseArgument> {
-		let outputWebElement: WebElement = await driver.findElement(By.xpath('//pre[contains(@class, "task-tests--value") and contains(@class, "-answer")]'));
+		let outputWebElement: WebElement = await driver.wait(until.elementLocated(By.xpath('//pre[contains(@class, "task-tests--value") and contains(@class, "-answer")]')), ChallengeService.TIMEOUT);
+		// let outputWebElement: WebElement = await driver.findElement(By.xpath('//pre[contains(@class, "task-tests--value") and contains(@class, "-answer")]'));
 		return new TestCaseArgument(await outputWebElement.getAttribute('innerText'), outputType);
 	}
 }

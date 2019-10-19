@@ -10,18 +10,18 @@
   },
   "author": "jimmynguyen",
   "dependencies": {
-    "chromedriver": "^2.46.0",
-    "prompts": "^2.0.4",
-    "rimraf": "^2.6.3",
-    "selenium-webdriver": "^4.0.0-alpha.1",
+    "chromedriver": "^77.0.0",
+    "prompts": "^2.2.1",
+    "rimraf": "^2.7.1",
+    "selenium-webdriver": "^4.0.0-alpha.5",
     "sprintf-js": "^1.1.2"
   },
   "devDependencies": {
-    "@types/node": "^11.12.2",
+    "@types/node": "^11.13.22",
     "@types/prompts": "^1.2.0",
     "@types/rimraf": "^2.0.2",
-    "@types/selenium-webdriver": "^4.0.0",
+    "@types/selenium-webdriver": "^4.0.5",
     "@types/sprintf-js": "^1.1.2",
-    "typescript": "^3.4.1"
+    "typescript": "^3.6.4"
   }
 }

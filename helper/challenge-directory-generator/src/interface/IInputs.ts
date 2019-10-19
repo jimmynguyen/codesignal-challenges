@@ -1,6 +1,8 @@
 import * as prompts from 'prompts';
 
 interface IInputs {
+	USERNAME: prompts.PromptObject<string>;
+	PASSWORD: prompts.PromptObject<string>;
 	CHALLENGE_ID: prompts.PromptObject<string>;
 	LANGUAGE: prompts.PromptObject<string>;
 	LANGUAGE_FULL_NAME: prompts.PromptObject<string>;
