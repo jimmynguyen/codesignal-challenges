@@ -1,0 +1,1 @@
+javac PrimeFactors2.java && java -ea PrimeFactors2
