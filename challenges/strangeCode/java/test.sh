@@ -1,0 +1,1 @@
+javac StrangeCode.java && java -ea StrangeCode

@@ -1,0 +1,1 @@
+scalac strangeCode.scala && scala strangeCode
