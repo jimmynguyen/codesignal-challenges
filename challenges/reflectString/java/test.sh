@@ -1,0 +1,1 @@
+javac ReflectString.java && java -ea ReflectString

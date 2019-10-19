@@ -1,0 +1,1 @@
+scalac reflectString.scala && scala reflectString
