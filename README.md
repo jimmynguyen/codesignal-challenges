@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [deleteDigit](https://app.codesignal.com/challenge/m399dDgJDCeQA6jF5) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteDigit/octave) |
 | [strangeCode](https://app.codesignal.com/challenge/avRcKBznbsoA9Hk3T) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/strangeCode/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/strangeCode/scala) |
 | [minimalMultiple](https://app.codesignal.com/challenge/mdLiKRe5bDDPYmvTN) | [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/minimalMultiple/scala) |
 | [findSquareSide](https://app.codesignal.com/challenge/mCGWhBSaQ2nY2ZoiC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findSquareSide/octave) |
