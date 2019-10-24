@@ -1,0 +1,1 @@
+javac ExtractEachKth.java && java -ea ExtractEachKth
