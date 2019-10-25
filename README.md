@@ -5,6 +5,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | Challenge | Solution |
 | --------- | -------- |
 | [equationSolutions](https://app.codesignal.com/challenge/4TDbzaLfpySTBmCuF) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equationSolutions/octave) |
+| [dotProduct](https://app.codesignal.com/challenge/QR2CL6wQadp9R6w8Y) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/dotProduct/java) |
 | [extractEachKth](https://app.codesignal.com/challenge/j9JSTTntsnq8xRCgZ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/scala) |
 | [splitAddress](https://app.codesignal.com/challenge/8ezof2mziSN8ZbS9C) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/splitAddress/octave) |
 | [deleteDigit](https://app.codesignal.com/challenge/m399dDgJDCeQA6jF5) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteDigit/octave) |

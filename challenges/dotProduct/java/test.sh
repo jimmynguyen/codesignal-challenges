@@ -1,0 +1,1 @@
+javac DotProduct.java && java -ea DotProduct
