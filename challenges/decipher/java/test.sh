@@ -1,0 +1,1 @@
+javac Decipher.java && java -ea Decipher
