@@ -1,5 +1,6 @@
 ### Repository ###
 trash
+**/typescript/*.js
 
 ### OS X ###
 .DS_Store
