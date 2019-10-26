@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [parkingCost](https://app.codesignal.com/challenge/vjsPvZ3hv5ZdxxYzC) | [TypeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/parkingCost/typescript) |
 | [neighbouringElements](https://app.codesignal.com/challenge/9udjeSqmmRnC9TTJx) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/neighbouringElements/octave) |
 | [piecesOfDistinctLengths](https://app.codesignal.com/challenge/E6XCNZEDWrNCboYAs) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/piecesOfDistinctLengths/octave) |
 | [isSumOfConsecutive](https://app.codesignal.com/challenge/X4Qpbuu8A4xiiNdc7) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive/scala) |

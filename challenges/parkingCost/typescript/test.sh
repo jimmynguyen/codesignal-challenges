@@ -1,0 +1,1 @@
+tsc parkingCost.ts && node parkingCost.js
