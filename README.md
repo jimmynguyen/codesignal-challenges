@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [differentSubstringsTrie](https://app.codesignal.com/challenge/j7RqxeRQ9BooqLYod) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/differentSubstringsTrie/java) |
 | [parkingCost](https://app.codesignal.com/challenge/vjsPvZ3hv5ZdxxYzC) | [TypeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/parkingCost/typescript) |
 | [neighbouringElements](https://app.codesignal.com/challenge/9udjeSqmmRnC9TTJx) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/neighbouringElements/octave) |
 | [piecesOfDistinctLengths](https://app.codesignal.com/challenge/E6XCNZEDWrNCboYAs) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/piecesOfDistinctLengths/octave) |

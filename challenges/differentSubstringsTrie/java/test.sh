@@ -1,0 +1,1 @@
+javac DifferentSubstringsTrie.java && java -ea DifferentSubstringsTrie
