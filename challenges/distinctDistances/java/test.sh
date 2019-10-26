@@ -1,0 +1,1 @@
+javac DistinctDistances.java && java -ea DistinctDistances
