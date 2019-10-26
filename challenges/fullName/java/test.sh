@@ -1,0 +1,1 @@
+javac FullName.java && java -ea FullName

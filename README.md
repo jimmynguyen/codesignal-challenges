@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [fullName](https://app.codesignal.com/challenge/Pq5wxnanyr2ktSmkn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fullName/java) |
 | [decipher](https://app.codesignal.com/challenge/gigWoXtAmM6LGqqY9) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/decipher/java) |
 | [evenNumbersBeforeFixed](https://app.codesignal.com/challenge/aEmhz9YNDsHTALTmh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/evenNumbersBeforeFixed/java) |
 | [higherVersion](https://app.codesignal.com/challenge/cGQt9dgZZ6MGsbPMc) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/higherVersion/octave) |
