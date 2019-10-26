@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [waterTubes](https://app.codesignal.com/challenge/Me7huwYtYN5YYA2kq) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/waterTubes/java) |
 | [robotPath](https://app.codesignal.com/challenge/d7cXfpka2JhuhejxQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/robotPath/java) |
 | [numberOfEvenDigits](https://app.codesignal.com/challenge/8yxaZyGyWGFsvqNhm) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/numberOfEvenDigits/octave) |
 | [candles](https://app.codesignal.com/challenge/CzgYv3fToYH33epxx) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/candles/js) |

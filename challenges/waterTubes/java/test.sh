@@ -1,0 +1,1 @@
+javac WaterTubes.java && java -ea WaterTubes
