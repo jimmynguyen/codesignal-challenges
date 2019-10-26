@@ -1,0 +1,1 @@
+javac EvenNumbersBeforeFixed.java && java -ea EvenNumbersBeforeFixed
