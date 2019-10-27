@@ -1,0 +1,1 @@
+javac VolleyballPositions.java && java -ea VolleyballPositions
