@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [rightTriangle](https://app.codesignal.com/challenge/XMnPmmmK7cJEKL9vu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/rightTriangle/coffeescript) |
 | [sumOfPowers](https://app.codesignal.com/challenge/LTQSYDDMMQxkoY5bK) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfPowers/coffeescript) |
 | [firstReverseTry](https://app.codesignal.com/challenge/DHppREaEB3hwT8rXu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstReverseTry/coffeescript) |
 | [arithmeticProgression](https://app.codesignal.com/challenge/6TbBh7yCjoPk9D7xE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticProgression/java) |

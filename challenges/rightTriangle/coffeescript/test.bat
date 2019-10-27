@@ -1,0 +1,1 @@
+coffee --compile rightTriangle.coffee && node rightTriangle.js
