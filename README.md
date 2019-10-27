@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [sumOfDivisors](https://app.codesignal.com/challenge/jwAXkHKwZ5CCX6HjH) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfDivisors/java) |
 | [volleyballPositions](https://app.codesignal.com/challenge/FkRMrjSQ8YH8HwMMq) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/volleyballPositions/java) |
 | [squarePerimeter](https://app.codesignal.com/challenge/Yrs5yndP3Gy25PhvW) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/squarePerimeter/coffeescript) |
 | [knapsackLight2](https://app.codesignal.com/challenge/yWFjqF4kSfo3CKXtp) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight2/js) |
