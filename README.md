@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [knapsackLight2](https://app.codesignal.com/challenge/yWFjqF4kSfo3CKXtp) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight2/js) |
 | [isLuckyNumber](https://app.codesignal.com/challenge/Qaip9FfLWnHmQCGKZ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isLuckyNumber/octave) |
 | [electionsWinners](https://app.codesignal.com/challenge/KbNFxbXFsiokxCDJF) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/electionsWinners/js) |
 | [waterTubes](https://app.codesignal.com/challenge/Me7huwYtYN5YYA2kq) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/waterTubes/java) |
