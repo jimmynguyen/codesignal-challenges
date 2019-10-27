@@ -1,0 +1,1 @@
+coffee --compile squarePerimeter.coffee && node squarePerimeter.js

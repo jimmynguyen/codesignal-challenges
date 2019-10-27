@@ -1,5 +1,6 @@
 ### Repository ###
 trash
+**/coffeescript/*.js
 **/typescript/*.js
 
 ### OS X ###
