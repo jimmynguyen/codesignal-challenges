@@ -1,0 +1,1 @@
+coffee --compile firstReverseTry.coffee && node firstReverseTry.js

@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [firstReverseTry](https://app.codesignal.com/challenge/DHppREaEB3hwT8rXu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstReverseTry/coffeescript) |
 | [arithmeticProgression](https://app.codesignal.com/challenge/6TbBh7yCjoPk9D7xE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticProgression/java) |
 | [sumOfDivisors](https://app.codesignal.com/challenge/jwAXkHKwZ5CCX6HjH) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfDivisors/java) |
 | [volleyballPositions](https://app.codesignal.com/challenge/FkRMrjSQ8YH8HwMMq) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/volleyballPositions/java) |
