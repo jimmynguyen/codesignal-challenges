@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [matrixTrace](https://app.codesignal.com/challenge/YCszRN5FH58AuEdks) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/matrixTrace/octave) |
 | [rightTriangle](https://app.codesignal.com/challenge/XMnPmmmK7cJEKL9vu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/rightTriangle/coffeescript) |
 | [sumOfPowers](https://app.codesignal.com/challenge/LTQSYDDMMQxkoY5bK) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfPowers/coffeescript) |
 | [firstReverseTry](https://app.codesignal.com/challenge/DHppREaEB3hwT8rXu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstReverseTry/coffeescript) |
