@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [digitDistanceNumber](https://app.codesignal.com/challenge/TieSbaDHnbGyKjfKa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitDistanceNumber/octave) |
 | [htmlEndTagByStartTag](https://app.codesignal.com/challenge/6CH5C9bcLd9Pfoyk7) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/htmlEndTagByStartTag/octave) |
 | [isGeometricProgression](https://app.codesignal.com/challenge/osJK8YhviaN5bQT5m) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isGeometricProgression/octave) |
 | [matrixTrace](https://app.codesignal.com/challenge/YCszRN5FH58AuEdks) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/matrixTrace/octave) |
