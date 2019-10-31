@@ -1,0 +1,1 @@
+javac CountIncreasingSequences.java && java -ea CountIncreasingSequences
