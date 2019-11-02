@@ -1,0 +1,1 @@
+javac CheckPalindrome.java && java -ea CheckPalindrome
