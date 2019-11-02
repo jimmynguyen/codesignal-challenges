@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [alternatingSums](https://app.codesignal.com/challenge/ReDbsxeiSr3eKKczW) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/alternatingSums/octave) |
 | [newRoadSystem](https://app.codesignal.com/arcade/graphs-arcade/kingdom-roads/nCMisf4ZKpDLdHevE) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/newRoadSystem/octave) |
 | [unusualDictionary](https://app.codesignal.com/challenge/EbMqajTbSWmhTcpoQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/unusualDictionary/java) |
 | [countIncreasingSequences](https://app.codesignal.com/challenge/C3AifYwjTZhJfpPjX) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countIncreasingSequences/java) |
