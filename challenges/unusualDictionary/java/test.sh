@@ -1,0 +1,1 @@
+javac UnusualDictionary.java && java -ea UnusualDictionary
