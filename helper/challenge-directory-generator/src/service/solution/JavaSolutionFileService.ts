@@ -10,7 +10,7 @@ import { FileService } from '../FileService';
 
 class JavaSolutionFileService extends FileService {
 	protected importTemplateString: string = 'import %s;\n';
-	protected getChallengeTestBashFileParameter(): string {
+	protected getChallengeTestScriptFileParameter(): string {
 		return this.challenge.getName().toPascalCase();
 	}
 	protected getMainSolutionFileName(): string {

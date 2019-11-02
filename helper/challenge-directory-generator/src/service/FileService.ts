@@ -63,7 +63,7 @@ abstract class FileService {
 			rimraf.sync(this.challengeSolutionDirPath);
 		}
 		fs.mkdirSync(this.challengeSolutionDirPath);
-		this.createChallengeTestBashFile();
+		this.createChallengeTestScriptFiles();
 		this.createMainSolutionFile();
 		this.copyChallengeSolutionFiles();
 	}
@@ -95,20 +95,22 @@ abstract class FileService {
 		const readmeFilePath = sprintf('%sREADME.md', this.challengeDirPath);
 		fs.writeFileSync(readmeFilePath, sprintf('# %s\n\nLink to Challenge: [%s](%s)', this.challenge.getName(), this.challenge.getLink(), this.challenge.getLink()));
 	}
-	private async createChallengeTestBashFile(): Promise<void> {
-		const testBashFile: string = await this.getChallengeTestBashFile();
+	private async createChallengeTestScriptFiles(): Promise<void> {
+		const testScriptFile: string = await this.getChallengeTestScriptFile();
 		const testBashFilePath = sprintf('%stest.sh', this.challengeSolutionDirPath);
-		fs.writeFileSync(testBashFilePath, testBashFile);
+		const testBatFilePath = sprintf('%stest.bat', this.challengeSolutionDirPath);
+		fs.writeFileSync(testBashFilePath, testScriptFile);
+		fs.writeFileSync(testBatFilePath, testScriptFile);
 	}
-	protected async getChallengeTestBashFile(): Promise<string> {
+	protected async getChallengeTestScriptFile(): Promise<string> {
 		const testBashFilePath: string = sprintf('%stest.sh', this.resourcesDirPath);
 		if (this.exists(testBashFilePath)) {
 			let testBashFile: string = this.readFile(testBashFilePath);
-			return testBashFile.split('%s').join(this.getChallengeTestBashFileParameter());
+			return testBashFile.split('%s').join(this.getChallengeTestScriptFileParameter());
 		}
 		return await UserInputService.get(UserInputService.INPUTS.TEST_BASH_FILE);
 	}
-	protected getChallengeTestBashFileParameter(): string {
+	protected getChallengeTestScriptFileParameter(): string {
 		return this.challenge.getName();
 	}
 	private copyChallengeSolutionFiles(): void {

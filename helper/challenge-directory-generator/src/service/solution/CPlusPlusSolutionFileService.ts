@@ -9,7 +9,7 @@ import { JavaSolutionFileService } from './JavaSolutionFileService';
 class CPlusPlusSolutionFileService extends JavaSolutionFileService {
 	private functionImports: string[] = [];
 	protected importTemplateString: string = '#include <%s>\n';
-	protected getChallengeTestBashFileParameter(): string {
+	protected getChallengeTestScriptFileParameter(): string {
 		return this.challenge.getName();
 	}
 	protected getMainSolutionFileName(): string {
