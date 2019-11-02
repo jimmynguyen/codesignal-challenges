@@ -1,14 +1,22 @@
 import { ILanguage } from '../interface/ILanguage';
 import { TestCase } from './TestCase';
+import { ChallengeService } from '../service/ChallengeService';
 
 class Challenge {
+	private static SITE_URL: string = 'https://app.codesignal.com';
+	private static CHALLENGE_URL_TEMPLATE: string = Challenge.SITE_URL + '/challenge/{challengeId}';
 	private id: string = '';
 	private name: string = '';
 	private link: string = '';
 	private language: ILanguage;
 	private testCases: TestCase[] = [];
-	public constructor(id: string, language: ILanguage) {
-		this.id = id;
+	public constructor(idOrLink: string, language: ILanguage) {
+		if (idOrLink.indexOf(Challenge.SITE_URL) > -1) {
+			this.link = idOrLink;
+		} else {
+			this.id = idOrLink;
+			this.link = Challenge.CHALLENGE_URL_TEMPLATE.replace('{challengeId}', idOrLink);
+		}
 		this.language = language;
 	}
 	public getId(): string {

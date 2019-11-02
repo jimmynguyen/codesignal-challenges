@@ -9,14 +9,11 @@ import { ILanguage } from '../interface/ILanguage';
 import { UserInputService } from './UserInputService';
 
 class ChallengeService {
-	private static URL_TEMPLATE: string = 'https://app.codesignal.com/challenge/{challengeId}';
 	private static WINDOW_SIZE: any = { width: 1280, height: 960 };
 	private static TIMEOUT: number = 5000;
 	public static async getChallengeByLanguage(language: ILanguage): Promise<Challenge> {
-		let challenge: Challenge = new Challenge(await ChallengeService.getChallengeId(), language);
+		let challenge: Challenge = new Challenge(await ChallengeService.getChallengeIdOrLink(), language);
 		let driver: WebDriver = await new Builder().withCapabilities(Capabilities.chrome()).setChromeOptions(await ChallengeService.getChromeOptions()).build();
-		const linkToChallenge = ChallengeService.URL_TEMPLATE.replace('{challengeId}', challenge.getId());
-		challenge.setLink(linkToChallenge);
 		try {
 			let username = await ChallengeService.getUsername();
 			let password = await ChallengeService.getPassword();
@@ -28,7 +25,7 @@ class ChallengeService {
 			let signInButton: WebElement = await driver.wait(until.elementLocated(By.xpath('//*[@class="coder-login--button"]')), ChallengeService.TIMEOUT);
 			await signInButton.click();
 			await driver.wait(until.elementLocated(By.xpath('//h3[text()="Daily Challenge"]')), ChallengeService.TIMEOUT);
-			await driver.get(linkToChallenge);
+			await driver.get(challenge.getLink());
 			let methodHeader: string = await ChallengeService.getMethodHeader(driver);
 			challenge.setName(ChallengeService.getChallengeName(methodHeader));
 			let testCaseArgumentTypes: TestCaseArgumentTypesResult = ChallengeService.getTestCaseArgumentTypes(methodHeader);
@@ -38,14 +35,14 @@ class ChallengeService {
 		}
 		return challenge;
 	}
-	private static async getChallengeId(): Promise<string> {
-		let challengeId: string;
+	private static async getChallengeIdOrLink(): Promise<string> {
+		let challengeIdOrLink: string;
 		if (process.argv.length > 3) {
-			challengeId = process.argv[3];
+			challengeIdOrLink = process.argv[3];
 		} else {
-			challengeId = await UserInputService.get(UserInputService.INPUTS.CHALLENGE_ID);
+			challengeIdOrLink = await UserInputService.get(UserInputService.INPUTS.CHALLENGE_ID);
 		}
-		return challengeId;
+		return challengeIdOrLink;
 	}
 	private static async getChromeOptions(): Promise<chrome.Options> {
 		let options: chrome.Options;
