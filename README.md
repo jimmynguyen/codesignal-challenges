@@ -5,6 +5,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | Challenge | Solution |
 | --------- | -------- |
 | [add](https://app.codesignal.com/arcade/intro/level-1/jwr339Kq6e3LQTsfa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/add/octave) |
+| [adjacentElementsProduct](https://app.codesignal.com/arcade/intro/level-2/xzKiBHjhoinnpdh6m) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/adjacentElementsProduct/java) |
 | [alternatingSums](https://app.codesignal.com/challenge/ReDbsxeiSr3eKKczW) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/alternatingSums/octave) |
 | [arithmeticProgression](https://app.codesignal.com/challenge/6TbBh7yCjoPk9D7xE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticProgression/java) |
 | [arraySumAdjacentDifference](https://app.codesignal.com/challenge/h7i7qTRoon4KSekYk) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arraySumAdjacentDifference/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arraySumAdjacentDifference/octave) |
