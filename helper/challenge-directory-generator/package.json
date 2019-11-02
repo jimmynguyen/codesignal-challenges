@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "prestart": "tsc",
-    "start": "node ./out/app.js"
+    "start": "node ./out/app.js",
+    "poststart": "cd ../scripts && octave sortChallenges.m && cd ../challenge-directory-generator"
   },
   "author": "jimmynguyen",
   "dependencies": {
