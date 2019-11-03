@@ -1,6 +1,7 @@
 # commonCharacterCount
 
 Link to Challenge: [https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud](https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud)
+Link to Challenge: [https://app.codesignal.com/arcade/intro/level-3/JKKuHJknZNj4YGL32](https://app.codesignal.com/arcade/intro/level-3/JKKuHJknZNj4YGL32)
 
 ## Challenge Description
 

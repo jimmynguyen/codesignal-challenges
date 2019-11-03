@@ -1,0 +1,1 @@
+javac CommonCharacterCount.java && java -ea CommonCharacterCount
