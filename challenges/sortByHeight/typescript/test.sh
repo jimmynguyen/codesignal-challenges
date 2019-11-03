@@ -1,0 +1,1 @@
+tsc sortByHeight.ts && node sortByHeight.js
