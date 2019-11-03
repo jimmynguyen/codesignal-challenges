@@ -1,0 +1,1 @@
+javac IsLucky.java && java -ea IsLucky
