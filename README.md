@@ -6,6 +6,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | --------- | -------- |
 | [add](https://app.codesignal.com/arcade/intro/level-1/jwr339Kq6e3LQTsfa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/add/octave) |
 | [adjacentElementsProduct](https://app.codesignal.com/arcade/intro/level-2/xzKiBHjhoinnpdh6m) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/adjacentElementsProduct/java) |
+| [allLongestStrings](https://app.codesignal.com/arcade/intro/level-3/fzsCQGYbxaEcTr2bL) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/allLongestStrings/octave) |
 | [almostIncreasingSequence](https://app.codesignal.com/arcade/intro/level-2/2mxbGwLzvkTCKAJMG) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/almostIncreasingSequence/octave) |
 | [alternatingSums](https://app.codesignal.com/challenge/ReDbsxeiSr3eKKczW) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/alternatingSums/octave) |
 | [arithmeticProgression](https://app.codesignal.com/challenge/6TbBh7yCjoPk9D7xE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticProgression/java) |
