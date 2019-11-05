@@ -54,7 +54,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [isSumOfConsecutive2](https://app.codesignal.com/challenge/CY2qYcwMqPxp6Rsst) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive2/octave) |
 | [isTandemRepeat](https://app.codesignal.com/challenge/b88Cu9b88ymnXxw7h) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isTandemRepeat) |
 | [knapsackLight2](https://app.codesignal.com/challenge/yWFjqF4kSfo3CKXtp) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight2/js) |
-| [largestNumber](https://app.codesignal.com/challenge/voofLc2giXxkixsti) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestNumber) |
+| [largestNumber](https://app.codesignal.com/challenge/voofLc2giXxkixsti) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestNumber/octave), [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestNumber) |
 | [listWithoutLoop](https://app.codesignal.com/challenge/dRQcqkynqvAHHkgtv) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/listWithoutLoop) |
 | [makeArrayConsecutive2](https://app.codesignal.com/arcade/intro/level-2/bq2XnSr5kbHqpHGJC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/makeArrayConsecutive2/octave) |
 | [matrixElementsSum](https://app.codesignal.com/arcade/intro/level-2/xskq4ZxLyqQMCLshr) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/matrixElementsSum/octave) |
