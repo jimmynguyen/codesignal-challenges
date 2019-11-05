@@ -1,0 +1,1 @@
+javac ArrayMinimumIndex.java && java -ea ArrayMinimumIndex
