@@ -1,0 +1,1 @@
+javac BishopAndPawn.java && java -ea BishopAndPawn
