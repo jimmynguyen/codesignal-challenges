@@ -1,0 +1,1 @@
+javac MaxMultiple.java && java -ea MaxMultiple

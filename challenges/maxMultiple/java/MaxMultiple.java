@@ -11,9 +11,14 @@ public class MaxMultiple {
 			int actualOutput = maxMultiple(input0[i], input1[i]);
 			assert actualOutput == expectedOutput[i] : String.format("maxMultiple(%d, %d) returned %d, but expected %d", input0[i], input1[i], actualOutput, expectedOutput[i]);
 		});
+		System.out.println(String.format("PASSES %d out of %d tests", expectedOutput.length, expectedOutput.length));
 	}
 
-	public static int maxMultiple(int d, int b) {
+	public static int maxMultiple(int divisor, int bound) {
+		return bound / divisor * divisor;
+	}
+
+	public static int maxMultiple2(int d, int b) {
 		while (b >= 1)
 			if (b%d==0)
 				break;
