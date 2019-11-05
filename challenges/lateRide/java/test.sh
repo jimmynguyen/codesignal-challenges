@@ -1,0 +1,1 @@
+javac LateRide.java && java -ea LateRide
