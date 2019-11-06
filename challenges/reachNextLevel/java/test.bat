@@ -1,0 +1,1 @@
+javac ReachNextLevel.java && java -ea ReachNextLevel
