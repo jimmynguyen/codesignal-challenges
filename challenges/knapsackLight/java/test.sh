@@ -1,0 +1,1 @@
+javac KnapsackLight.java && java -ea KnapsackLight
