@@ -37,6 +37,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [equationSolutions](https://app.codesignal.com/challenge/4TDbzaLfpySTBmCuF) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equationSolutions/octave) |
 | [evenNumbersBeforeFixed](https://app.codesignal.com/challenge/aEmhz9YNDsHTALTmh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/evenNumbersBeforeFixed/java) |
 | [exerciseElaboration](https://app.codesignal.com/challenge/Ght3b8yAccvEpNDSc) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/exerciseElaboration/python3) |
+| [extraNumber](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/sgDWKCFQHHi5D3Szj) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extraNumber/java) |
 | [extractEachKth](https://app.codesignal.com/challenge/j9JSTTntsnq8xRCgZ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/scala) |
 | [fibonacciSum](https://app.codesignal.com/challenge/F54etL8JkcJtQpKAZ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fibonacciSum/octave) |
 | [findEmailDomain](https://app.codesignal.com/challenge/HHKmRM9PLczxAFFTy) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findEmailDomain/octave) |

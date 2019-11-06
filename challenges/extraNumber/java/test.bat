@@ -1,0 +1,1 @@
+javac ExtraNumber.java && java -ea ExtraNumber
