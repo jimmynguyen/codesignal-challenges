@@ -1,0 +1,1 @@
+javac IsInfiniteProcess.java && java -ea IsInfiniteProcess
