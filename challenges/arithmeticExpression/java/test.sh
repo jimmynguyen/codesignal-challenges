@@ -1,0 +1,1 @@
+javac ArithmeticExpression.java && java -ea ArithmeticExpression
