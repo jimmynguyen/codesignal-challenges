@@ -1,0 +1,1 @@
+javac PhoneCall.java && java -ea PhoneCall
