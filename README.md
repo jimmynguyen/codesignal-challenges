@@ -38,6 +38,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [divNumber](https://app.codesignal.com/challenge/hJWTa9EzRsQFKF5Ju) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divNumber/java) |
 | [dotProduct](https://app.codesignal.com/challenge/QR2CL6wQadp9R6w8Y) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/dotProduct/java) |
 | [electionsWinners](https://app.codesignal.com/challenge/KbNFxbXFsiokxCDJF) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/electionsWinners/js) |
+| [equalPairOfBits](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/6SLJChm9N3fEgr2R7) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equalPairOfBits/python3) |
 | [equationSolutions](https://app.codesignal.com/challenge/4TDbzaLfpySTBmCuF) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equationSolutions/octave) |
 | [evenNumbersBeforeFixed](https://app.codesignal.com/challenge/aEmhz9YNDsHTALTmh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/evenNumbersBeforeFixed/java) |
 | [exerciseElaboration](https://app.codesignal.com/challenge/Ght3b8yAccvEpNDSc) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/exerciseElaboration/python3) |
