@@ -29,6 +29,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [decipher](https://app.codesignal.com/challenge/gigWoXtAmM6LGqqY9) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/decipher/java) |
 | [deleteDigit](https://app.codesignal.com/challenge/m399dDgJDCeQA6jF5) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteDigit/octave) |
 | [deleteWhitespaces](https://app.codesignal.com/challenge/JYMbCfBwmwqWdjgeY) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteWhitespaces/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteWhitespaces/octave) |
+| [differentRightmostBit](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/whz5JzszYTdXW6aNA) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/differentRightmostBit/python3) |
 | [differentSubstringsTrie](https://app.codesignal.com/challenge/j7RqxeRQ9BooqLYod) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/differentSubstringsTrie/java) |
 | [differentValues](https://app.codesignal.com/challenge/mrAXkgwfH5a9HCyuL) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/differentValues) |
 | [digitDistanceNumber](https://app.codesignal.com/challenge/TieSbaDHnbGyKjfKa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitDistanceNumber/octave) |
