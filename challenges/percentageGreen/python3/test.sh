@@ -1,1 +1,1 @@
-python3 percentageGreen.py
+python percentageGreen.py

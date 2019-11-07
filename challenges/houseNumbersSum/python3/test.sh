@@ -1,1 +1,1 @@
-python3 houseNumbersSum.py
+python houseNumbersSum.py

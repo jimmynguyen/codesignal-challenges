@@ -1,1 +1,1 @@
-python3 killKthBit.py
+python killKthBit.py

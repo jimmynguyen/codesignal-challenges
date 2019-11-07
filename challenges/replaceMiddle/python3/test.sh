@@ -1,1 +1,1 @@
-python3 replaceMiddle.py
+python replaceMiddle.py

@@ -1,1 +1,1 @@
-python3 symbolsPermutation.py
+python symbolsPermutation.py

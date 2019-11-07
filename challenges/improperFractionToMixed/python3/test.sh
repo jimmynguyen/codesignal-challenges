@@ -1,1 +1,1 @@
-python3 improperFractionToMixed.py
+python improperFractionToMixed.py

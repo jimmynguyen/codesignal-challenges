@@ -1,1 +1,1 @@
-python3 exerciseElaboration.py
+python exerciseElaboration.py

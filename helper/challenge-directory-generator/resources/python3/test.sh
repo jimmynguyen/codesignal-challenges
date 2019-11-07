@@ -1,1 +1,1 @@
-python3 %s.py
+python %s.py

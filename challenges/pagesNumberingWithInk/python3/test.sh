@@ -1,1 +1,1 @@
-python3 pagesNumberingWithInk.py
+python pagesNumberingWithInk.py

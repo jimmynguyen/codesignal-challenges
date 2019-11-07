@@ -1,1 +1,1 @@
-python3 metroCard.py
+python metroCard.py

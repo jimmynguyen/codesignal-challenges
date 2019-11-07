@@ -1,1 +1,1 @@
-python3 specialPolynomial.py
+python specialPolynomial.py
