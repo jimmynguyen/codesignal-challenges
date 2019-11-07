@@ -1,0 +1,1 @@
+javac DivNumber.java && java -ea DivNumber
