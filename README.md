@@ -93,6 +93,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [rightTriangle](https://app.codesignal.com/challenge/XMnPmmmK7cJEKL9vu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/rightTriangle/coffeescript) |
 | [robotPath](https://app.codesignal.com/challenge/d7cXfpka2JhuhejxQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/robotPath/java) |
 | [seatsInTheater](https://app.codesignal.com/arcade/code-arcade/intro-gates/bszFiQAog96G9CXKg) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/seatsInTheater/java) |
+| [secondRightmostZeroBit](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/9nSj6DgqLDsBePJha) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/secondRightmostZeroBit/python3) |
 | [shapeArea](https://app.codesignal.com/arcade/intro/level-2/yuGuHvcCaFCKk56rJ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/shapeArea/octave) |
 | [solarSystemBallistics](https://app.codesignal.com/challenge/7pHPAEfxbJPs8z4GR) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/solarSystemBallistics) |
 | [sortByHeight](https://app.codesignal.com/arcade/intro/level-3/D6qmdBL2NYz49XHwM) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sortByHeight/octave), [TypeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sortByHeight/typescript) |
