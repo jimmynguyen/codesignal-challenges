@@ -25,6 +25,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [computeDefiniteIntegral](https://app.codesignal.com/challenge/i7AAfRDur9TybJQ2P) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/octave) |
 | [countDistantPairs](https://app.codesignal.com/challenge/Npv4LdeuiEZBbw2JF) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countDistantPairs/java) |
 | [countIncreasingSequences](https://app.codesignal.com/challenge/C3AifYwjTZhJfpPjX) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countIncreasingSequences/java) |
+| [countSumOfTwoRepresentations2](https://app.codesignal.com/arcade/code-arcade/loop-tunnel/hBw5BJiZ4LmXcy92u) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countSumOfTwoRepresentations2/java) |
 | [cubeWorld](https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/cubeWorld) |
 | [decipher](https://app.codesignal.com/challenge/gigWoXtAmM6LGqqY9) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/decipher/java) |
 | [deleteDigit](https://app.codesignal.com/challenge/m399dDgJDCeQA6jF5) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteDigit/octave) |

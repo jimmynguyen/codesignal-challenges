@@ -1,0 +1,1 @@
+javac CountSumOfTwoRepresentations2.java && java -ea CountSumOfTwoRepresentations2
