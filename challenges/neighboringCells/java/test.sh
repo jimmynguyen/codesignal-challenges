@@ -1,0 +1,1 @@
+javac NeighboringCells.java && java -ea NeighboringCells
