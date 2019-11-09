@@ -1,0 +1,1 @@
+scalac sumOfCubes.scala && scala sumOfCubes

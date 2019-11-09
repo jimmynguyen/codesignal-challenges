@@ -1,0 +1,1 @@
+javac SumOfCubes.java && java -ea SumOfCubes
