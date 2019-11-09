@@ -1,0 +1,1 @@
+javac LeastFactorial.java && java -ea LeastFactorial
