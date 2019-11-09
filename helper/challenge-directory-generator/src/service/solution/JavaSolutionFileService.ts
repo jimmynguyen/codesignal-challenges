@@ -120,7 +120,7 @@ class JavaSolutionFileService extends FileService {
 	protected setActualExpectedComparison(argumentsMap: IArgumentsMap, imports: string[]): void {
 		const outputType: string = this.challenge.getTestCases()[0].getOutput().getType();
 		if (this.isArray(outputType)) {
-			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'Arrays.equals(actualOutput, expectedOutput[i])';
+			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'Arrays.deepEquals(actualOutput, expectedOutput[i])';
 			imports.push('java.util.Arrays');
 		} else if (this.isObject(outputType)) {
 			argumentsMap.ACTUAL_EXPECTED_COMPARISON = 'actualOutput.equals(expectedOutput[i])';

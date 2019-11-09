@@ -119,14 +119,13 @@ class ChallengeService {
 		let inputs: TestCaseArgument[] = [];
 		let inputWebElements: WebElement[] = await driver.findElements(By.xpath('//pre[contains(@class, "task-tests--value") and not(contains(@class, "-answer"))]/div'));
 		for (const [index, inputWebElement] of inputWebElements.entries()) {
-			inputs.push(new TestCaseArgument((await inputWebElement.getAttribute('innerText')).split(': ')[1].replace(/(\r\n|\n|\r)/gm,'').replace(/ +(?= )/g,''), inputTypes[index]));
+			inputs.push(new TestCaseArgument((await inputWebElement.getAttribute('innerText')).split(':')[1].trim().replace(/(\r\n|\n|\r)/gm,'').replace(/ +(?= )/g,''), inputTypes[index]));
 		}
 		return inputs;
 	}
 	private static async getTestCaseOutput(driver: WebDriver, outputType: string): Promise<TestCaseArgument> {
 		let outputWebElement: WebElement = await driver.wait(until.elementLocated(By.xpath('//pre[contains(@class, "task-tests--value") and contains(@class, "-answer")]')), ChallengeService.TIMEOUT);
-		// let outputWebElement: WebElement = await driver.findElement(By.xpath('//pre[contains(@class, "task-tests--value") and contains(@class, "-answer")]'));
-		return new TestCaseArgument(await outputWebElement.getAttribute('innerText'), outputType);
+		return new TestCaseArgument((await outputWebElement.getAttribute('innerText')).trim().replace(/(\r\n|\n|\r)/gm,'').replace(/ +(?= )/g,''), outputType);
 	}
 }
 
