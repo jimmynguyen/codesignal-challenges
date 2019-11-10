@@ -70,6 +70,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [lateRide](https://app.codesignal.com/arcade/code-arcade/intro-gates/aiKck9MwwAKyF8D4L) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/lateRide/java) |
 | [leastFactorial](https://app.codesignal.com/arcade/code-arcade/loop-tunnel/7BFPq6TpsNjzgcpXy) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/leastFactorial/java) |
 | [listWithoutLoop](https://app.codesignal.com/challenge/dRQcqkynqvAHHkgtv) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/listWithoutLoop) |
+| [magicalWell](https://app.codesignal.com/arcade/code-arcade/loop-tunnel/LbuWRHnMoJH9SAo4o) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/magicalWell/python3) |
 | [makeArrayConsecutive2](https://app.codesignal.com/arcade/intro/level-2/bq2XnSr5kbHqpHGJC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/makeArrayConsecutive2/octave) |
 | [matrixElementsSum](https://app.codesignal.com/arcade/intro/level-2/xskq4ZxLyqQMCLshr) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/matrixElementsSum/octave) |
 | [matrixTrace](https://app.codesignal.com/challenge/YCszRN5FH58AuEdks) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/matrixTrace/octave) |
