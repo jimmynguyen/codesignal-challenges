@@ -62,6 +62,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [isPermutation](https://app.codesignal.com/challenge/r3f8PoCN4YCn634an) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isPermutation/octave) |
 | [isSumOfConsecutive](https://app.codesignal.com/challenge/X4Qpbuu8A4xiiNdc7) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive/scala) |
 | [isSumOfConsecutive2](https://app.codesignal.com/challenge/CY2qYcwMqPxp6Rsst) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive2/octave) |
+| [isSuspiciousRespondent](https://app.codesignal.com/challenge/5vyWTp8qdYBZZ8BKb) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSuspiciousRespondent/python3) |
 | [isTandemRepeat](https://app.codesignal.com/challenge/b88Cu9b88ymnXxw7h) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isTandemRepeat) |
 | [killKthBit](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/b5z4P2r2CGCtf8HCR) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/killKthBit/python3) |
 | [knapsackLight](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/r9azLYp2BDZPyzaG2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight/java) |
