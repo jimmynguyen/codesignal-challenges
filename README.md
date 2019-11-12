@@ -68,6 +68,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [knapsackLight](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/r9azLYp2BDZPyzaG2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight/java) |
 | [knapsackLight2](https://app.codesignal.com/challenge/yWFjqF4kSfo3CKXtp) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight2/js) |
 | [largestNumber](https://app.codesignal.com/challenge/voofLc2giXxkixsti) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestNumber/octave), [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestNumber) |
+| [lastDigitRegExp](https://app.codesignal.com/challenge/i7XejhS888nXv9pnP) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/lastDigitRegExp/octave) |
 | [lateRide](https://app.codesignal.com/arcade/code-arcade/intro-gates/aiKck9MwwAKyF8D4L) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/lateRide/java) |
 | [leastFactorial](https://app.codesignal.com/arcade/code-arcade/loop-tunnel/7BFPq6TpsNjzgcpXy) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/leastFactorial/java) |
 | [listWithoutLoop](https://app.codesignal.com/challenge/dRQcqkynqvAHHkgtv) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/listWithoutLoop) |
