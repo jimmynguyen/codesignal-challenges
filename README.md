@@ -5,6 +5,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | Challenge | Solution |
 | --------- | -------- |
 | [add](https://app.codesignal.com/arcade/intro/level-1/jwr339Kq6e3LQTsfa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/add/octave) |
+| [addBorder](https://app.codesignal.com/challenge/kozrL9G9TzWwWpneJ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/addBorder/octave) |
 | [addTwoDigits](https://app.codesignal.com/arcade/code-arcade/intro-gates/wAGdN6FMPkx7WBq66) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/addTwoDigits/octave) |
 | [adjacentElementsProduct](https://app.codesignal.com/arcade/intro/level-2/xzKiBHjhoinnpdh6m) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/adjacentElementsProduct/java) |
 | [allLongestStrings](https://app.codesignal.com/arcade/intro/level-3/fzsCQGYbxaEcTr2bL) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/allLongestStrings/octave) |
