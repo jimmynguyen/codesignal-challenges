@@ -29,6 +29,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [countIncreasingSequences](https://app.codesignal.com/challenge/C3AifYwjTZhJfpPjX) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countIncreasingSequences/java) |
 | [countSumOfTwoRepresentations2](https://app.codesignal.com/arcade/code-arcade/loop-tunnel/hBw5BJiZ4LmXcy92u) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countSumOfTwoRepresentations2/java) |
 | [countTriangles](https://app.codesignal.com/challenge/hbRLsbDh9fTSFapAB) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countTriangles/octave) |
+| [crossingSum](https://app.codesignal.com/challenge/pvndueQwncJoTmDxK) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/crossingSum/python3) |
 | [cubeWorld](https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/cubeWorld) |
 | [decipher](https://app.codesignal.com/challenge/gigWoXtAmM6LGqqY9) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/decipher/java) |
 | [deleteDigit](https://app.codesignal.com/challenge/m399dDgJDCeQA6jF5) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteDigit/octave) |
