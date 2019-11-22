@@ -106,6 +106,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [phoneCall](https://app.codesignal.com/arcade/code-arcade/intro-gates/mZAucMXhNMmT7JWta) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/phoneCall/java) |
 | [piecesOfDistinctLengths](https://app.codesignal.com/challenge/E6XCNZEDWrNCboYAs) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/piecesOfDistinctLengths/octave) |
 | [primeFactors2](https://app.codesignal.com/challenge/2cnGDhLAdiShkfdNn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/primeFactors2/java) |
+| [properOrImproper](https://app.codesignal.com/challenge/oB9bpK9Q6kxXu4JRQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/properOrImproper/java) |
 | [rangeBitCount](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/eC2Zxu5H5SnuKxvPT) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/rangeBitCount/octave) |
 | [reachNextLevel](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/m9wjpkCjgofg7gs8N) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reachNextLevel/java) |
 | [reflectString](https://app.codesignal.com/challenge/keqZL6SYysHeyoEuQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reflectString/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reflectString/scala) |

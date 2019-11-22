@@ -1,0 +1,1 @@
+javac ProperOrImproper.java && java -ea ProperOrImproper
