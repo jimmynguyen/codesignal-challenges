@@ -11,6 +11,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [allLongestStrings](https://app.codesignal.com/arcade/intro/level-3/fzsCQGYbxaEcTr2bL) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/allLongestStrings/octave) |
 | [almostIncreasingSequence](https://app.codesignal.com/arcade/intro/level-2/2mxbGwLzvkTCKAJMG) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/almostIncreasingSequence/octave) |
 | [alternatingSums](https://app.codesignal.com/challenge/ReDbsxeiSr3eKKczW) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/alternatingSums/octave) |
+| [appleBoxes](https://app.codesignal.com/challenge/rW5PgG8qaFM2ubgzx) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/appleBoxes/octave) |
 | [areEquallyStrong](https://app.codesignal.com/challenge/MvBsn2Ya3yMovNjwY) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/areEquallyStrong/octave) |
 | [arithmeticExpression](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/QrCSNQWhnQoaK9KgK) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticExpression/java) |
 | [arithmeticProgression](https://app.codesignal.com/challenge/6TbBh7yCjoPk9D7xE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticProgression/java) |
