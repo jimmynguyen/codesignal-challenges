@@ -83,6 +83,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [killKthBit](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/b5z4P2r2CGCtf8HCR) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/killKthBit/python3) |
 | [knapsackLight](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/r9azLYp2BDZPyzaG2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight/java) |
 | [knapsackLight2](https://app.codesignal.com/challenge/yWFjqF4kSfo3CKXtp) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight2/js) |
+| [kthDivisor](https://app.codesignal.com/challenge/acxEGxKFh2cigPNqu) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/kthDivisor/java) |
 | [largestNumber](https://app.codesignal.com/challenge/voofLc2giXxkixsti) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestNumber/octave), [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestNumber) |
 | [lastDigitRegExp](https://app.codesignal.com/challenge/i7XejhS888nXv9pnP) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/lastDigitRegExp/octave) |
 | [lateRide](https://app.codesignal.com/arcade/code-arcade/intro-gates/aiKck9MwwAKyF8D4L) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/lateRide/java) |
