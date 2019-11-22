@@ -1,0 +1,1 @@
+javac FindTheRemainder.java && java -ea FindTheRemainder

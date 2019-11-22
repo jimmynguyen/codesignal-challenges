@@ -58,6 +58,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [fibonacciSum](https://app.codesignal.com/challenge/F54etL8JkcJtQpKAZ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fibonacciSum/octave) |
 | [findEmailDomain](https://app.codesignal.com/challenge/HHKmRM9PLczxAFFTy) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findEmailDomain/octave) |
 | [findSquareSide](https://app.codesignal.com/challenge/mCGWhBSaQ2nY2ZoiC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findSquareSide/octave) |
+| [findTheRemainder](https://app.codesignal.com/challenge/KhDXwxuZMBBFivMqS) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findTheRemainder/java) |
 | [firstReverseTry](https://app.codesignal.com/challenge/DHppREaEB3hwT8rXu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstReverseTry/coffeescript) |
 | [fromDecimal](https://app.codesignal.com/challenge/tZ38JTkMwh7iTA5hi) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fromDecimal/java) |
 | [fullName](https://app.codesignal.com/challenge/Pq5wxnanyr2ktSmkn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fullName/java) |
