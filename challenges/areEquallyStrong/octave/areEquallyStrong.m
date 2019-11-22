@@ -1,0 +1,17 @@
+function r = areEquallyStrong(a, b, c, d)
+	r = all(sort([a b]) == sort([c d]));
+endfunction
+%!assert(areEquallyStrong(10, 15, 15, 10), true)
+%!assert(areEquallyStrong(15, 10, 15, 10), true)
+%!assert(areEquallyStrong(15, 10, 15, 9), false)
+%!assert(areEquallyStrong(10, 5, 5, 10), true)
+%!assert(areEquallyStrong(10, 15, 5, 20), false)
+%!assert(areEquallyStrong(10, 20, 10, 20), true)
+%!assert(areEquallyStrong(5, 20, 20, 5), true)
+%!assert(areEquallyStrong(20, 15, 5, 20), false)
+%!assert(areEquallyStrong(5, 10, 5, 10), true)
+%!assert(areEquallyStrong(1, 10, 10, 0), false)
+%!assert(areEquallyStrong(5, 5, 10, 10), false)
+%!assert(areEquallyStrong(10, 5, 10, 6), false)
+%!assert(areEquallyStrong(1, 1, 1, 1), true)
+%!assert(areEquallyStrong(0, 10, 10, 0), true)
