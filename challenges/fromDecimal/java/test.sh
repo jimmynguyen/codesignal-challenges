@@ -1,0 +1,1 @@
+javac FromDecimal.java && java -ea FromDecimal
