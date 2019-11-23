@@ -62,6 +62,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [findSquareSide](https://app.codesignal.com/challenge/mCGWhBSaQ2nY2ZoiC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findSquareSide/octave) |
 | [findTheRemainder](https://app.codesignal.com/challenge/KhDXwxuZMBBFivMqS) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findTheRemainder/java) |
 | [firstReverseTry](https://app.codesignal.com/challenge/DHppREaEB3hwT8rXu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstReverseTry/coffeescript) |
+| [fractionMultiplication](https://app.codesignal.com/challenge/ptQ8nzNPHqbwbMoqn) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionMultiplication/octave) |
 | [fromDecimal](https://app.codesignal.com/challenge/tZ38JTkMwh7iTA5hi) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fromDecimal/java) |
 | [fullName](https://app.codesignal.com/challenge/Pq5wxnanyr2ktSmkn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fullName/java) |
 | [higherVersion](https://app.codesignal.com/challenge/cGQt9dgZZ6MGsbPMc) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/higherVersion/octave) |
