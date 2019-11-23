@@ -1,0 +1,1 @@
+javac FindHyperlink.java && java -ea FindHyperlink
