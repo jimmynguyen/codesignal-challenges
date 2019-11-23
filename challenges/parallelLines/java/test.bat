@@ -1,0 +1,1 @@
+javac ParallelLines.java && java -ea ParallelLines
