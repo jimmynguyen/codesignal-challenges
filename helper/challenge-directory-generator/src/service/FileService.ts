@@ -49,7 +49,7 @@ abstract class FileService {
 		if (!fs.existsSync(this.challengeDirPath)) {
 			fs.mkdirSync(this.challengeDirPath);
 		}
-		this.createChallengeREADMEFile();
+		this.createOrUpdateChallengeREADMEFile();
 		if (fs.existsSync(this.challengeSolutionDirPath)) {
 			let deleteChallengeSolutionDir: boolean;
 			if (process.argv.length > 5) {
@@ -91,9 +91,18 @@ abstract class FileService {
 	private getGithubChallengeLink(): string {
 		return sprintf(this.GITHUB_CHALLENGE_LINK_TEMPLATE, this.challenge.getName(), this.challenge.getLanguage().name);
 	}
-	private createChallengeREADMEFile(): void {
-		const readmeFilePath = sprintf('%sREADME.md', this.challengeDirPath);
-		fs.writeFileSync(readmeFilePath, sprintf('# %s\n\nLink to Challenge: [%s](%s)', this.challenge.getName(), this.challenge.getLink(), this.challenge.getLink()));
+	private createOrUpdateChallengeREADMEFile(): void {
+		const readmeFilePath: string = sprintf('%sREADME.md', this.challengeDirPath);
+		let readmeFile: string = sprintf('# %s\n\nLink to Challenge: [%s](%s)', this.challenge.getName(), this.challenge.getLink(), this.challenge.getLink());
+		if (this.exists(readmeFilePath)) {
+			readmeFile = this.readFile(readmeFilePath);
+			if (!readmeFile.includes(this.challenge.getLink())) {
+				readmeFile += sprintf('\nLink to Challenge: [%s](%s)', this.challenge.getLink(), this.challenge.getLink());
+				fs.writeFileSync(readmeFilePath, readmeFile);
+			}
+		} else {
+			fs.writeFileSync(readmeFilePath, readmeFile);
+		}
 	}
 	private async createChallengeTestScriptFiles(): Promise<void> {
 		const testScriptFile: string = await this.getChallengeTestScriptFile();
