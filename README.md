@@ -82,6 +82,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [isLucky](https://app.codesignal.com/arcade/intro/level-3/3AdBC97QNuhF6RwsQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isLucky/java) |
 | [isLuckyNumber](https://app.codesignal.com/challenge/Qaip9FfLWnHmQCGKZ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isLuckyNumber/octave) |
 | [isPermutation](https://app.codesignal.com/challenge/r3f8PoCN4YCn634an) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isPermutation/octave) |
+| [isSum](https://app.codesignal.com/challenge/EZSyNbGjNT6Kevpbi) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSum/python3) |
 | [isSumOfConsecutive](https://app.codesignal.com/challenge/X4Qpbuu8A4xiiNdc7) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive/scala) |
 | [isSumOfConsecutive2](https://app.codesignal.com/challenge/CY2qYcwMqPxp6Rsst) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive2/octave) |
 | [isSuspiciousRespondent](https://app.codesignal.com/challenge/5vyWTp8qdYBZZ8BKb) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSuspiciousRespondent/python3) |
