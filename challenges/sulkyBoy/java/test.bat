@@ -1,0 +1,1 @@
+javac SulkyBoy.java && java -ea SulkyBoy
