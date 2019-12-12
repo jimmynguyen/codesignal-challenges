@@ -1,0 +1,1 @@
+javac FindEqual.java && java -ea FindEqual
