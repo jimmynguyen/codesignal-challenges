@@ -1,0 +1,1 @@
+javac Is_palindrome.java && java -ea Is_palindrome
