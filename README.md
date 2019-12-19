@@ -184,4 +184,5 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [volleyballPositions](https://app.codesignal.com/challenge/FkRMrjSQ8YH8HwMMq) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/volleyballPositions/java) |
 | [waterTubes](https://app.codesignal.com/challenge/Me7huwYtYN5YYA2kq) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/waterTubes/java) |
 | [weakNumbers](https://app.codesignal.com/challenge/wrD8sMDwk28cKQYJr) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/weakNumbers/java) |
+| [whoseMove](https://app.codesignal.com/challenge/R6pswKNcG8iW4H4Rf) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/whoseMove/java) |
 | [willYou](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/jZ4ZSiGohzFTeg4yb) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/willYou/octave) |

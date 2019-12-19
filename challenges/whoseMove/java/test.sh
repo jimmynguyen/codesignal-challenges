@@ -1,0 +1,1 @@
+javac WhoseMove.java && java -ea WhoseMove
