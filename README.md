@@ -115,6 +115,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [metroCard](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/J7PQDxpWqhx7HrvBZ) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/metroCard/python3) |
 | [minimalMultiple](https://app.codesignal.com/challenge/mdLiKRe5bDDPYmvTN) | [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/minimalMultiple/scala) |
 | [mirrorBits](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/e3zfPNTwTa9qTQzcX) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/mirrorBits/python3) |
+| [mySubstring](https://app.codesignal.com/challenge/Dj5rbEu6rjEZiF2dp) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/mySubstring/octave) |
 | [neighboringCells](https://app.codesignal.com/challenge/cCp2KatYhxeXPtG7a) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/neighboringCells/java) |
 | [neighbouringElements](https://app.codesignal.com/challenge/9udjeSqmmRnC9TTJx) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/neighbouringElements/octave) |
 | [newRoadSystem](https://app.codesignal.com/arcade/graphs-arcade/kingdom-roads/nCMisf4ZKpDLdHevE) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/newRoadSystem/octave) |
