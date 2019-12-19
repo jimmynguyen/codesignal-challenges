@@ -20,6 +20,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [arrayReplace](https://app.codesignal.com/challenge/dDELgvSfpLyx8Zig2) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayReplace/python3) |
 | [arraySumAdjacentDifference](https://app.codesignal.com/challenge/h7i7qTRoon4KSekYk) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arraySumAdjacentDifference/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arraySumAdjacentDifference/octave) |
 | [avoidObstacles](https://app.codesignal.com/challenge/AEKkAcCxy9hbNWwad) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/avoidObstacles/octave) |
+| [bfsComponentSize](https://app.codesignal.com/challenge/ru749qc7S27sorjcJ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/bfsComponentSize/java) |
 | [bishopAndPawn](https://app.codesignal.com/challenge/uFMZ9Wm3MK3f7j5uG) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/bishopAndPawn/java) |
 | [candies](https://app.codesignal.com/arcade/code-arcade/intro-gates/DdNKFA3XCX6XN7bNz) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/candies/java) |
 | [candles](https://app.codesignal.com/challenge/CzgYv3fToYH33epxx) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/candles/js) |

@@ -1,0 +1,1 @@
+javac BfsComponentSize.java && java -ea BfsComponentSize
