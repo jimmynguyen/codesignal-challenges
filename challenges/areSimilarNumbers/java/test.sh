@@ -1,0 +1,1 @@
+javac AreSimilarNumbers.java && java -ea AreSimilarNumbers
