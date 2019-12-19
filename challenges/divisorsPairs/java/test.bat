@@ -1,0 +1,1 @@
+javac DivisorsPairs.java && java -ea DivisorsPairs

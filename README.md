@@ -51,6 +51,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [digitSum](https://app.codesignal.com/challenge/gmg3rya2qWsFDTchB) | [C++](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitSum/c++), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitSum/octave) |
 | [distinctDistances](https://app.codesignal.com/challenge/Y9AZrgkZs7wqfPRWH) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/distinctDistances/java) |
 | [divNumber](https://app.codesignal.com/challenge/hJWTa9EzRsQFKF5Ju) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divNumber/java) |
+| [divisorsPairs](https://app.codesignal.com/challenge/tQrzM9YobTCGCu7X2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divisorsPairs/java) |
 | [dotProduct](https://app.codesignal.com/challenge/QR2CL6wQadp9R6w8Y) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/dotProduct/java) |
 | [electionsWinners](https://app.codesignal.com/challenge/KbNFxbXFsiokxCDJF) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/electionsWinners/js) |
 | [equalPairOfBits](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/6SLJChm9N3fEgr2R7) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equalPairOfBits/python3) |
