@@ -169,6 +169,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [sumOfDivisors](https://app.codesignal.com/challenge/jwAXkHKwZ5CCX6HjH) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfDivisors/java) |
 | [sumOfMultiples](https://app.codesignal.com/challenge/2poQGkZSokQLMxmmh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfMultiples/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfMultiples/octave) |
 | [sumOfPowers](https://app.codesignal.com/challenge/LTQSYDDMMQxkoY5bK) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfPowers/coffeescript) |
+| [sumOfSquares](https://app.codesignal.com/challenge/9P2qNM49MySsds2gm) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfSquares/octave) |
 | [sumOfTheAngles](https://app.codesignal.com/challenge/xc6nYBsiuySyQ7iFb) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfTheAngles/octave) |
 | [sumUpDigits](https://app.codesignal.com/challenge/2NK7BGPbWb5FDWJ59) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumUpDigits/octave) |
 | [swapAdjacentBits](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/dShYZZT4WmvpmfpgB) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/swapAdjacentBits/python3) |
