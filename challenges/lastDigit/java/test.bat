@@ -1,0 +1,1 @@
+javac LastDigit.java && java -ea LastDigit
