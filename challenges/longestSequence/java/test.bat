@@ -1,0 +1,1 @@
+javac LongestSequence.java && java -ea LongestSequence
