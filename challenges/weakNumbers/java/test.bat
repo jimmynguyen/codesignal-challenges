@@ -1,0 +1,1 @@
+javac WeakNumbers.java && java -ea WeakNumbers
