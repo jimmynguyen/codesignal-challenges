@@ -1,0 +1,1 @@
+javac Parabole.java && java -ea Parabole
