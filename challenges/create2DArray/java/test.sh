@@ -1,0 +1,1 @@
+javac Create2DArray.java && java -ea Create2DArray
