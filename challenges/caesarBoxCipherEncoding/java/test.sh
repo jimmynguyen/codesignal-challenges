@@ -1,0 +1,1 @@
+javac CaesarBoxCipherEncoding.java && java -ea CaesarBoxCipherEncoding
