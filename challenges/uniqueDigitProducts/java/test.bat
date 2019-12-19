@@ -1,0 +1,1 @@
+javac UniqueDigitProducts.java && java -ea UniqueDigitProducts
