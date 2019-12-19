@@ -81,6 +81,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [insideCircle](https://app.codesignal.com/challenge/4CzBshDsiexaz5rxt) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/insideCircle/octave) |
 | [integerToStringOfFixedWidth](https://app.codesignal.com/challenge/KXWxB8YmEerFPKcSb) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/integerToStringOfFixedWidth/python3) |
 | [isAdult](https://app.codesignal.com/challenge/CsvxXXb6KrkugPJtr) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isAdult/octave) |
+| [isCaseInsensitivePalindrome](https://app.codesignal.com/challenge/zwXfWsr48th5BCbwZ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isCaseInsensitivePalindrome/java) |
 | [isDiagonalMatrix](https://app.codesignal.com/challenge/yzfu8ngwoH4LiKH6x) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isDiagonalMatrix/octave) |
 | [isDigit](https://app.codesignal.com/challenge/n5MhXxfpoWf5unNfj) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isDigit/python3) |
 | [isGeometricProgression](https://app.codesignal.com/challenge/osJK8YhviaN5bQT5m) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isGeometricProgression/octave) |
