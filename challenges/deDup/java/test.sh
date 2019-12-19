@@ -1,0 +1,1 @@
+javac DeDup.java && java -ea DeDup

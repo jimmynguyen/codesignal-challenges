@@ -42,6 +42,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [createArray](https://app.codesignal.com/challenge/dWYL5b6SRqNxx42WA) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/createArray/octave) |
 | [crossingSum](https://app.codesignal.com/challenge/pvndueQwncJoTmDxK) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/crossingSum/python3) |
 | [cubeWorld](https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/cubeWorld) |
+| [deDup](https://app.codesignal.com/challenge/SCgGQZE8ogJDTKmDp) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deDup/java) |
 | [decipher](https://app.codesignal.com/challenge/gigWoXtAmM6LGqqY9) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/decipher/java) |
 | [deleteDigit](https://app.codesignal.com/challenge/m399dDgJDCeQA6jF5) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteDigit/octave) |
 | [deleteWhitespaces](https://app.codesignal.com/challenge/JYMbCfBwmwqWdjgeY) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteWhitespaces/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteWhitespaces/octave) |
