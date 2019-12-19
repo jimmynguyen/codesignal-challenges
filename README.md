@@ -65,6 +65,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [findTheRemainder](https://app.codesignal.com/challenge/KhDXwxuZMBBFivMqS) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findTheRemainder/java) |
 | [firstReverseTry](https://app.codesignal.com/challenge/DHppREaEB3hwT8rXu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstReverseTry/coffeescript) |
 | [fractionMultiplication](https://app.codesignal.com/challenge/ptQ8nzNPHqbwbMoqn) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionMultiplication/octave) |
+| [fractionReducing](https://app.codesignal.com/challenge/nzDQW93qQgYNGJK46) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionReducing/java) |
 | [fromDecimal](https://app.codesignal.com/challenge/tZ38JTkMwh7iTA5hi) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fromDecimal/java) |
 | [fullName](https://app.codesignal.com/challenge/Pq5wxnanyr2ktSmkn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fullName/java) |
 | [hailstoneSequence](https://app.codesignal.com/challenge/BKgnwNBLpJdrzAx24) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/hailstoneSequence/octave) |

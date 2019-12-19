@@ -1,0 +1,1 @@
+javac FractionReducing.java && java -ea FractionReducing
