@@ -4,6 +4,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
+| [Aaga](https://app.codesignal.com/challenge/4vzGyfNSicYAf75gC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/Aaga/octave) |
 | [add](https://app.codesignal.com/arcade/intro/level-1/jwr339Kq6e3LQTsfa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/add/octave), [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/add/python3) |
 | [addBorder](https://app.codesignal.com/challenge/kozrL9G9TzWwWpneJ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/addBorder/octave) |
 | [addTwoDigits](https://app.codesignal.com/arcade/code-arcade/intro-gates/wAGdN6FMPkx7WBq66) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/addTwoDigits/octave) |
