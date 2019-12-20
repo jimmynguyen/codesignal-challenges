@@ -1,0 +1,1 @@
+javac Factorial.java && java -ea Factorial

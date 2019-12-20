@@ -64,6 +64,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [exerciseElaboration](https://app.codesignal.com/challenge/Ght3b8yAccvEpNDSc) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/exerciseElaboration/python3) |
 | [extraNumber](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/sgDWKCFQHHi5D3Szj) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extraNumber/java) |
 | [extractEachKth](https://app.codesignal.com/challenge/j9JSTTntsnq8xRCgZ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/scala) |
+| [factorial](https://app.codesignal.com/challenge/Cb6MBwPdAFLYRu9zT) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/factorial/java) |
 | [fibonacciSum](https://app.codesignal.com/challenge/F54etL8JkcJtQpKAZ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fibonacciSum/octave) |
 | [findEmailDomain](https://app.codesignal.com/challenge/HHKmRM9PLczxAFFTy) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findEmailDomain/octave) |
 | [findEqual](https://app.codesignal.com/challenge/kzjWujHam7y7A3dzN) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findEqual/java) |
