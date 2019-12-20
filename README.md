@@ -4,7 +4,6 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 
 | Challenge | Solution |
 | --------- | -------- |
-| [SoF](https://app.codesignal.com/challenge/RwhbRkRviseEBBmbY) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/SoF/octave) |
 | [add](https://app.codesignal.com/arcade/intro/level-1/jwr339Kq6e3LQTsfa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/add/octave), [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/add/python3) |
 | [addBorder](https://app.codesignal.com/challenge/kozrL9G9TzWwWpneJ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/addBorder/octave) |
 | [addTwoDigits](https://app.codesignal.com/arcade/code-arcade/intro-gates/wAGdN6FMPkx7WBq66) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/addTwoDigits/octave) |
@@ -43,8 +42,8 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [createArray](https://app.codesignal.com/challenge/dWYL5b6SRqNxx42WA) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/createArray/octave) |
 | [crossingSum](https://app.codesignal.com/challenge/pvndueQwncJoTmDxK) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/crossingSum/python3) |
 | [cubeWorld](https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/cubeWorld) |
-| [deDup](https://app.codesignal.com/challenge/SCgGQZE8ogJDTKmDp) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deDup/java) |
 | [decipher](https://app.codesignal.com/challenge/gigWoXtAmM6LGqqY9) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/decipher/java) |
+| [deDup](https://app.codesignal.com/challenge/SCgGQZE8ogJDTKmDp) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deDup/java) |
 | [deleteDigit](https://app.codesignal.com/challenge/m399dDgJDCeQA6jF5) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteDigit/octave) |
 | [deleteWhitespaces](https://app.codesignal.com/challenge/JYMbCfBwmwqWdjgeY) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteWhitespaces/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/deleteWhitespaces/octave) |
 | [depositProfit](https://app.codesignal.com/challenge/EwvQL8R3fS9Q9ZMsC) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/depositProfit/python3) |
@@ -55,16 +54,16 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [digitDistanceNumber](https://app.codesignal.com/challenge/TieSbaDHnbGyKjfKa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitDistanceNumber/octave) |
 | [digitSum](https://app.codesignal.com/challenge/gmg3rya2qWsFDTchB) | [C++](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitSum/c++), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitSum/octave) |
 | [distinctDistances](https://app.codesignal.com/challenge/Y9AZrgkZs7wqfPRWH) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/distinctDistances/java) |
-| [divNumber](https://app.codesignal.com/challenge/hJWTa9EzRsQFKF5Ju) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divNumber/java) |
 | [divisorsPairs](https://app.codesignal.com/challenge/tQrzM9YobTCGCu7X2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divisorsPairs/java) |
+| [divNumber](https://app.codesignal.com/challenge/hJWTa9EzRsQFKF5Ju) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divNumber/java) |
 | [dotProduct](https://app.codesignal.com/challenge/QR2CL6wQadp9R6w8Y) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/dotProduct/java) |
 | [electionsWinners](https://app.codesignal.com/challenge/KbNFxbXFsiokxCDJF) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/electionsWinners/js) |
 | [equalPairOfBits](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/6SLJChm9N3fEgr2R7) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equalPairOfBits/python3) |
 | [equationSolutions](https://app.codesignal.com/challenge/4TDbzaLfpySTBmCuF) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equationSolutions/octave) |
 | [evenNumbersBeforeFixed](https://app.codesignal.com/challenge/aEmhz9YNDsHTALTmh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/evenNumbersBeforeFixed/java) |
 | [exerciseElaboration](https://app.codesignal.com/challenge/Ght3b8yAccvEpNDSc) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/exerciseElaboration/python3) |
-| [extraNumber](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/sgDWKCFQHHi5D3Szj) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extraNumber/java) |
 | [extractEachKth](https://app.codesignal.com/challenge/j9JSTTntsnq8xRCgZ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/scala) |
+| [extraNumber](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/sgDWKCFQHHi5D3Szj) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extraNumber/java) |
 | [factorial](https://app.codesignal.com/challenge/Cb6MBwPdAFLYRu9zT) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/factorial/java) |
 | [fibonacciSum](https://app.codesignal.com/challenge/F54etL8JkcJtQpKAZ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fibonacciSum/octave) |
 | [findEmailDomain](https://app.codesignal.com/challenge/HHKmRM9PLczxAFFTy) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findEmailDomain/octave) |
@@ -87,13 +86,14 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [increaseNumberRoundness](https://app.codesignal.com/challenge/9JMQovWr4cZ933o6S) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/increaseNumberRoundness/octave) |
 | [insideCircle](https://app.codesignal.com/challenge/4CzBshDsiexaz5rxt) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/insideCircle/octave) |
 | [integerToStringOfFixedWidth](https://app.codesignal.com/challenge/KXWxB8YmEerFPKcSb) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/integerToStringOfFixedWidth/python3) |
+| [is_palindrome](https://app.codesignal.com/challenge/3ucwTksArfYnhXddD) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/is_palindrome/java) |
 | [isAdult](https://app.codesignal.com/challenge/CsvxXXb6KrkugPJtr) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isAdult/octave) |
 | [isCaseInsensitivePalindrome](https://app.codesignal.com/challenge/zwXfWsr48th5BCbwZ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isCaseInsensitivePalindrome/java) |
 | [isDiagonalMatrix](https://app.codesignal.com/challenge/yzfu8ngwoH4LiKH6x) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isDiagonalMatrix/octave) |
 | [isDigit](https://app.codesignal.com/challenge/n5MhXxfpoWf5unNfj) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isDigit/python3) |
 | [isGeometricProgression](https://app.codesignal.com/challenge/osJK8YhviaN5bQT5m) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isGeometricProgression/octave) |
-| [isInRange](https://app.codesignal.com/challenge/Q9irP4hhFKieMPqrn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isInRange) |
 | [isInfiniteProcess](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/aFF9HDm2Rsti9j5kc) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isInfiniteProcess/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isInfiniteProcess/octave), [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isInfiniteProcess/python3) |
+| [isInRange](https://app.codesignal.com/challenge/Q9irP4hhFKieMPqrn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isInRange) |
 | [isLucky](https://app.codesignal.com/arcade/intro/level-3/3AdBC97QNuhF6RwsQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isLucky/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isLucky/octave) |
 | [isLuckyNumber](https://app.codesignal.com/challenge/Qaip9FfLWnHmQCGKZ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isLuckyNumber/octave) |
 | [isPermutation](https://app.codesignal.com/challenge/r3f8PoCN4YCn634an) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isPermutation/octave) |
@@ -104,7 +104,6 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [isSuspiciousRespondent](https://app.codesignal.com/challenge/5vyWTp8qdYBZZ8BKb) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSuspiciousRespondent/python3) |
 | [isTandemRepeat](https://app.codesignal.com/challenge/b88Cu9b88ymnXxw7h) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isTandemRepeat) |
 | [isUppercase](https://app.codesignal.com/challenge/C2qJJs9AmtEfjXgep) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isUppercase/python3) |
-| [is_palindrome](https://app.codesignal.com/challenge/3ucwTksArfYnhXddD) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/is_palindrome/java) |
 | [killKthBit](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/b5z4P2r2CGCtf8HCR) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/killKthBit/python3) |
 | [knapsackLight](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/r9azLYp2BDZPyzaG2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight/octave) |
 | [knapsackLight2](https://app.codesignal.com/challenge/yWFjqF4kSfo3CKXtp) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight2/js) |
@@ -150,6 +149,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [primeFactors2](https://app.codesignal.com/challenge/2cnGDhLAdiShkfdNn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/primeFactors2/java) |
 | [properOrImproper](https://app.codesignal.com/challenge/oB9bpK9Q6kxXu4JRQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/properOrImproper/java) |
 | [rangeBitCount](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/eC2Zxu5H5SnuKxvPT) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/rangeBitCount/octave) |
+| [rangeDigitSum](https://app.codesignal.com/challenge/KJW7qMKX2ee375mPQ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/rangeDigitSum/octave) |
 | [reachNextLevel](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/m9wjpkCjgofg7gs8N) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reachNextLevel/java) |
 | [reduceString](https://app.codesignal.com/challenge/n3Pp5y3rcJkacWbxd) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reduceString/java) |
 | [reflectString](https://app.codesignal.com/challenge/keqZL6SYysHeyoEuQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reflectString/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reflectString/scala) |
@@ -165,6 +165,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [secondRightmostZeroBit](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/9nSj6DgqLDsBePJha) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/secondRightmostZeroBit/python3) |
 | [shapeArea](https://app.codesignal.com/arcade/intro/level-2/yuGuHvcCaFCKk56rJ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/shapeArea/octave) |
 | [shefferStroke](https://app.codesignal.com/challenge/qnnbwJqgrBntDpXcP) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/shefferStroke/octave) |
+| [SoF](https://app.codesignal.com/challenge/RwhbRkRviseEBBmbY) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/SoF/octave) |
 | [solarSystemBallistics](https://app.codesignal.com/challenge/7pHPAEfxbJPs8z4GR) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/solarSystemBallistics) |
 | [sortByHeight](https://app.codesignal.com/arcade/intro/level-3/D6qmdBL2NYz49XHwM) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sortByHeight/octave), [TypeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sortByHeight/typescript) |
 | [sortByLength](https://app.codesignal.com/challenge/Y4m8j4dDxFSxyuDjh) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sortByLength/octave) |

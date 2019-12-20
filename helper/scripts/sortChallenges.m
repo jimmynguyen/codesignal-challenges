@@ -14,7 +14,7 @@ while ischar(line)
 	line = fgets(fh);
 endwhile
 fclose(fh);
-[~, ndx] = sort({challenges.name});
+[~, ndx] = sort(tolower({challenges.name}));
 lines = [lines {challenges(ndx).line}];
 fh = fopen(filepath, 'w');
 fprintf(fh, '%s', strjoin(lines, ''));
