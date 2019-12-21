@@ -1,0 +1,1 @@
+octave --eval "test adjacentElementsProduct"
