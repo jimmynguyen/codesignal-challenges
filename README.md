@@ -55,6 +55,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [digitDistanceNumber](https://app.codesignal.com/challenge/TieSbaDHnbGyKjfKa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitDistanceNumber/octave) |
 | [digitSum](https://app.codesignal.com/challenge/gmg3rya2qWsFDTchB) | [C++](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitSum/c++), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitSum/octave) |
 | [distinctDistances](https://app.codesignal.com/challenge/Y9AZrgkZs7wqfPRWH) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/distinctDistances/java) |
+| [divideAsLongAsPossible](https://app.codesignal.com/challenge/WCisYsTSeF4Kqwzs7) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divideAsLongAsPossible/octave) |
 | [divisorsPairs](https://app.codesignal.com/challenge/tQrzM9YobTCGCu7X2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divisorsPairs/java) |
 | [divNumber](https://app.codesignal.com/challenge/hJWTa9EzRsQFKF5Ju) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divNumber/java) |
 | [dotProduct](https://app.codesignal.com/challenge/QR2CL6wQadp9R6w8Y) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/dotProduct/java) |
