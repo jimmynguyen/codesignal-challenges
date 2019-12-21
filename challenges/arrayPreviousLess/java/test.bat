@@ -1,0 +1,1 @@
+javac ArrayPreviousLess.java && java -ea ArrayPreviousLess

@@ -19,6 +19,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [arithmeticProgression](https://app.codesignal.com/challenge/6TbBh7yCjoPk9D7xE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticProgression/java) |
 | [arrayMinimumIndex](https://app.codesignal.com/challenge/jCJgmTuTmLPGSKXei) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayMinimumIndex/java) |
 | [arrayPacking](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/KeMqde6oqfF5wBXxf) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayPacking/python3) |
+| [arrayPreviousLess](https://app.codesignal.com/challenge/LtCQYE7ZwQFmGcPs4) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayPreviousLess/java) |
 | [arrayReplace](https://app.codesignal.com/challenge/dDELgvSfpLyx8Zig2) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayReplace/python3) |
 | [arraySumAdjacentDifference](https://app.codesignal.com/challenge/h7i7qTRoon4KSekYk) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arraySumAdjacentDifference/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arraySumAdjacentDifference/octave) |
 | [avoidObstacles](https://app.codesignal.com/challenge/AEKkAcCxy9hbNWwad) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/avoidObstacles/octave) |
