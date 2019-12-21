@@ -1,0 +1,1 @@
+javac ArrayMinimumAboveBound.java && java -ea ArrayMinimumAboveBound

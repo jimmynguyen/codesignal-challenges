@@ -17,6 +17,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [areSimilarNumbers](https://app.codesignal.com/challenge/gu2uWowHBCZyrJfcX) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/areSimilarNumbers/java) |
 | [arithmeticExpression](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/QrCSNQWhnQoaK9KgK) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticExpression/java) |
 | [arithmeticProgression](https://app.codesignal.com/challenge/6TbBh7yCjoPk9D7xE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticProgression/java) |
+| [arrayMinimumAboveBound](https://app.codesignal.com/challenge/m5DzzZAXguc4swSsv) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayMinimumAboveBound/java) |
 | [arrayMinimumIndex](https://app.codesignal.com/challenge/jCJgmTuTmLPGSKXei) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayMinimumIndex/java) |
 | [arrayPacking](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/KeMqde6oqfF5wBXxf) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayPacking/python3) |
 | [arrayPreviousLess](https://app.codesignal.com/challenge/LtCQYE7ZwQFmGcPs4) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayPreviousLess/java) |
