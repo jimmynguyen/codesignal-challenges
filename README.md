@@ -64,6 +64,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [electionsWinners](https://app.codesignal.com/challenge/KbNFxbXFsiokxCDJF) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/electionsWinners/js) |
 | [equalPairOfBits](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/6SLJChm9N3fEgr2R7) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equalPairOfBits/python3) |
 | [equationSolutions](https://app.codesignal.com/challenge/4TDbzaLfpySTBmCuF) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equationSolutions/octave) |
+| [eulersTotientFunction](https://app.codesignal.com/challenge/kYvWouwjmMbBEBqAS) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/eulersTotientFunction/octave) |
 | [evenNumbersBeforeFixed](https://app.codesignal.com/challenge/aEmhz9YNDsHTALTmh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/evenNumbersBeforeFixed/java) |
 | [exerciseElaboration](https://app.codesignal.com/challenge/Ght3b8yAccvEpNDSc) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/exerciseElaboration/python3) |
 | [extractEachKth](https://app.codesignal.com/challenge/j9JSTTntsnq8xRCgZ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/scala) |
