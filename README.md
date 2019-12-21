@@ -108,6 +108,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [isSuspiciousRespondent](https://app.codesignal.com/challenge/5vyWTp8qdYBZZ8BKb) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSuspiciousRespondent/python3) |
 | [isTandemRepeat](https://app.codesignal.com/challenge/b88Cu9b88ymnXxw7h) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isTandemRepeat) |
 | [isUppercase](https://app.codesignal.com/challenge/C2qJJs9AmtEfjXgep) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isUppercase/python3) |
+| [josephusProblem](https://app.codesignal.com/challenge/fnrTcjg69akJmfYdk) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/josephusProblem/octave) |
 | [killKthBit](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/b5z4P2r2CGCtf8HCR) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/killKthBit/python3) |
 | [knapsackLight](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/r9azLYp2BDZPyzaG2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight/octave) |
 | [knapsackLight2](https://app.codesignal.com/challenge/yWFjqF4kSfo3CKXtp) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/knapsackLight2/js) |
