@@ -1,0 +1,1 @@
+javac FirstDigit.java && java -ea FirstDigit

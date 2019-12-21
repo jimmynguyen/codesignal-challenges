@@ -76,6 +76,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [findHyperlink](https://app.codesignal.com/challenge/baN7twsxjPH3vxrdd) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findHyperlink/java) |
 | [findSquareSide](https://app.codesignal.com/challenge/mCGWhBSaQ2nY2ZoiC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findSquareSide/octave) |
 | [findTheRemainder](https://app.codesignal.com/challenge/KhDXwxuZMBBFivMqS) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findTheRemainder/java) |
+| [firstDigit](https://app.codesignal.com/challenge/MYBCagcRWsPqnSTzN) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstDigit/java) |
 | [firstReverseTry](https://app.codesignal.com/challenge/DHppREaEB3hwT8rXu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstReverseTry/coffeescript) |
 | [fractionMultiplication](https://app.codesignal.com/challenge/ptQ8nzNPHqbwbMoqn) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionMultiplication/octave) |
 | [fractionReducing](https://app.codesignal.com/challenge/nzDQW93qQgYNGJK46) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionReducing/java) |
