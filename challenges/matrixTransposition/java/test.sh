@@ -1,0 +1,1 @@
+javac MatrixTransposition.java && java -ea MatrixTransposition

@@ -127,6 +127,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [makeArrayConsecutive2](https://app.codesignal.com/arcade/intro/level-2/bq2XnSr5kbHqpHGJC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/makeArrayConsecutive2/octave) |
 | [matrixElementsSum](https://app.codesignal.com/arcade/intro/level-2/xskq4ZxLyqQMCLshr) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/matrixElementsSum/octave) |
 | [matrixTrace](https://app.codesignal.com/challenge/YCszRN5FH58AuEdks) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/matrixTrace/octave) |
+| [matrixTransposition](https://app.codesignal.com/challenge/TuabQz8uhXtC4LtDe) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/matrixTransposition/java) |
 | [maxDigit](https://app.codesignal.com/challenge/kKTpyheNfKzgfR2nt) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/maxDigit/octave) |
 | [maxMultiple](https://app.codesignal.com/challenge/cksc3cndoKiuZhe6Y) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/maxMultiple) |
 | [maxSubarray](https://app.codesignal.com/challenge/LrAwpTnYZR6NMCbfs) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/maxSubarray/java) |
