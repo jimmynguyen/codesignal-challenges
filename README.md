@@ -168,6 +168,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [secondRightmostZeroBit](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/9nSj6DgqLDsBePJha) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/secondRightmostZeroBit/python3) |
 | [shapeArea](https://app.codesignal.com/arcade/intro/level-2/yuGuHvcCaFCKk56rJ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/shapeArea/octave) |
 | [shefferStroke](https://app.codesignal.com/challenge/qnnbwJqgrBntDpXcP) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/shefferStroke/octave) |
+| [smallestMultiple](https://app.codesignal.com/challenge/Y68W6PLmjxn7jfFei) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/smallestMultiple/java) |
 | [SoF](https://app.codesignal.com/challenge/RwhbRkRviseEBBmbY) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/SoF/octave) |
 | [solarSystemBallistics](https://app.codesignal.com/challenge/7pHPAEfxbJPs8z4GR) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/solarSystemBallistics) |
 | [sortByHeight](https://app.codesignal.com/arcade/intro/level-3/D6qmdBL2NYz49XHwM) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sortByHeight/octave), [TypeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sortByHeight/typescript) |
