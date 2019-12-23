@@ -1,0 +1,1 @@
+javac OneTwoMany.java && java -ea OneTwoMany
