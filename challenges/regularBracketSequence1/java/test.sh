@@ -1,0 +1,1 @@
+javac RegularBracketSequence1.java && java -ea RegularBracketSequence1
