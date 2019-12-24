@@ -1,0 +1,1 @@
+javac VisitsOnCircularRoad.java && java -ea VisitsOnCircularRoad
