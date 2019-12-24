@@ -57,6 +57,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [differentRightmostBit](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/whz5JzszYTdXW6aNA) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/differentRightmostBit/python3) |
 | [differentSubstringsTrie](https://app.codesignal.com/challenge/j7RqxeRQ9BooqLYod) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/differentSubstringsTrie/java) |
 | [differentValues](https://app.codesignal.com/challenge/mrAXkgwfH5a9HCyuL) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/differentValues) |
+| [differentValuesInMultiplicationTable2](https://app.codesignal.com/challenge/L9Ar3f2cgZsmeXAKh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/differentValuesInMultiplicationTable2/java) |
 | [digitDistanceNumber](https://app.codesignal.com/challenge/TieSbaDHnbGyKjfKa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitDistanceNumber/octave) |
 | [digitSum](https://app.codesignal.com/challenge/gmg3rya2qWsFDTchB) | [C++](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitSum/c++), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitSum/octave) |
 | [distinctDistances](https://app.codesignal.com/challenge/Y9AZrgkZs7wqfPRWH) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/distinctDistances/java) |

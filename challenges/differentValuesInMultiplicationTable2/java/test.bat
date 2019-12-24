@@ -1,0 +1,1 @@
+javac DifferentValuesInMultiplicationTable2.java && java -ea DifferentValuesInMultiplicationTable2
