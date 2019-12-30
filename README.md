@@ -135,6 +135,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [longestString](https://app.codesignal.com/challenge/myNEg9Cd45k8wmyBJ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/longestString/octave) |
 | [longestWord](https://app.codesignal.com/challenge/DH6wLFLBWMfeRE8r7) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/longestWord/octave) |
 | [magicalWell](https://app.codesignal.com/arcade/code-arcade/loop-tunnel/LbuWRHnMoJH9SAo4o) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/magicalWell/octave), [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/magicalWell/python3) |
+| [makeArrayConsecutive](https://app.codesignal.com/challenge/Rrq7MRnYKFhCGooeg) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/makeArrayConsecutive/octave) |
 | [makeArrayConsecutive2](https://app.codesignal.com/arcade/intro/level-2/bq2XnSr5kbHqpHGJC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/makeArrayConsecutive2/octave) |
 | [matrixElementsSum](https://app.codesignal.com/arcade/intro/level-2/xskq4ZxLyqQMCLshr) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/matrixElementsSum/octave) |
 | [matrixTrace](https://app.codesignal.com/challenge/YCszRN5FH58AuEdks) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/matrixTrace/octave) |
