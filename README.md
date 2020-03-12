@@ -208,6 +208,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [sumOfPowers](https://app.codesignal.com/challenge/LTQSYDDMMQxkoY5bK) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfPowers/coffeescript) |
 | [sumOfSquares](https://app.codesignal.com/challenge/9P2qNM49MySsds2gm) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfSquares/octave) |
 | [sumOfTheAngles](https://app.codesignal.com/challenge/xc6nYBsiuySyQ7iFb) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfTheAngles/octave) |
+| [sumOfTwo](https://app.codesignal.com/challenge/MaMiLK5PHhqiwwTGS) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumOfTwo/octave) |
 | [sumUpDigits](https://app.codesignal.com/challenge/2NK7BGPbWb5FDWJ59) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/sumUpDigits/octave) |
 | [swapAdjacentBits](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/dShYZZT4WmvpmfpgB) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/swapAdjacentBits/python3) |
 | [switchLights](https://app.codesignal.com/challenge/hbrbG8EtHS2pzQRbM) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/switchLights/java) |
