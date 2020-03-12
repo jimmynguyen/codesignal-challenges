@@ -83,15 +83,18 @@ class ChallengeService {
 		let javaLanguageDropdownOption: WebElement = await driver.wait(until.elementLocated(By.xpath('//div[contains(@class, "select-menu ")]/div/div/span[text()="Java"]')), ChallengeService.TIMEOUT);
 		await javaLanguageDropdownOption.click();
 		await driver.wait(until.elementLocated(By.xpath('//div[contains(@class, "tabs--title")]/div/span[text()="main.java"]')), ChallengeService.TIMEOUT);
-		let methodHeaderElement: WebElement =  await driver.wait(until.elementLocated(By.xpath('//pre[contains(@class,"CodeMirror-line")][1]/span[@role="presentation"]')), ChallengeService.TIMEOUT);
-		let methodHeader: string = await methodHeaderElement.getAttribute("innerText");
+		let methodHeaderElement: WebElement =  await driver.wait(until.elementLocated(By.xpath('//*[contains(@class,"view-lines")]//*[contains(@class,"view-line")][1]/span')), ChallengeService.TIMEOUT);
+    let methodHeader: string = await methodHeaderElement.getAttribute("innerText");
 		return methodHeader;
 	}
 	private static getChallengeName(methodHeader: string): string {
-		return methodHeader.split(' ')[1].split('(')[0];
+		return methodHeader.split(/(\s+)/)[2].split('(')[0];
 	}
 	private static getTestCaseArgumentTypes(methodHeader: string): TestCaseArgumentTypesResult {
-		let methodHeaderArgs = methodHeader.split(' ');
+    let methodHeaderArgs = methodHeader.split(/(\s+)/);
+    for (var i = 0; i < methodHeaderArgs.length; i++) {
+      methodHeaderArgs.splice(i + 1, 1);
+    }
 		let outputType: string = methodHeaderArgs[0];
 		let inputTypes: string[] = [];
 		let tempArgs = methodHeaderArgs[1].split('(');
