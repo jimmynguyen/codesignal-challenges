@@ -37,7 +37,9 @@ class TypeScriptSolutionFileService extends JavaScriptSolutionFileService {
 				tsType = 'string';
 				break;
 			default:
-				ErrorService.throw(ErrorService.ERRORS.TYPE_NOT_IMPLEMENTED, sprintf('%s[]', javaType));
+        tsType = javaType;
+        // ErrorService.throw(ErrorService.ERRORS.TYPE_NOT_IMPLEMENTED, sprintf('%s[]', javaType));
+        break;
 		}
 		return sprintf('%s%s', tsType, isArray ? '[]' : '');
 	}

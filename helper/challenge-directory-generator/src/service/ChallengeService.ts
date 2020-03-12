@@ -83,7 +83,7 @@ class ChallengeService {
 		let javaLanguageDropdownOption: WebElement = await driver.wait(until.elementLocated(By.xpath('//div[contains(@class, "select-menu ")]/div/div/span[text()="Java"]')), ChallengeService.TIMEOUT);
 		await javaLanguageDropdownOption.click();
 		await driver.wait(until.elementLocated(By.xpath('//div[contains(@class, "tabs--title")]/div/span[text()="main.java"]')), ChallengeService.TIMEOUT);
-		let methodHeaderElement: WebElement =  await driver.wait(until.elementLocated(By.xpath('//*[contains(@class,"view-lines")]//*[contains(@class,"view-line")][1]/span')), ChallengeService.TIMEOUT);
+		let methodHeaderElement: WebElement =  await driver.wait(until.elementLocated(By.xpath('//*[contains(@class,"view-lines")]//*[contains(@class,"view-line") and not(./span/child::span[starts-with(text(),"//")])][1]/span')), ChallengeService.TIMEOUT);
     let methodHeader: string = await methodHeaderElement.getAttribute("innerText");
 		return methodHeader;
 	}
