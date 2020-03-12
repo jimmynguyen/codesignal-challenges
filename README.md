@@ -44,6 +44,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [countIncreasingSequences](https://app.codesignal.com/challenge/C3AifYwjTZhJfpPjX) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countIncreasingSequences/java) |
 | [countSumOfTwoRepresentations2](https://app.codesignal.com/arcade/code-arcade/loop-tunnel/hBw5BJiZ4LmXcy92u) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countSumOfTwoRepresentations2/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countSumOfTwoRepresentations2/octave) |
 | [countTriangles](https://app.codesignal.com/challenge/hbRLsbDh9fTSFapAB) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countTriangles/octave) |
+| [countVowelConsonant](https://app.codesignal.com/challenge/wq96QyEqEBvjM7k5C) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countVowelConsonant/octave) |
 | [create2DArray](https://app.codesignal.com/challenge/tegkALuY9EqaMhHEu) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/create2DArray/java) |
 | [createArray](https://app.codesignal.com/challenge/dWYL5b6SRqNxx42WA) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/createArray/octave) |
 | [crossingSum](https://app.codesignal.com/challenge/pvndueQwncJoTmDxK) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/crossingSum/python3) |
