@@ -150,6 +150,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [maxZeros](https://app.codesignal.com/challenge/eF6rk2pErPvEmEtjT) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/maxZeros/octave) |
 | [metroCard](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/J7PQDxpWqhx7HrvBZ) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/metroCard/python3) |
 | [minimalMultiple](https://app.codesignal.com/challenge/mdLiKRe5bDDPYmvTN) | [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/minimalMultiple/scala) |
+| [minimumOnStack](https://app.codesignal.com/challenge/LC8sv7t8uDEccgDYs) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/minimumOnStack/octave) |
 | [mirrorBits](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/e3zfPNTwTa9qTQzcX) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/mirrorBits/python3) |
 | [mySubstring](https://app.codesignal.com/challenge/Dj5rbEu6rjEZiF2dp) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/mySubstring/octave) |
 | [neighboringCells](https://app.codesignal.com/challenge/cCp2KatYhxeXPtG7a) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/neighboringCells/java) |
