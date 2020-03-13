@@ -1,0 +1,1 @@
+javac ChessQueen.java && java -ea ChessQueen
