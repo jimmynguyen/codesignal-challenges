@@ -1,0 +1,1 @@
+javac AreFollowingPatterns.java && java -ea AreFollowingPatterns
