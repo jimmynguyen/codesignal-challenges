@@ -1,0 +1,1 @@
+javac RegularMonths.java && java -ea RegularMonths
