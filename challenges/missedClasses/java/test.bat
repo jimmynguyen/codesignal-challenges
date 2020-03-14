@@ -1,0 +1,1 @@
+javac MissedClasses.java && java -ea MissedClasses
