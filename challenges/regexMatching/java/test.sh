@@ -1,0 +1,1 @@
+javac RegexMatching.java && java -ea RegexMatching

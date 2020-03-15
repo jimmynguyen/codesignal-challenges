@@ -183,6 +183,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [reachNextLevel](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/m9wjpkCjgofg7gs8N) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reachNextLevel/java) |
 | [reduceString](https://app.codesignal.com/challenge/n3Pp5y3rcJkacWbxd) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reduceString/java) |
 | [reflectString](https://app.codesignal.com/challenge/keqZL6SYysHeyoEuQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reflectString/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reflectString/scala) |
+| [regexMatching](https://app.codesignal.com/challenge/ZWFPoqcizLTD9CSyp) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/regexMatching/java) |
 | [regularBracketSequence1](https://app.codesignal.com/challenge/eiXyGZhqaPpsMHvEd) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/regularBracketSequence1/java) |
 | [regularMonths](https://app.codesignal.com/challenge/K2pc9T4GzBxvQ6aH2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/regularMonths/java) |
 | [removeDuplicateCharacters](https://app.codesignal.com/challenge/yd8DzTmnWb7aEW2m5) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/removeDuplicateCharacters/octave) |
