@@ -1,0 +1,1 @@
+javac ExcelSheetColumnNumber.java && java -ea ExcelSheetColumnNumber
