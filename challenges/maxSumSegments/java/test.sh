@@ -1,0 +1,1 @@
+javac MaxSumSegments.java && java -ea MaxSumSegments
