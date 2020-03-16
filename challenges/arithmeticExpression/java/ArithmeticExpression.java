@@ -16,7 +16,7 @@ public class ArithmeticExpression {
 		System.out.println(String.format("PASSES %d out of %d tests", expectedOutput.length, expectedOutput.length));
 	}
 
-	public static boolean arithmeticExpression(int a, int b, int c) {
+	static boolean arithmeticExpression(int a, int b, int c) {
 		return a + b == c || a - b == c || a * b == c || (double)a / b == c;
 	}
 }
