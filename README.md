@@ -159,7 +159,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [mySubstring](https://app.codesignal.com/challenge/Dj5rbEu6rjEZiF2dp) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/mySubstring/octave) |
 | [neighboringCells](https://app.codesignal.com/challenge/cCp2KatYhxeXPtG7a) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/neighboringCells/java) |
 | [neighbouringElements](https://app.codesignal.com/challenge/9udjeSqmmRnC9TTJx) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/neighbouringElements/octave) |
-| [newRoadSystem](https://app.codesignal.com/arcade/graphs-arcade/kingdom-roads/nCMisf4ZKpDLdHevE) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/newRoadSystem/octave) |
+| [newRoadSystem](https://app.codesignal.com/arcade/graphs-arcade/kingdom-roads/nCMisf4ZKpDLdHevE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/newRoadSystem/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/newRoadSystem/octave) |
 | [noOddDigits](https://app.codesignal.com/challenge/2pvFN4i8T64bF5F5a) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/noOddDigits/octave) |
 | [nthElementFromTheEnd](https://app.codesignal.com/challenge/o9QW9r6JcBKqceGBq) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/nthElementFromTheEnd/java) |
 | [numberOfEvenDigits](https://app.codesignal.com/challenge/8yxaZyGyWGFsvqNhm) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/numberOfEvenDigits/octave) |

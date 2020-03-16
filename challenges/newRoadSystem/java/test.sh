@@ -1,0 +1,1 @@
+javac NewRoadSystem.java && java -ea NewRoadSystem
