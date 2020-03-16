@@ -1,0 +1,1 @@
+javac InsertDashes.java && java -ea InsertDashes
