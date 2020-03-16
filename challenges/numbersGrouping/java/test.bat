@@ -1,0 +1,1 @@
+javac NumbersGrouping.java && java -ea NumbersGrouping
