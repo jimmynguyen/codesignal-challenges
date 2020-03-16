@@ -1,0 +1,1 @@
+javac ShuffledArray.java && java -ea ShuffledArray
