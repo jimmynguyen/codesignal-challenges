@@ -1,0 +1,1 @@
+javac CubeVolume.java && java -ea CubeVolume
