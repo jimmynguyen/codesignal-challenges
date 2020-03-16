@@ -203,6 +203,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [returnTwelve](https://app.codesignal.com/challenge/eoi6ETDgQPJaEuwWk) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/returnTwelve/java) |
 | [reverseComplement](https://app.codesignal.com/challenge/revx6ws9h53DS9KFF) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reverseComplement) |
 | [reverseInteger](https://app.codesignal.com/challenge/jiDd9pPSvaLzxjZrG) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reverseInteger/java) |
+| [reverseOnDiagonals](https://app.codesignal.com/challenge/pHJF5RkRQCWJFLcY3) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/reverseOnDiagonals/octave) |
 | [rightTriangle](https://app.codesignal.com/challenge/XMnPmmmK7cJEKL9vu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/rightTriangle/coffeescript) |
 | [robotPath](https://app.codesignal.com/challenge/d7cXfpka2JhuhejxQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/robotPath/java) |
 | [rounders](https://app.codesignal.com/challenge/Axe2EhL7bpvqDX9bF) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/rounders/octave) |
