@@ -1,0 +1,1 @@
+javac AddTwoDigits.java && java -ea AddTwoDigits
