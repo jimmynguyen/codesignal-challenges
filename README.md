@@ -80,6 +80,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [equationSolutions](https://app.codesignal.com/challenge/4TDbzaLfpySTBmCuF) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equationSolutions/octave) |
 | [eulersTotientFunction](https://app.codesignal.com/challenge/kYvWouwjmMbBEBqAS) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/eulersTotientFunction/octave) |
 | [evenNumbersBeforeFixed](https://app.codesignal.com/challenge/aEmhz9YNDsHTALTmh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/evenNumbersBeforeFixed/java) |
+| [excelSheetColumnNumber](https://app.codesignal.com/challenge/ESBdiMSa8YTr95qFx) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/excelSheetColumnNumber/octave) |
 | [exerciseElaboration](https://app.codesignal.com/challenge/Ght3b8yAccvEpNDSc) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/exerciseElaboration/python3) |
 | [extractEachKth](https://app.codesignal.com/challenge/j9JSTTntsnq8xRCgZ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extractEachKth/scala) |
 | [extraNumber](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/sgDWKCFQHHi5D3Szj) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/extraNumber/java) |
