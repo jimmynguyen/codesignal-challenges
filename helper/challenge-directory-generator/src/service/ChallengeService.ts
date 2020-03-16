@@ -84,17 +84,17 @@ class ChallengeService {
 		await javaLanguageDropdownOption.click();
 		await driver.wait(until.elementLocated(By.xpath('//div[contains(@class, "tabs--title")]/div/span[text()="main.java"]')), ChallengeService.TIMEOUT);
 		let methodHeaderElement: WebElement =  await driver.wait(until.elementLocated(By.xpath('//*[contains(@class,"view-lines")]//*[contains(@class,"view-line") and not(./span/child::span[starts-with(text(),"//")])][1]/span')), ChallengeService.TIMEOUT);
-    let methodHeader: string = await methodHeaderElement.getAttribute("innerText");
+		let methodHeader: string = await methodHeaderElement.getAttribute("innerText");
 		return methodHeader;
 	}
 	private static getChallengeName(methodHeader: string): string {
 		return methodHeader.split(/(\s+)/)[2].split('(')[0];
 	}
 	private static getTestCaseArgumentTypes(methodHeader: string): TestCaseArgumentTypesResult {
-    let methodHeaderArgs = methodHeader.split(/(\s+)/);
-    for (var i = 0; i < methodHeaderArgs.length; i++) {
-      methodHeaderArgs.splice(i + 1, 1);
-    }
+		let methodHeaderArgs = methodHeader.split(/(\s+)/);
+		for (var i = 0; i < methodHeaderArgs.length; i++) {
+			methodHeaderArgs.splice(i + 1, 1);
+		}
 		let outputType: string = methodHeaderArgs[0];
 		let inputTypes: string[] = [];
 		let tempArgs = methodHeaderArgs[1].split('(');
@@ -122,7 +122,8 @@ class ChallengeService {
 		let inputs: TestCaseArgument[] = [];
 		let inputWebElements: WebElement[] = await driver.findElements(By.xpath('//pre[contains(@class, "task-tests--value") and not(contains(@class, "-answer"))]/div'));
 		for (const [index, inputWebElement] of inputWebElements.entries()) {
-			inputs.push(new TestCaseArgument((await inputWebElement.getAttribute('innerText')).split(':')[1].trim().replace(/(\r\n|\n|\r)/gm,'').replace(/ +(?= )/g,''), inputTypes[index]));
+			let innerText: string = await inputWebElement.getAttribute('innerText');
+			inputs.push(new TestCaseArgument(innerText.substring(innerText.indexOf(':')+1).trim().replace(/(\r\n|\n|\r)/gm,'').replace(/ +(?= )/g,''), inputTypes[index]));
 		}
 		return inputs;
 	}

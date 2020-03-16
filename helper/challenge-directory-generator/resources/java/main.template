@@ -11,7 +11,7 @@ public class [CLASS_NAME] {
 		System.out.println(String.format("PASSES %d out of %d tests", expectedOutput.length, expectedOutput.length));
 	}
 
-	public static [OUTPUT_TYPE] [METHOD_NAME]([METHOD_ARGS_DEFINITION]) {
+	static [OUTPUT_TYPE] [METHOD_NAME]([METHOD_ARGS_DEFINITION]) {
 		throw new UnsupportedOperationException();
 	}
 }

@@ -1,0 +1,1 @@
+javac VideoPart.java && java -ea VideoPart
