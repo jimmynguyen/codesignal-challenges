@@ -95,6 +95,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [fractionReducing](https://app.codesignal.com/challenge/nzDQW93qQgYNGJK46) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionReducing/java) |
 | [fromDecimal](https://app.codesignal.com/challenge/tZ38JTkMwh7iTA5hi) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fromDecimal/java) |
 | [fullName](https://app.codesignal.com/challenge/Pq5wxnanyr2ktSmkn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fullName/java) |
+| [giftSafety](https://app.codesignal.com/challenge/ueMWmccxYbti63LXA) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/giftSafety/java) |
 | [greetPerson](https://app.codesignal.com/challenge/Yr33aJzBew6ou7iRh) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/greetPerson/octave) |
 | [hailstoneSequence](https://app.codesignal.com/challenge/BKgnwNBLpJdrzAx24) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/hailstoneSequence/octave) |
 | [halvingSum](https://app.codesignal.com/challenge/mJPidEuuPJ8vCh6sh) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/halvingSum/octave) |
