@@ -1,0 +1,1 @@
+javac ReverseOnDiagonals.java && java -ea ReverseOnDiagonals
