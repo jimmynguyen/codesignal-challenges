@@ -1,0 +1,1 @@
+javac NthElementFromTheEnd.java && java -ea NthElementFromTheEnd
