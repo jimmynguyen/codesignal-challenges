@@ -1,0 +1,1 @@
+javac TwoArraysNthElement.java && java -ea TwoArraysNthElement
