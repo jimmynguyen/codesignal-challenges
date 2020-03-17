@@ -1,0 +1,1 @@
+javac LargestDistance.java && java -ea LargestDistance
