@@ -15,6 +15,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [alphabetSubstring](https://app.codesignal.com/challenge/ptFrnXhzvADkCz5Ls) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/alphabetSubstring/java) |
 | [alternatingSums](https://app.codesignal.com/challenge/ReDbsxeiSr3eKKczW) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/alternatingSums/octave) |
 | [appleBoxes](https://app.codesignal.com/challenge/rW5PgG8qaFM2ubgzx) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/appleBoxes/octave) |
+| [applesDistribution](https://app.codesignal.com/challenge/kpx4s9dsudpcgyC9F) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/applesDistribution/java) |
 | [areEquallyStrong](https://app.codesignal.com/challenge/MvBsn2Ya3yMovNjwY) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/areEquallyStrong/octave) |
 | [areFollowingPatterns](https://app.codesignal.com/challenge/dF75kDpLMi3WKMkdD) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/areFollowingPatterns/java) |
 | [areSimilarNumbers](https://app.codesignal.com/challenge/gu2uWowHBCZyrJfcX) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/areSimilarNumbers/java) |
