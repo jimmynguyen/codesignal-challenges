@@ -1,0 +1,1 @@
+javac EvenDigitsOnly.java && java -ea EvenDigitsOnly

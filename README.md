@@ -85,6 +85,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [equationSolutions](https://app.codesignal.com/challenge/4TDbzaLfpySTBmCuF) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equationSolutions/octave) |
 | [equationTemplate](https://app.codesignal.com/challenge/aBz44dMFDQgvmverf) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/equationTemplate/java) |
 | [eulersTotientFunction](https://app.codesignal.com/challenge/kYvWouwjmMbBEBqAS) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/eulersTotientFunction/octave) |
+| [evenDigitsOnly](https://app.codesignal.com/challenge/nckaDwhQf2gb4HFhS) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/evenDigitsOnly/java) |
 | [evenNumbersBeforeFixed](https://app.codesignal.com/challenge/aEmhz9YNDsHTALTmh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/evenNumbersBeforeFixed/java) |
 | [excelSheetColumnNumber](https://app.codesignal.com/challenge/ESBdiMSa8YTr95qFx) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/excelSheetColumnNumber/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/excelSheetColumnNumber/octave) |
 | [exerciseElaboration](https://app.codesignal.com/challenge/Ght3b8yAccvEpNDSc) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/exerciseElaboration/python3) |
