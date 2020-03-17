@@ -1,0 +1,1 @@
+javac GraphEdges.java && java -ea GraphEdges
