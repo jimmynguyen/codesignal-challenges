@@ -1,0 +1,1 @@
+javac FastSymmetrization.java && java -ea FastSymmetrization
