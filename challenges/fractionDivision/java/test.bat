@@ -1,0 +1,1 @@
+javac FractionDivision.java && java -ea FractionDivision

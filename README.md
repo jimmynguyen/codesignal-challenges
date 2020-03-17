@@ -96,6 +96,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [firstReverseTry](https://app.codesignal.com/challenge/DHppREaEB3hwT8rXu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstReverseTry/coffeescript) |
 | [fixedPointsPermutation](https://app.codesignal.com/challenge/WmFYd86PCzWGCGRAq) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fixedPointsPermutation/octave) |
 | [fractionComparison](https://app.codesignal.com/challenge/5vmC2veLB5rsTPeZC) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionComparison/java) |
+| [fractionDivision](https://app.codesignal.com/challenge/6TNRhv9jaaBgE8MPJ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionDivision/java) |
 | [fractionMultiplication](https://app.codesignal.com/challenge/ptQ8nzNPHqbwbMoqn) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionMultiplication/octave) |
 | [fractionReducing](https://app.codesignal.com/challenge/nzDQW93qQgYNGJK46) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionReducing/java) |
 | [fromDecimal](https://app.codesignal.com/challenge/tZ38JTkMwh7iTA5hi) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fromDecimal/java) |
