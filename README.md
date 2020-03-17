@@ -11,6 +11,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [adjacentElementsProduct](https://app.codesignal.com/arcade/intro/level-2/xzKiBHjhoinnpdh6m) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/adjacentElementsProduct/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/adjacentElementsProduct/octave) |
 | [allLongestStrings](https://app.codesignal.com/arcade/intro/level-3/fzsCQGYbxaEcTr2bL) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/allLongestStrings/octave) |
 | [almostIncreasingSequence](https://app.codesignal.com/arcade/intro/level-2/2mxbGwLzvkTCKAJMG) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/almostIncreasingSequence/octave) |
+| [alphabetSubsequence](https://app.codesignal.com/challenge/Mi26C6CpxEs7yiDMo) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/alphabetSubsequence/java) |
 | [alphabetSubstring](https://app.codesignal.com/challenge/ptFrnXhzvADkCz5Ls) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/alphabetSubstring/java) |
 | [alternatingSums](https://app.codesignal.com/challenge/ReDbsxeiSr3eKKczW) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/alternatingSums/octave) |
 | [appleBoxes](https://app.codesignal.com/challenge/rW5PgG8qaFM2ubgzx) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/appleBoxes/octave) |

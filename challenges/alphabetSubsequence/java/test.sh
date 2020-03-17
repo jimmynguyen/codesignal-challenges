@@ -1,0 +1,1 @@
+javac AlphabetSubsequence.java && java -ea AlphabetSubsequence
