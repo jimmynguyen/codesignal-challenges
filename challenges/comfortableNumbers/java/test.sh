@@ -1,0 +1,1 @@
+javac ComfortableNumbers.java && java -ea ComfortableNumbers

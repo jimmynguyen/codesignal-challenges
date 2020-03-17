@@ -42,6 +42,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [chessQueen](https://app.codesignal.com/challenge/KHYiHC5rvsP2f3poh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/chessQueen/java) |
 | [circleOfNumbers](https://app.codesignal.com/arcade/code-arcade/intro-gates/vExYvcGnFsEYSt8nQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/circleOfNumbers/java) |
 | [columnTitle](https://app.codesignal.com/challenge/iwQwAS9Zn5v7SNj9D) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/columnTitle/java) |
+| [comfortableNumbers](https://app.codesignal.com/challenge/hqB4Ejpyf3ncHqNzt) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/comfortableNumbers/java) |
 | [commonCharacterCount](https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/commonCharacterCount)
 | [computeDefiniteIntegral](https://app.codesignal.com/challenge/i7AAfRDur9TybJQ2P) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/octave) |
 | [concatenateArrays](https://app.codesignal.com/challenge/4LpkxwykLc3Af5v5u) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/concatenateArrays/octave) |
