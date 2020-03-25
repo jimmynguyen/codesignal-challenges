@@ -1,0 +1,1 @@
+javac MissingNumber.java && java -ea MissingNumber

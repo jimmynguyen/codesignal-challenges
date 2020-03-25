@@ -177,6 +177,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [minimumOnStack](https://app.codesignal.com/challenge/LC8sv7t8uDEccgDYs) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/minimumOnStack/octave) |
 | [mirrorBits](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/e3zfPNTwTa9qTQzcX) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/mirrorBits/python3) |
 | [missedClasses](https://app.codesignal.com/challenge/qAYye4nduWhC6dDhR) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/missedClasses/java) |
+| [missingNumber](https://app.codesignal.com/challenge/p4qArskGsNtf6ecdP) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/missingNumber/java) |
 | [mySubstring](https://app.codesignal.com/challenge/Dj5rbEu6rjEZiF2dp) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/mySubstring/octave) |
 | [neighboringCells](https://app.codesignal.com/challenge/cCp2KatYhxeXPtG7a) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/neighboringCells/java) |
 | [neighbouringElements](https://app.codesignal.com/challenge/9udjeSqmmRnC9TTJx) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/neighbouringElements/octave) |
