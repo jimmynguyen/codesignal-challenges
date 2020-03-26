@@ -1,0 +1,1 @@
+javac IsUnstablePair.java && java -ea IsUnstablePair
