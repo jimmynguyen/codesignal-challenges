@@ -204,6 +204,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [piecesOfDistinctLengths](https://app.codesignal.com/challenge/E6XCNZEDWrNCboYAs) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/piecesOfDistinctLengths/octave) |
 | [pointInLine](https://app.codesignal.com/challenge/HXyAmAuP9fG6xvX3W) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/pointInLine/octave) |
 | [pointsCollision](https://app.codesignal.com/challenge/TiRBMx8CsgABTHgNi) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/pointsCollision/js) |
+| [primeFactors](https://app.codesignal.com/challenge/Xa5wqxrtQB9e47Yeq) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/primeFactors/java) |
 | [primeFactors2](https://app.codesignal.com/challenge/2cnGDhLAdiShkfdNn) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/primeFactors2/java) |
 | [properOrImproper](https://app.codesignal.com/challenge/oB9bpK9Q6kxXu4JRQ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/properOrImproper/java) |
 | [rangeBitCount](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/eC2Zxu5H5SnuKxvPT) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/rangeBitCount/octave) |
