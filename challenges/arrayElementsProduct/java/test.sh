@@ -1,0 +1,1 @@
+javac ArrayElementsProduct.java && java -ea ArrayElementsProduct
