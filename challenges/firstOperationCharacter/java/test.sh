@@ -1,0 +1,1 @@
+javac FirstOperationCharacter.java && java -ea FirstOperationCharacter

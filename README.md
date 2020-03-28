@@ -100,6 +100,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [findSquareSide](https://app.codesignal.com/challenge/mCGWhBSaQ2nY2ZoiC) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findSquareSide/octave) |
 | [findTheRemainder](https://app.codesignal.com/challenge/KhDXwxuZMBBFivMqS) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findTheRemainder/java) |
 | [firstDigit](https://app.codesignal.com/challenge/MYBCagcRWsPqnSTzN) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstDigit/java) |
+| [firstOperationCharacter](https://app.codesignal.com/challenge/vE9Ykd7mtRq7E77oY) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstOperationCharacter/java) |
 | [firstReverseTry](https://app.codesignal.com/challenge/DHppREaEB3hwT8rXu) | [CoffeeScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/firstReverseTry/coffeescript) |
 | [fixedPointsPermutation](https://app.codesignal.com/challenge/WmFYd86PCzWGCGRAq) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fixedPointsPermutation/octave) |
 | [fractionComparison](https://app.codesignal.com/challenge/5vmC2veLB5rsTPeZC) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fractionComparison/java) |
