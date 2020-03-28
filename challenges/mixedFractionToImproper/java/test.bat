@@ -1,0 +1,1 @@
+javac MixedFractionToImproper.java && java -ea MixedFractionToImproper
