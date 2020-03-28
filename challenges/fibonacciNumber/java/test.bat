@@ -1,0 +1,1 @@
+javac FibonacciNumber.java && java -ea FibonacciNumber
