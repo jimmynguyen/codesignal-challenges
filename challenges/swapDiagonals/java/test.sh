@@ -1,0 +1,1 @@
+javac SwapDiagonals.java && java -ea SwapDiagonals
