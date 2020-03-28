@@ -33,6 +33,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [avoidObstacles](https://app.codesignal.com/challenge/AEKkAcCxy9hbNWwad) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/avoidObstacles/octave) |
 | [bfsComponentSize](https://app.codesignal.com/challenge/ru749qc7S27sorjcJ) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/bfsComponentSize/java) |
 | [bishopAndPawn](https://app.codesignal.com/challenge/uFMZ9Wm3MK3f7j5uG) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/bishopAndPawn/java) |
+| [buildPalindrome](https://app.codesignal.com/challenge/Fucm34ZryB8EBKbJP) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/buildPalindrome/java) |
 | [caesarBoxCipherEncoding](https://app.codesignal.com/challenge/bXXQbc5cesH7jPtXr) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/caesarBoxCipherEncoding/java) |
 | [candies](https://app.codesignal.com/arcade/code-arcade/intro-gates/DdNKFA3XCX6XN7bNz) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/candies/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/candies/octave) |
 | [candles](https://app.codesignal.com/challenge/CzgYv3fToYH33epxx) | [JavaScript](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/candles/js) |
