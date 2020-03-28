@@ -1,0 +1,1 @@
+javac MakeArrayConsecutive2.java && java -ea MakeArrayConsecutive2
