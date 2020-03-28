@@ -22,6 +22,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [arithmeticExpression](https://app.codesignal.com/arcade/code-arcade/at-the-crossroads/QrCSNQWhnQoaK9KgK) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticExpression/java) |
 | [arithmeticProgression](https://app.codesignal.com/challenge/6TbBh7yCjoPk9D7xE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arithmeticProgression/java) |
 | [arrayChange](https://app.codesignal.com/challenge/rpZstdHXPpjvPhMXh) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayChange/octave) |
+| [arrayComplexElementsProduct](https://app.codesignal.com/challenge/wLCaREGyjbocrdBDA) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayComplexElementsProduct/java) |
 | [arrayElementsProduct](https://app.codesignal.com/challenge/TuHac4M5746kwqTaH) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayElementsProduct/java) |
 | [arrayMinimumAboveBound](https://app.codesignal.com/challenge/m5DzzZAXguc4swSsv) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayMinimumAboveBound/java) |
 | [arrayMinimumIndex](https://app.codesignal.com/challenge/jCJgmTuTmLPGSKXei) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayMinimumIndex/java) |
