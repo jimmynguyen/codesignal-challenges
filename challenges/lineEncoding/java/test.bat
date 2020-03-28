@@ -1,0 +1,1 @@
+javac LineEncoding.java && java -ea LineEncoding
