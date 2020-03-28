@@ -1,0 +1,1 @@
+javac MaxDivisor.java && java -ea MaxDivisor
