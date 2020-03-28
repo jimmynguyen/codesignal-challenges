@@ -1,0 +1,1 @@
+javac IsPrime.java && java -ea IsPrime

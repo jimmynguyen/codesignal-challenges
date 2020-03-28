@@ -142,6 +142,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [isPermutation](https://app.codesignal.com/challenge/r3f8PoCN4YCn634an) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isPermutation/octave) |
 | [isPower](https://app.codesignal.com/challenge/hiPeCwLgendpQASyD) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isPower/octave) |
 | [isPowerOfTwo2](https://app.codesignal.com/challenge/o4P4CzeyHATP9xfm3) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isPowerOfTwo2/java) |
+| [isPrime](https://app.codesignal.com/challenge/rCfCTkrbE4PDE9J2w) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isPrime/java) |
 | [isSum](https://app.codesignal.com/challenge/EZSyNbGjNT6Kevpbi) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSum/python3) |
 | [isSumOfConsecutive](https://app.codesignal.com/challenge/X4Qpbuu8A4xiiNdc7) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive/java), [Scala](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive/scala) |
 | [isSumOfConsecutive2](https://app.codesignal.com/challenge/CY2qYcwMqPxp6Rsst) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/isSumOfConsecutive2/octave) |
