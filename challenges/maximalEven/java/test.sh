@@ -1,0 +1,1 @@
+javac MaximalEven.java && java -ea MaximalEven
