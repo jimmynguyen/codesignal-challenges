@@ -1,0 +1,1 @@
+javac AmendTheSentence.java && java -ea AmendTheSentence
