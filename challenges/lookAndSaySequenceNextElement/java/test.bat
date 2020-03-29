@@ -1,0 +1,1 @@
+javac LookAndSaySequenceNextElement.java && java -ea LookAndSaySequenceNextElement
