@@ -1,0 +1,1 @@
+javac MaximumSubsetProduct.java && java -ea MaximumSubsetProduct
