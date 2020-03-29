@@ -1,0 +1,1 @@
+javac ArrayMaximalAdjacentDifference.java && java -ea ArrayMaximalAdjacentDifference

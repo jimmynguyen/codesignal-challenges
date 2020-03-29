@@ -24,6 +24,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [arrayChange](https://app.codesignal.com/challenge/rpZstdHXPpjvPhMXh) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayChange/octave) |
 | [arrayComplexElementsProduct](https://app.codesignal.com/challenge/wLCaREGyjbocrdBDA) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayComplexElementsProduct/java) |
 | [arrayElementsProduct](https://app.codesignal.com/challenge/TuHac4M5746kwqTaH) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayElementsProduct/java) |
+| [arrayMaximalAdjacentDifference](https://app.codesignal.com/challenge/8cWAm3sYiBSNXwMZ7) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayMaximalAdjacentDifference/java) |
 | [arrayMinimumAboveBound](https://app.codesignal.com/challenge/m5DzzZAXguc4swSsv) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayMinimumAboveBound/java) |
 | [arrayMinimumIndex](https://app.codesignal.com/challenge/jCJgmTuTmLPGSKXei) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayMinimumIndex/java) |
 | [arrayPacking](https://app.codesignal.com/arcade/code-arcade/corner-of-0s-and-1s/KeMqde6oqfF5wBXxf) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/arrayPacking/python3) |
