@@ -1,0 +1,1 @@
+javac CheckFactorial.java && java -ea CheckFactorial
