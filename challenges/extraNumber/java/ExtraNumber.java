@@ -16,7 +16,7 @@ public class ExtraNumber {
 		System.out.println(String.format("PASSES %d out of %d tests", expectedOutput.length, expectedOutput.length));
 	}
 
-	public static int extraNumber(int a, int b, int c) {
-		return a == b ? c : a == c ? b : a;
+	static int extraNumber(int a, int b, int c) {
+		return a == b ? c : (a == c ? b : a);
 	}
 }
