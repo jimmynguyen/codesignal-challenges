@@ -1,0 +1,1 @@
+javac ContainsNearbyAlmostDuplicate.java && java -ea ContainsNearbyAlmostDuplicate

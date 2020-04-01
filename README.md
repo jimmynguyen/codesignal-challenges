@@ -53,6 +53,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [computeDefiniteIntegral](https://app.codesignal.com/challenge/i7AAfRDur9TybJQ2P) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/octave) |
 | [concatenateArrays](https://app.codesignal.com/challenge/4LpkxwykLc3Af5v5u) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/concatenateArrays/octave) |
 | [concatenateNumbers](https://app.codesignal.com/challenge/6yBjit2d4xdrGBecf) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/concatenateNumbers/python3) |
+| [containsNearbyAlmostDuplicate](https://app.codesignal.com/challenge/RKeFMnMnNoMvySDgX) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/containsNearbyAlmostDuplicate/java) |
 | [coolString](https://app.codesignal.com/challenge/csP46oWNeGhAH7quW) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/coolString/octave) |
 | [countDistantPairs](https://app.codesignal.com/challenge/Npv4LdeuiEZBbw2JF) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countDistantPairs/java) |
 | [countIncreasingSequences](https://app.codesignal.com/challenge/C3AifYwjTZhJfpPjX) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/countIncreasingSequences/java) |
