@@ -164,6 +164,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [kthDivisor](https://app.codesignal.com/challenge/acxEGxKFh2cigPNqu) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/kthDivisor/java) |
 | [largestDistance](https://app.codesignal.com/challenge/8RggMQ75MYrgomqnY) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestDistance/java) |
 | [largestNumber](https://app.codesignal.com/challenge/voofLc2giXxkixsti) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestNumber/octave), [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestNumber) |
+| [largestValuesInTreeRows](https://app.codesignal.com/challenge/aGu962yiy8Grj7PDE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/largestValuesInTreeRows/java) |
 | [lastDigit](https://app.codesignal.com/challenge/LoHLZktN2uEPDsFD2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/lastDigit/java) |
 | [lastDigitRegExp](https://app.codesignal.com/challenge/i7XejhS888nXv9pnP) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/lastDigitRegExp/octave) |
 | [lateRide](https://app.codesignal.com/arcade/code-arcade/intro-gates/aiKck9MwwAKyF8D4L) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/lateRide/java) |
