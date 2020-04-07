@@ -81,6 +81,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [differentValuesInMultiplicationTable2](https://app.codesignal.com/challenge/L9Ar3f2cgZsmeXAKh) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/differentValuesInMultiplicationTable2/java) |
 | [digitDistanceNumber](https://app.codesignal.com/challenge/TieSbaDHnbGyKjfKa) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitDistanceNumber/octave) |
 | [digitSum](https://app.codesignal.com/challenge/gmg3rya2qWsFDTchB) | [C++](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitSum/c++), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitSum/octave) |
+| [digitTreeSum](https://app.codesignal.com/challenge/KhyzcMrKxRYhYqTm3) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/digitTreeSum/java) |
 | [distinctDistances](https://app.codesignal.com/challenge/Y9AZrgkZs7wqfPRWH) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/distinctDistances/java) |
 | [divideAsLongAsPossible](https://app.codesignal.com/challenge/WCisYsTSeF4Kqwzs7) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divideAsLongAsPossible/octave) |
 | [divisorsPairs](https://app.codesignal.com/challenge/tQrzM9YobTCGCu7X2) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/divisorsPairs/java) |

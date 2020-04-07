@@ -1,0 +1,1 @@
+javac DigitTreeSum.java && java -ea DigitTreeSum
