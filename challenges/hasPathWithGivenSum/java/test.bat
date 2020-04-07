@@ -1,0 +1,1 @@
+javac HasPathWithGivenSum.java && java -ea HasPathWithGivenSum
