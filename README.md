@@ -50,6 +50,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [columnTitle](https://app.codesignal.com/challenge/iwQwAS9Zn5v7SNj9D) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/columnTitle/java) |
 | [comfortableNumbers](https://app.codesignal.com/challenge/hqB4Ejpyf3ncHqNzt) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/comfortableNumbers/java) |
 | [commonCharacterCount](https://app.codesignal.com/challenge/EmRRenvtbS4x5i2ud) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/commonCharacterCount)
+| [commonCharacterCount2](https://app.codesignal.com/challenge/6XfqSQgXsWDct3fuE) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/commonCharacterCount2/java) |
 | [computeDefiniteIntegral](https://app.codesignal.com/challenge/i7AAfRDur9TybJQ2P) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/java), [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/computeDefiniteIntegral/octave) |
 | [concatenateArrays](https://app.codesignal.com/challenge/4LpkxwykLc3Af5v5u) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/concatenateArrays/octave) |
 | [concatenateNumbers](https://app.codesignal.com/challenge/6yBjit2d4xdrGBecf) | [Python3](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/concatenateNumbers/python3) |
