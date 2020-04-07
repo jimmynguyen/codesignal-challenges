@@ -103,6 +103,7 @@ Solutions to challenges from [CodeSignal](https://codesignal.com/)
 | [fastSymmetrization](https://app.codesignal.com/challenge/SACBD4FdoAwPXDQF3) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fastSymmetrization/java) |
 | [fibonacciNumber](https://app.codesignal.com/challenge/hTvQiQuJTk9bSvY6n) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fibonacciNumber/java) |
 | [fibonacciSum](https://app.codesignal.com/challenge/F54etL8JkcJtQpKAZ) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fibonacciSum/octave) |
+| [fileNaming](https://app.codesignal.com/challenge/ZDcqnTLrb2hiYfWmG) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/fileNaming/java) |
 | [findEmailDomain](https://app.codesignal.com/challenge/HHKmRM9PLczxAFFTy) | [Octave](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findEmailDomain/octave) |
 | [findEqual](https://app.codesignal.com/challenge/kzjWujHam7y7A3dzN) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findEqual/java) |
 | [findHyperlink](https://app.codesignal.com/challenge/baN7twsxjPH3vxrdd) | [Java](https://github.com/jimmynguyen/codesignal-challenges/tree/master/challenges/findHyperlink/java) |

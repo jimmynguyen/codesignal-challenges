@@ -1,0 +1,1 @@
+javac FileNaming.java && java -ea FileNaming
