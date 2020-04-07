@@ -1,0 +1,1 @@
+javac TraverseTree.java && java -ea TraverseTree
